@@ -1,5 +1,138 @@
 # Markdown examples \(temp\)
 
+## Gitbbok Examples
+
+# tests!
+
+## Getting Super Powers
+
+Becoming a super hero is a fairly straight forward process:
+
+```
+$ give me super-powers
+```
+
+{% hint style="info" %}
+ Info hint
+{% endhint %}
+
+{% hint style="warning" %}
+Warning hint
+{% endhint %}
+
+{% hint style="danger" %}
+Danger hint
+{% endhint %}
+
+{% hint style="success" %}
+Success hint
+{% endhint %}
+
+Once you're strong enough, save the world:
+
+```
+// Ain't no code for that yet, sorry
+echo 'You got to trust me on this, I saved the world'
+```
+
+{% page-ref page="tests.md" %}
+
+{% api-method method="get" host="" path="" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+{% page-ref page="markdown-examples.md" %}
+
+{% file src="../.gitbook/assets/car-insurance.csv" caption="Car-Insurance.csv" %}
+
+{% tabs %}
+{% tab title="First Tab" %}
+
+
+Text in the 1st tab
+
+
+
+
+
+Text in the 1st tab
+
+
+
+
+
+Text in the 1st tab
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+
+Text in the second tab
+
+
+
+
+
+Text in the second tab
+
+
+
+
+
+Text in the second tab
+{% endtab %}
+
+{% tab title="3rd Tab" %}
+Text in the 3rd tab
+
+
+
+
+
+Text in the 3rd tab
+
+
+
+Text in the 3rd tab
+{% endtab %}
+{% endtabs %}
+
+> This is a quote from Achilles
+>
+> fds
+
+fds
+
+
 #### Features
 
 * Support Standard Markdown / CommonMark and GFM\(GitHub Flavored Markdown\);
@@ -13,6 +146,17 @@
 ## Editor.md
 
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png )
+
+<img src="image.png" width="640" height=360 />
+
+<img src="image.png" width="100" height=100 />
+
+# Heading
+
+Here is an 200x100 image:
+
+<img src="image.png" width="200" height="100" />
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
