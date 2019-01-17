@@ -1,7 +1,7 @@
 
 ## CACI FORECASTER
 
-Forecaster is an advanced demand forecasting tool that is used to quickly produce accurate data-driven forecasts.
+Forecaster is a powerful demand forecasting tool that helps you quickly produce accurate data-driven forecasts.
 
 Forecaster provides a standard, easy to use platform for all forecasts, helping to make the forecasting process more robust, transparent, and reliable. It has the ability to quickly evaluate and include any additional business drivers, providing both improved accuracy and increased understanding of the factors affecting your business.
 
