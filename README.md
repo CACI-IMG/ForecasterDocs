@@ -7,9 +7,9 @@ Forecaster provides a standard, easy to use platform for all forecasts, helping 
 
 Data importation, pre-processing, and exportation can all be automated, reducing the need for manual intervention. This automation also helps to guarantee data integrity and accuracy, giving your business the confidence to plan more effectively.
 
-Backed up by a scientific and transparent approach,gfdsgfdsgfsgrfds Forecaster can be used across a wide range of commercial settings for predicting call volumes as well as sales volumes for forecasting packaging or production volumes.
+Backed up by a scientific and transparent approach, Forecaster can be used across a wide range of commercial settings, from predicting call volumes as well as sales volumes for forecasting packaging or production volumes.
 
 ## FURTHER INFORMATION
 
-See how Forecaster can help you build more accurate demand forecasts, call us on +44 \(0\)20 7605 6081.
+See how Forecaster can help you build more accurate demand forecasts, call us on +44 (0) 207 605 6081.
 
