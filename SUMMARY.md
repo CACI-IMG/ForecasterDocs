@@ -11,12 +11,12 @@
   * [Projects](user-guide/Getting-started/Projects.md)
 
 * [Data](user-guide/Data/Data.md)
-  * [Data Importers](user-guide/Data/Data-Importers.md)
-  * [Data Exporters](user-guide/Data/Data-Exporters.md)
+  * [Importing Data](user-guide/Data/Data-Importers.md)
+  * [Exporting Data](user-guide/Data/Data-Exporters.md)
   * [Data Rows & Columns](user-guide/Data/Data-Rows-Columns.md)
 
 * [Forecasting]()
-  * [Model Type](user-guide/Forecasting/Model-Type.md)
+  * [Model Types](user-guide/Forecasting/Model-Type.md)
   * [Model Rows](user-guide/Forecasting/Model-Rows.md)
   * [Model Columns](user-guide/Forecasting/Model-Columns.md)
   * [Model Design](user-guide/Forecasting/Model-Design.md)

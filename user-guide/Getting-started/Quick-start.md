@@ -1,8 +1,9 @@
 # Quick Start
 
-The CACI Forecaster provides planners with the best forecasting models available. These models provide superior forecasting accuracy when compared with existing ~~workforce management products~~. CACI Forecaster is quick and easy to use and provides a controlled and straightforward forecast generation process.
+CACI Forecaster is designed to let you get started very quickly with producing your own data-driven forecasts. This section covers the creation of a simple forecasting project. In this example, we'll create forecasts of car insurance call volumes, based on historical data. This dataset holds only historical call volumes and public holidays, so we'll use a simple seasonality-based model.
 
-### Before you start
+
+## Before you start
 
 Make sure that you have the following:
 
@@ -11,7 +12,7 @@ Make sure that you have the following:
 
 {% file src="data/Car-Insurance.csv" caption="Car-Insurance.csv" %}
 
-### Create a new Solution
+## Create a new Solution
 - **Open** CACI Forecaster.
 
 - In CACI Forecaster **click** “New” to create a new solution.
@@ -22,59 +23,76 @@ Make sure that you have the following:
 
 - **Click** “OK” to continue.
 
-### Import the Data
+## Import the Data
 - In the “Data Importer” part of the ribbon, **select** the "Text" icon then the "Import" icon – this tells the forecaster that you are going to import a text file.
 
 {% hint style="info" %}
-Forecaster can also import from Excel files or run any custom process using the script ~~import to import~~ (??) data i.e. database extraction, data pre-processing, etc.
+Forecaster can also import from Excel files by using the 'MS Excel' button rather than the 'Text' button we've used here. In addition, more advanced importation is possible using the 'Script' button. Out of the box, Forecaster is provided with a range of 'Load With Harmonics' importation scripts. These append a range of useful additional data to any data import, including public holiday information for a range of countries. Additional customised importation scripts can also be created, in order to read, combined, or aggregate data from any range of files, data feeds, or databases.
 {% endhint %}
 
-- In the pop-up window start a new importation by clicking "Next" and browse for the data file “Car Insurance”.
+- In the pop-up window start a new importation by clicking "Next" and browse for the data file “Car Insurance.csv”, that you should have downloaded prior to starting this exercise.
 
 ![Import Data](imgs/QuickStart_ImportData.png)
 
 
-- After checking that the comma delimiters option is ticked, continue to **click** “Next” until you see the following window, below:
+- After checking that the comma delimiters option is ticked, continue to **click** “Next” to move through the series of windows until you see the following window:
 
 ![Text Import Wizard - Final Screen](imgs/QuickStart_TextImportWizard_Completed.png)
 
 
+This completes the data importation process, and you should see the call volume and public holiday information in the main Forecaster data grid.
 
-### Prepare Data
+{% hint style="info" %}
+Often, data re-importation is needed to update Forecaster with the very latest data. If the car insurance csv file had been updated, clicking the 'Quick Re-Import' button would re-import from this updated file, bringing in the very latest data.
+{% endhint %}
 
-- **Select** the "CallsOffered" column header and **click** on "Target".
+## Prepare the Data
+
+- We first need to tell Forecaster that we want to forecast the calls offered column. To to so, **select** the "CallsOffered" column header and **click** on "Target". "Target" means that this is the column that we want Forecaster to forecast for. (Columns can also be flagged up as "Input", if they are to be used by Forecaster in order to increase forecast accuracy. For this simple model however, we will not be needing any inputs.)
 
 ![Target Column](imgs/QuickStart_TargetColumn.png)
 
 
-- Now you need to select a “Start point”. **Scroll down** to row with date "01/11/2010" and **select** the row by clicking on the row header. Then **click** on the the Forecast Start button - the row will turn light blue.
+- Forecaster works by first learning from historical data, then using this trained model to create forecasts for future rows. Setting the Forecast Start point defines which rows Forecaster will used for training (learning or building) the model. All rows before Forecast Start are used for learning the predictive model. When used for generating a real live forecast, this is typically set to the first row for which no target information is available. In this case, however, we'll set this point a few weeks back from the last available data, so we can compare forecasts to the known actual values. **Scroll down** to row with date "01/11/2010" and **select** the row by clicking on the row header. Then **click** on the Forecast Start button - the row will be highlighted in blue.
 
 ![Forecast Start](imgs/QuickStart_ForecastStart.png)
 
 {% hint style="info" %}
-The data above the “Forecast Start” is historic data that CACI Forecaster will use to train the model. ~~The data below the “Forecast Start” will be used to validate the model - CACI Forecaster will only use the key driver data below the “start point” to determine the target~~
+Forecaster will use all data above the Forecast Start row (the training period) to train the model. The data below the Forecast Start row (the forecast period) will be used to validate the model's accuracy (this accuracy can be found on the output charts). In fact, forecasts will be generated for all rows in the dataset; looking back historically at areas where performance is lower can be really useful in improving model performance.
 {% endhint %}
 
 
-### Forecasting
+## Create the Forecasts
 
-- **Select** the "Simple Profile" model.
+- Now the data has been set up, we can move to training the forecasting model and producing the forecasts. As this simple dataset has no business drivers, we will use a simple seasonal model. **Select** the "Simple Profile" model.
 
 ![Model Selection](imgs/QuickStart_SimpleProfileModel.png)
 
 
-- and then **click** on the "Forecast" button!
+- and then **click** on the "Forecast" button to train the model and produce the forecasts!
 
 ![Forecast button](imgs/QuickStart_Forecast.png)
 
 
-- The forecast and predicted error will appear in the data table. Details of the model are also displayed in the output window.
+- The forecast and predicted error (expected model accuracy) will appear in the data table. Details of the model are also displayed in the output window. Different models will show different information here. This Multi Profile Daily model shows the daily, weekly, and yearly profiles (where 100% is an average day), as well as the effects of public holidays (and the days before and after public holidays). Both long term and short term trends are also taken into account.
 
 ![Forecast and Forecast Error columns](imgs/QuickStart_Forecasts.png)
 
+{% hint style="info" %}
+The Forecast Error column holds expected forecast accuracy for each row. For this simple model, the same value is shown for all rows; this is just providing the average expected accuracy. More advanced models such as ARIMA provide different accuracy estimates for each row - this can be really useful for understanding where the model is confident in its predictions, and where forecasting is more difficult.
+{% endhint %}
 
-### Analyze results
+## Analyse the Results
 - **Click** on the "Analysis" tab - a graph of the actual target value and forecast target is displayed with a range of performance metrics.
 
 ![Analysis Tab](imgs/QuickStart_Analysis.png)
+
+- Clicking on the **Show Full Range** button flips between showing the forecast period (the default), and the entire dataset.
+- The mouse wheel controls zooming in and out (horizontal zooming)
+- Data can be panned by clicking on the chart and dragging
+- Zoom into a specific area by holding down the Shift key and dragging with the mouse
+- Ctrl + mouse wheel zooms vertically only
+- Shift + mouse wheel zooms both horizontally and vertically
+
+
 
