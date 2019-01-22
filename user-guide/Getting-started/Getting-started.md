@@ -5,7 +5,6 @@ description: Forecaster getting started guide.
 
 Forecaster is a powerful demand forecasting tool that helps you quickly produce accurate data-driven forecasts.
 
-
 If you're new to Forecaster, the following Quick Start guide takes you through setting up your first Forecaster project:
 {% page-ref page="Quick-start.md" %}
 
@@ -15,5 +14,5 @@ Navigating in Forecaster is explained here:
 To find information about Forecaster Solutions click on the link below:
 {% page-ref page="Solution.md" %}
 
-To find information about Forecaster Projects click on the link below:
+For information about Forecaster Projects click on the link below:
 {% page-ref page="Projects.md" %}

@@ -4,10 +4,10 @@
 
 ## User Guide
 
-* [Getting started](user-guide/Getting-started/Getting-started.md)
+* [Getting Started with CACI Forecaster](user-guide/Getting-started/Getting-started.md)
   * [Quick Start](user-guide/Getting-started/Quick-start.md)
   * [Navigation](user-guide/Getting-started/Navigation.md)
-  * [Solution](user-guide/Getting-started/Solution.md)
+  * [Solutions](user-guide/Getting-started/Solution.md)
   * [Projects](user-guide/Getting-started/Projects.md)
 
 * [Data](user-guide/Data/Data.md)
@@ -33,7 +33,11 @@
 
 ## Use Cases
 
-* [Forecasts and Models](user-guide/part-i/README.md)
+* [Forecasting Models Overview](user-cases/Forecast-Models-Overview.md)
+* [Using Marketing Type Delays](user-cases/Delays.md)
+* [Interval Forecasting](user-cases/Interval-Forecasting.md)
+
+
   * [Forecasts – usefulness and limitations](user-guide/part-i/writing-is-nice.md)
   * [Models](user-guide/part-i/gitbook-is-nice.md)
   * [Model and forecast quality](GettingStarted/GettingStarted.md#Projects)

@@ -2,6 +2,7 @@
 
 The Columns group on the Data tab is concerned with deriving new fields from the imported data, deleting columns and providing summary statistics for each column.
 
+![Data / Rows and Columns group](imgs/Data_RowsAndColumns-Columns.png)
 
 ## Column Properties
 To see column properties and summary statistics for each column, the user can move the mouse pointer over to the column name of interest in the data grid and wait for the tool-tip to be displayed.  Alternatively, select the column of interest and press the Column Properties icon in the Data – Data Columns ribbon.  
