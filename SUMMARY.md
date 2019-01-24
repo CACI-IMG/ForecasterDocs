@@ -2,8 +2,8 @@
 
 * [About CACI Forecaster](README.md)
 
-## [User Guide](user-guide/user-guide.md)
-
+## User Guide
+* [Overview](user-guide/user-guide.md)
 * [Getting Started with CACI Forecaster](user-guide/Getting-started/Getting-started.md)
     * [Quick Start](user-guide/Getting-started/Quick-start.md)
     * [Navigation](user-guide/Getting-started/Navigation.md)
@@ -36,7 +36,7 @@
 
 
 ## Use Cases
-
+* [Overview](use-cases/use-cases.md)
 * [Forecasting Models Overview](user-cases/Forecast-Models-Overview.md)
 * [Using Marketing Type Delays](user-cases/Delays.md)
 * [Interval Forecasting](user-cases/Interval-Forecasting.md)
