@@ -70,7 +70,7 @@ As already mentioned, to build a new workflow users can either start from the Cr
 
 ### Import Data
 
-The Import Data is used to specify that at this step of the workflow the data has to be imported.
+The Import Data task is used to import data.
 
 From the Task Properties pane users can specify a new importation procedure, re-use of the existing one by updating the current importation configuration (i.e. data file, script) or re-use of the existing one with a clean import.
 

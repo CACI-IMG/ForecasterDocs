@@ -31,19 +31,21 @@ The application makes use of a ribbon tool bar and has been broken down into the
 
 
 
-* **Automation**: This tab is for automating the forecasting process by creating workflows that can create a project, import the data, setup models, generate the forecasts and export the results.
+* [Automation](/user-guide/Automation/Automation.md): This tab is for automating the forecasting process by creating workflows that can create a project, import the data, setup models, generate the forecasts and export the results.
 
 ![Automation Tab](imgs/AutomationTab.png)
-{% page-ref page="Automation.md" %}
+{% page-ref page="/user-guide/Automation/Automation.md" %}
+[Automation link](/user-guide/Automation/Automation.md)
 
 
+There is a natural order to building the forecasts, generally speaking the forecasting process starts with the Home tab, moves to Data, then to the Model and Analysis, and finally onto the Automation for productionising the process.  This follows the order of the ribbon tabs from left to right. However, the user is able to move around the application as they see fit, adapting forecasts and updating results.  
 
-There is a natural order to building the forecasts, generally speaking the user will start with the Home tab, move to Data, then to the Model and Analysis, and finally onto the Automation for productionising the process.  However, the user is able to move around the application as they see fit, adapting forecasts and updating results.  Also within the ribbon control, the general mode is to move from left to right.
 
+## Solution Explorer
 The Solution Explorer window (generally to the left of the screen) shows details of all available projects within the solution and is visible in all tabs.
 
 ![Forecaster](imgs/ForecasterMainScreen.png)
-
+{% page-ref page="user-guide/Getting-started/Solution.md" %}
 
 
 #### Custom Actions

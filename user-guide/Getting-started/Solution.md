@@ -1,24 +1,23 @@
-## Solution
+# Solution
+While a project holds a single forecast, a solution represents a single workspace which may hold any number of individual projects.
 
+## Solution Hierarchy
 
-### Solution Hierarchy
-
-At this point it is sensible to talk about the hierarchy of a solution.  Once a new solution has been defined or loaded, its structure can be seen in the Solution Explorer window.  A solution may contain one or more projects.  The projects can be related to one another, such as projects with the same dataset but with differing forecasting models, or they can be completely unrelated but grouped in the solution for convenience. For example, all call volume forecasts in a contact centre could be grouped into one solution.  The image below demonstrates that forecast projects for Motor, Home and Travel can be grouped in the same solution.
+Once a new solution has been defined or loaded, its structure can be seen in the Solution Explorer window (by default to the left of the screen).  A solution may contain one or more projects. The projects can be related to one another, such as projects with the same dataset but with differing forecasting models, or they can be completely unrelated but grouped in the solution for convenience. For example, all call volume forecasts in a contact centre could be grouped into one solution. The image below shows an example where projects for Motor, Home and Travel have been grouped in the same solution, together with a range of different forecasting techniques for Motor Sales.
 
 ![Solution Hierarchy](imgs/Solution_SolutionHierarchy.png)
 
-Each of these projects contains different sources of data, however, for the sake of simplicity it makes sense to group all of these forecasts in the same place.  For example, if other planners need to build forecasts in someone’s absence, all active forecast models will be in the same collection.
+Each of these projects may hold different sources of data, however, for the sake of simplicity it makes sense to group all of these forecasts in the same place.  For example, if other planners need to build forecasts in someone’s absence, all active forecast models will be in the same collection.
 
-Notice in the example that within the Motor Sales forecast there are a number of sub-forecasts or project snapshots.  These snapshots represent a collection of Motor Sales forecasts that share common data with the project one level up.  The purpose of this hierarchy is to allow the user to keep a copy of all experiments considered valuable, for example a collection of forecast models that yield good predictions.
-
-
-### Solution Management
-
-There is a number of management activities which can be carried out on Forecaster Solutions. More details follow in this section.
+Notice in the previous example that within the Motor Sales forecast there are a number of sub-forecasts or project snapshots.  These snapshots represent a collection of Motor Sales forecasts that (typically) share common data with the project one level up.  The purpose of this hierarchy is to allow the user to keep a copy of all experiments considered valuable, for example a collection of forecast models that yield good predictions.
 
 
+## Solution Management
 
-#### New Solution
+A number of management activities can be carried out on Forecaster Solutions. 
+
+
+### New Solution
 
 The New Solution icon (or quick keys `Ctrl+N`) allows the user to create a new forecast solution. 
 
@@ -36,7 +35,7 @@ Users can now create Projects and import their own data. For Creating a Project 
 
 
 
-#### Open, Close and Save a Solution
+### Open, Close and Save a Solution
 
 A Solution in Forecaster can be managed through the options available in the Home Tab.
 
@@ -62,13 +61,11 @@ When a solution is saved, a solution directory is created and a number of files 
 
 
 
-
-
-#### Deleting a Solution
+### Deleting a Solution
 To delete a solution, delete the solution directory through the usual Windows Explorer or equivalent.
 
 
-#### Recent Solutions
+### Recent Solutions
 Links to recent solutions are available via the Home – Solution ribbon or in the main window in Home.  As checks are made prior to a solution appearing in the list, all recent solutions listed will be valid and accessible.  If files are subsequently deleted, they will not be displayed in the options list.
 Selecting from this list will save you time and effort trying to find the location of previous solutions you may have been working on.
 
