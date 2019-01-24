@@ -1,9 +1,9 @@
----
-description: Forecaster getting started guide.
----
+![CACI Forecaster](imgs/ForecasterSplashWide.png)
 # Getting Started with CACI Forecaster
 
 Forecaster is a powerful demand forecasting tool that helps you quickly produce accurate data-driven forecasts.
+
+
 
 If you're new to Forecaster, the following Quick Start guide takes you through setting up your first Forecaster project:
 {% page-ref page="Quick-start.md" %}

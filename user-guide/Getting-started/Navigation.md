@@ -1,44 +1,44 @@
 # Navigation
 
 
-#### Navigation Tabs
+## Navigation Tabs
 The application makes use of a ribbon tool bar and has been broken down into the following sections:
 
 
 
-
-* **Home**:  This ribbon contains all of the controls required to manage the solution (the current CACI Forecaster file) and to automatically export the data
+* **Home**:  This tab contains all of the controls required to manage the solution (the current CACI Forecaster file) and to automatically export the data
 
 ![Home Tab](imgs/HomeTab.png)
 
 
 
-* **Data**:  This ribbon contains all of the functionality necessary to import data and pre-process it.
+* **Data**:  This tab contains all of the functionality necessary to import data and pre-process it.
 
 ![Data Tab](imgs/DataTab.png)
 
 
 
-* **Model**:  This ribbon contains all of the functionality necessary to specify a forecasting technique and build the forecast.
+* **Model**:  This tab contains all of the functionality necessary to specify a forecasting technique and build the forecast.
 
 ![Model Tab](imgs/ModelTab.png)
 
 
 
 
-* **Analysis**:  The analysis ribbon gives the user the ability to view and compare the results of a forecast against any other forecast generated on the same time series and same time period.
+* **Analysis**:  This tab holds chart for comparing the results of one or more forecasts.
 
 ![Analysis Tab](imgs/AnalysisTab.png)
 
 
 
-* **Automation**: In the Automation ribbon users can automate the whole forecasting process by creating workflows that create a project, import the data, setup models, generate the forecasts and export the results.
+* **Automation**: This tab is for automating the forecasting process by creating workflows that can create a project, import the data, setup models, generate the forecasts and export the results.
 
 ![Automation Tab](imgs/AutomationTab.png)
+{% page-ref page="Automation.md" %}
 
 
 
-There is a natural order to building the forecasts, generally speaking the user will start with the Home tab, move to Data, then to the Model and Analysis, and finally onto the Automation.  However, the user is able to move around the application as they see fit, adapting forecasts and updating results.  Also within the ribbon control, the general mode is to move from left to right.
+There is a natural order to building the forecasts, generally speaking the user will start with the Home tab, move to Data, then to the Model and Analysis, and finally onto the Automation for productionising the process.  However, the user is able to move around the application as they see fit, adapting forecasts and updating results.  Also within the ribbon control, the general mode is to move from left to right.
 
 The Solution Explorer window (generally to the left of the screen) shows details of all available projects within the solution and is visible in all tabs.
 

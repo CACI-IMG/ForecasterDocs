@@ -15,7 +15,7 @@
   * [Exporting Data](user-guide/Data/Data-Exporters.md)
   * [Data Rows & Columns](user-guide/Data/Data-Rows-Columns.md)
 
-* [Forecasting]()
+* [Model]()
   * [Model Types](user-guide/Forecasting/Model-Type.md)
   * [Model Rows](user-guide/Forecasting/Model-Rows.md)
   * [Model Columns](user-guide/Forecasting/Model-Columns.md)
@@ -23,8 +23,7 @@
   * [Forecasting](user-guide/Forecasting/Forecasting.md)
   
 * [Analysis]()
-  * [Charts & Error Metrics](user-guide/Analysis/Charts-And-Error-Metrics.md)
-  * [Series Setup](user-guide/Analysis/Series-Setup.md)
+  * [Charts](user-guide/Analysis/Charts-And-Error-Metrics.md)
 
 * [Automation](user-guide/Automation/Automation.md)
   * [Workflows](user-guide/Automation/Workflows.md)

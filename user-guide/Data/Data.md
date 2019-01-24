@@ -1,7 +1,7 @@
 # Data Tab
 
 
-The second item on the application ribbon is the Data tab.  This tab gives the user the tools to load or update data and derive new variables from the source data. The Data ribbon breaks down into 3 different groups:
+The second item on the application ribbon is the Data tab.  This tab allows you to load or update data and derive new variables from the source data. The Data ribbon breaks down into 3 different groups:
 
 
 - **Data Importers:** Mechanisms to import data into the application.

@@ -1,4 +1,6 @@
 
+![CACI Forecaster](user-guide/Getting-started/imgs/ForecasterSplashWide.png)
+
 ## CACI FORECASTER
 
 Forecaster is a powerful demand forecasting tool that helps you quickly produce accurate data-driven forecasts.
