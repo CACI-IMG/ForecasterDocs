@@ -11,17 +11,13 @@ Used to import an Excel file
 3. **Script:** <br/>
 There are two different types of script: 
 
-    - Load with Harmonics scripts: Enables the user to import their csv file but automatically includes information on bank holidays and harmonics.  Different scripts are available in order to load interval, daily, weekly, or monthly data. More can be found in a separate document on Decomposition Models.
-    - Automatic import from databases: Bespoke scripts can be created by CACI. For further consultancy, please contact CACI.
-
+    - Load with Harmonics scripts: These let you import from flat files such as csv files, while appending useful information on public holidays and harmonics (to help model seasonality).  A range of scripts is available in order to load interval, daily, weekly, or monthly data.
+    - Bespoke importation scripts: These can be created by CACI in order to import specific business data. For instance, these could be set up to read directly from a database, as well as merging in data from reports and local flat files. To find out more, please contact CACI directly.
 
 <br/>
+Once you have selected a particular importer (Text, Excel, or Script), click on Import to open the importation wizard.
 
-Once you have selected which type of import you require (Text, MS Excel, Script), click on Import to open the importation wizard.
-
-
-If the importation wizard is used on a brand new project (with no existing data), the user will only have the option to start a new importation.  The following sections will describe how to import data into a new project, using the three different importers.
-You are able to cancel the import by pressing the cancel button at any time, alternatively if you need to change some wizard settings press the Back button to go back through the importation wizard process.
+If the importation wizard is used on a brand new project (with no existing data), the only option is to start a new importation. The following sections will describe how to import data into a new project, using the three different importers. You can cancel the import at any time by pressing the cancel button. Alternatively if you need to change some wizard settings press the Back button to go back through the importation wizard process.
 
 
 {% hint style="info" %}
@@ -31,12 +27,12 @@ You can click on any of the sections of this page from the CONTENTS menu to the 
 
 
 ##### Text Importer
-Once the user has selected Text – Import from the Data – Data Importers ribbon, the Comma Delimited Importer will open.  
+Once you've selected Text – Import from the Data – Data Importers ribbon, the Comma Delimited Importer will open.  
 
 ![Text Import Wizard - Welcome](imgs/TextImportWizard_Welcome.png)
 
 
-By clicking on Next, the user will be able to insert the relevant path and file name of the text file (using the Browse button) and set the delimiter.  The default delimiter is comma, but other delimiters are possible (as shown in the image below).  By leaving the Suggest Data Types box ticked, the application will automatically define data types for each column.  
+By clicking on Next, you will be able to insert the relevant path and file name of the text file (using the Browse button) and set the delimiter.  The default delimiter is comma, but other delimiters are possible (as shown in the image below).  By leaving the Suggest Data Types box ticked, the application will automatically define data types for each column.  
 
 
 ![Text Import Wizard - Parameters](imgs/TextImportWizard_Parameters.png)
@@ -49,7 +45,7 @@ Clicking on Next brings you to the Column Configuration options where you will b
 ![Text Import Wizard - Column Configuration (Preview)](imgs/TextImportWizard_ColumnsConfig.png)
 
 
-By clicking the Advanced view shown in the image below, the user is able to adjust the data type of each column, described in Table 6.
+By clicking the Advanced view shown in the image below, you can adjust the data type of each column, described in Table 6.
  
 ![Text Import Wizard - Column Configuration (Advanced)](imgs/TextImportWizard_ColumnsConfigAdvanced.png)
 
@@ -72,12 +68,12 @@ The importation will complete by clicking Next followed by Finish.
 
 
 ##### Excel Importer
-Once the user has selected MS Excel – Import from the Data – Data Importers ribbon, the Excel Importer will open. 
+Once you've selected MS Excel – Import from the Data – Data Importers ribbon, the Excel Importer will open. 
  
 ![Excel Import Wizard - Welcome](imgs/ExcelImportWizard_Welcome.png)
 
 
-By clicking on Next, the user will be able to insert the relevant path and file name of the Excel file (using Browse button).  By leaving the Suggest Data Types box ticked, the application will automatically define data types for each column.  
+By clicking on Next, you will be able to insert the relevant path and file name of the Excel file (using Browse button).  By leaving the Suggest Data Types box ticked, the application will automatically define data types for each column.  
  
 ![Excel Import Wizard - Parameters](imgs/ExcelImportWizard_Parameters.png)
 
@@ -93,11 +89,11 @@ Clicking on Next will bring you to the Column Configuration screen.  The importa
 
 
 ##### Script Importer
-Once the user has selected Script – Import from the Data – Data Importers ribbon, the Script Importer will open.  
+Once you've selected Script – Import from the Data – Data Importers ribbon, the Script Importer will open.  
  
 ![Script Import Wizard - Welcome](imgs/ScriptImportWizard_Welcome.png)
 
-By clicking on Next, the user will be able to select the relevant script and input the required parameters in the Parameters field.
+By clicking on Next, you will be able to select the relevant script and input the required parameters in the Parameters field.
 
 ![Script Import Wizard - Script Selector](imgs/ScriptImportWizard_ScriptSelector.png) 
 
@@ -117,7 +113,7 @@ Once a forecast has been developed and the results deployed, the usual next step
 ![Typical Import Wizard - Re-Import](imgs/Re-Import.png)
 
 
-The import process will then make use of the key column.  It is assumed that the import file will be the same as the original file, that its format is the same, the column positions of each variable are the same, and that their types remain constant.  The key variable is used to overwrite any values in the data grid with values from the import data.  Therefore if you have historical data that has been changed in the CACI Forecaster but not reflected in the source data, the modified values will be overwritten with the original values. 
+The import process will then make use of the key column.  It is assumed that the import file will be the same as the original file, that its format is the same, the column positions of each variable are the same, and that their types remain constant.  The key variable is used to overwrite any values in the data grid with values from the import data.  Therefore if you have historical data that has been changed in Forecaster but not reflected in the source data, the modified values will be overwritten with the original values. 
  
-If Update Re-Import is selected, then any rows with key values not visible in the new source data will remain unchanged.  For example, if your import data file only contains data from March 2011, yet the data grid in the CACI Forecaster contains data from January 2011, then the updated data grid will contain data from January 2011, with the values from March 2011 taken from the new import file.  To prevent this from happening (and therefore only include the new source data in the data grid), select Clean Re-Import instead.
+If Update Re-Import is selected, then any rows with key values not visible in the new source data will remain unchanged.  For example, if your import data file only contains data from March 2011, yet the data grid in Forecaster contains data from January 2011, then the updated data grid will contain data from January 2011, with the values from March 2011 taken from the new import file.  To prevent this from happening (and therefore only include the new source data in the data grid), select Clean Re-Import instead.
 

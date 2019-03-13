@@ -12,7 +12,7 @@ Export Results Settings:
 | Setting             | Description                                                                                                                                                                                                      |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Target Filename     | Path and file name of the csv file where the data will be exported to.  The csv file can subsequently be opened in Excel if required.                                                                            |
-| Export Columns      | Enables you to select the variables that you want to include in the export                                                                                                                                       |
+| Export Columns      | Lets you select the variables that you want to include in the export                                                                                                                                       |
 | Automation Settings | By selecting **Auto-Export On**, the latest data will be exported to the specified file each time you generate a forecast.  If you only wish to export the data once, select **Auto-Export Off**, then the **Export** button |
 
 

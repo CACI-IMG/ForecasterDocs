@@ -48,7 +48,7 @@
         * [Models](user-guide/part-i/gitbook-is-nice.md)
         * [Model and forecast quality](GettingStarted/GettingStarted.md#Projects)
         * [From simple to complex models](GettingStarted/GettingStarted.md#Projects)
-        * [Seasonal models in the Forecaster](GettingStarted/GettingStarted.md#Projects)
+        * [Seasonal models in Forecaster](GettingStarted/GettingStarted.md#Projects)
 
     * [Regression Models](user-guide/part-i/README.md)
         * [Regression models – theory and practice](user-guide/part-i/writing-is-nice.md)

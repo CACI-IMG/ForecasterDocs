@@ -8,9 +8,9 @@ This User Guide is formed of two main sections, the User Guide itself, and a Use
 
 1. The User Guide provides detailed information on all Forecaster functionality, with a structure reflecting that of Forecaster itself. It starts with the 'Getting Started' section as a quick introduction to getting running with the tool, and subsequent sections cover the 5 main Forecaster tabs. 
 
-2. The Use Cases section on the other hand is written around specific topics, such as how to select specific models, or how to deal with interval data.
+2. The Use Cases section on the other hand is written around specific topics, such as how to choose the best forecast model, or how to deal with interval data.
 
-## User Guide (this page)
+## User Guide
 * [Getting Started](/user-guide/Getting-started/Getting-started.md)
 * [Home Tab](/user-guide/Home/Home.md)
 * [Data Tab](/user-guide/Data/Data.md)

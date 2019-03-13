@@ -1,10 +1,10 @@
 # Model Design
 
-A number of forecasting methods are available in the CACI Forecaster.
+A number of forecasting methods are available in Forecaster.
 
 
 ### The Three Core Forecasting Methods
-The CACI Forecaster offers three core forecasting models, each requiring input columns which are incorporated into the forecast as additional drivers. In order to allow for multiplicative data, the application provides you with the option to take the natural logarithm of the target variable prior to forecasting.  This is available in the Settings icon once you have selected the relevant forecasting method.
+Forecaster offers three core forecasting models, each requiring input columns which are incorporated into the forecast as additional drivers. This is available from the **Parameters** button once you have selected the relevant forecasting model.
 
 
 | Method          | Description                                                                                                                                                                                                                                                  | Input Columns                                                                                                                                        |
@@ -22,7 +22,7 @@ The general approach is to create all the forecasts with a simple but robust mod
 
 
 ### Custom Models
-In addition to the three core methods described above, CACI Forecaster offers a number of custom models that focus more on time series methods such as ARIMA and Exponential Smoothing.  
+In addition to the three core methods described above, CACI Forecaster offers a number of custom models that focus more on time series methods such as *ARIMA* and *Exponential Smoothing*.  
 
 <!-- Table 10 provides a description of each model and its general performance with different types of data.  More details can be found in a separate document on custom models [2].
 It is worth mentioning that, apart from the ARIMA models, any input columns will be ignored. -->

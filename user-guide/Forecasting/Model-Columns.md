@@ -3,7 +3,7 @@ This part of the Model ribbon  on defining or removing a column’s type, as des
 
 
 ### Column Types
-Two types of column specification are possible in the CACI Forecaster: 
+Two types of column specification are possible in Forecaster: 
 -	**Input**:  Column is used as an input to the forecast model (provided inputs are permitted in the forecast model)
 -	**Target**:  Column to be forecasted (only one can be selected)
 To assign a column to a given column type, select the column name or range of columns of interest.  Multiple columns can be selected using the `shift` key. The columns will turn blue is selected.  At this point press one of the column types: Input or Target.  
@@ -13,5 +13,6 @@ Once complete, the column background colour will change to reflect the colours o
 ![Target and Inputs in the Data Grid](imgs/ModelColumns_TargetInput.png)
 
 
-### Exclude a Column
-To deselect a data column from any specific model, select its name with the mouse pointer and then press the exclude column icon to remove it from the model.  The model type will be removed and the background colour of the column will be returned to white.
+### Excluding Columns
+To exclude any data columns from any specific model (either as input or target), select the columns and then press the **Exclude Columns** button. This will not delete the columns, but will remove them from the model. The background colour of these columns will be returned to white.
+To delete columns completely, you can instead use the **Delete Column** button on the *Data* tab.

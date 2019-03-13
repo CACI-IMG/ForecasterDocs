@@ -3,13 +3,13 @@ While a project holds a single forecast, a solution represents a single workspac
 
 ## Solution Hierarchy
 
-Once a new solution has been defined or loaded, its structure can be seen in the Solution Explorer window (by default to the left of the screen).  A solution may contain one or more projects. The projects can be related to one another, such as projects with the same dataset but with differing forecasting models, or they can be completely unrelated but grouped in the solution for convenience. For example, all call volume forecasts in a contact centre could be grouped into one solution. The image below shows an example where projects for Motor, Home and Travel have been grouped in the same solution, together with a range of different forecasting techniques for Motor Sales.
+Once a new solution has been created or loaded, its structure can be seen in the Solution Explorer window (by default to the left of the screen).  A solution may contain one or more projects. The projects can be related to one another, such as projects with the same dataset but with differing forecasting models, or they can be completely unrelated but grouped in the solution for convenience. For example, all call volume forecasts in a contact centre could be grouped into one solution. The image below shows an example where projects for Motor, Home and Travel have been grouped in the same solution, together with a range of different forecasting techniques for Motor Sales.
 
 ![Solution Hierarchy](imgs/Solution_SolutionHierarchy.png)
 
 Each of these projects may hold different sources of data, however, for the sake of simplicity it makes sense to group all of these forecasts in the same place.  For example, if other planners need to build forecasts in someone’s absence, all active forecast models will be in the same collection.
 
-Notice in the previous example that within the Motor Sales forecast there are a number of sub-forecasts or project snapshots.  These snapshots represent a collection of Motor Sales forecasts that (typically) share common data with the project one level up.  The purpose of this hierarchy is to allow the user to keep a copy of all experiments considered valuable, for example a collection of forecast models that yield good predictions.
+Notice in the previous example that within the Motor Sales forecast there are a number of sub-forecast projects. These projects represent a collection of Motor Sales forecasts that (typically) share common data with the project one level up. The purpose of this hierarchy is to allow you to keep a copy of all experiments considered valuable, for example a collection of forecast models that yield good predictions.
 
 
 ## Solution Management
@@ -17,57 +17,55 @@ Notice in the previous example that within the Motor Sales forecast there are a 
 A number of management activities can be carried out on Forecaster Solutions. 
 
 
-### New Solution
+### Creating a New Solution
 
-The New Solution icon (or quick keys `Ctrl+N`) allows the user to create a new forecast solution. 
+The New Solution button (or quick keys `Ctrl+N`) is used to create a new forecast solution. A solution can contain any number of projects, each with their own data and forecasting models.
 
 ![New Solution](imgs/Solution_NewSolutionButton.png)
 
-When users select to create a new solution, they are required to enter a solution name and, if necessary, change the location of the solution directory.  Once these parameters have been specified and the user presses the OK button, the new solution will be created.  
-
+When creating a new solution, you're given the option to enter a solution name and also, if needed, change the location of the solution folder. 
 
 ![New Solution Name & Location](imgs/Solution_NewSolutionWizard.png)
 
-
-Users can now create Projects and import their own data. For Creating a Project go to the link below:
+ Once these parameters have been specified, pressing the OK button creates the new solution. A new solution starts with a single empty project called *Project1*.
+ 
+ For finding out how to new projects to a solution, use the link below:
 
 {% page-ref page="Projects.md" %}
 
 
+### Opening, Closing and Saving a Solution
 
-### Open, Close and Save a Solution
-
-A Solution in Forecaster can be managed through the options available in the Home Tab.
+A solution in Forecaster can be managed through the options available in the Home Tab.
 
 ![Solution Management](imgs/Solution_Management.png)
 
 
-*	To **open** a solution, click on the Open icon, select the file of interest and select OK.  Alternatively press the `Ctrl+O` keys to access the same open solution dialog
-*	To **close** a solution, click on the Close icon.  If the solution has had some changes before the last save, then the application will ask you if you wish to save the changes
-*	To **save** a solution, select the Save icon.  This will then display two save options:
-    -	Save:  Saves the solution under the current name.  Files can be saved directly by pressing the `Ctrl+S` keys
-    -	Save As: This enables you to save the solution under a new name or in a different location
+*	To open a solution, click on the **Open** button, select the relevant solution file and select OK.  Alternatively press the `Ctrl+O` keys to access the same open solution dialog
+*	To close a solution, click on the **Close** button.  If the solution has had some changes before the last save, then the application will ask you if you'd like to save these changes
+*   To save a *project*, click on the **Save** button
+*	To save a *solution*, click on the **Save Solution** button.  This will then display two save options:
+    -	**Save**:  Saves the solution under the current name.  Files can be saved directly by pressing the `Ctrl+S` keys
+    -	**Save As**: This lets you to save the solution under a new name or in a different location
 
-Additionally all of the above functionality can be executed from any point in the application using the quick access toolbar, displayed in the top left of the CACI Forecaster. 
+All of this functionality can also be reached from quick access toolbar in the top left of Forecaster. 
  
-
 
 ![Quick Access Toolbar](imgs/Solution_QuickAccessToolbar.png)
 
 
 {% hint style="info" %}
-When a solution is saved, a solution directory is created and a number of files are placed in this directory.  If you wish to move a forecast solution without using Save As, for example if you have multiple solutions to move, you need to copy all elements in the solution directory to the new location, otherwise the hierarchy defined in the solution view will be broken.
+When a solution is saved, a solution folder is created and a number of files are placed in this folder. You can move a forecast solution without using Save As (for example if you have multiple solutions to move), by directly copying the whole folder to the new location.
 {% endhint %}
 
 
 
 ### Deleting a Solution
-To delete a solution, delete the solution directory through the usual Windows Explorer or equivalent.
+You can't delete a solution from within Forecaster, so to delete a solution, delete the solution folder using the usual Windows Explorer route.
 
 
 ### Recent Solutions
-Links to recent solutions are available via the Home – Solution ribbon or in the main window in Home.  As checks are made prior to a solution appearing in the list, all recent solutions listed will be valid and accessible.  If files are subsequently deleted, they will not be displayed in the options list.
-Selecting from this list will save you time and effort trying to find the location of previous solutions you may have been working on.
+Quick links to recent solutions are available via the Home – Solution ribbon or in the main window in the Home tab.
 
 
 

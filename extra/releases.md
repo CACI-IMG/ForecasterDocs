@@ -1,5 +1,42 @@
 # Releases
 
+
+
+## Version 4.0 (March 2019)
+
+This release sees a wide range of changes across the board, with a focus on ease of use as well as better support for interval level forecasting. Forecaster is now 64 bit, which allows the handling of larger projects and models.
+
+These are the changes with respect to the previous Forecaster version 3.3.
+
+### Headlines
+
+1.	Interval level forecasts are better supported, including improved charts
+2.	Improved user interface, bringing the recommended forecast models to the fore. This makes choosing the correct model even easier, even for occasional users. The recommended initial model is selected by default:
+
+![Daily Model 3 buttons](imgs/DailyModel3Buttons.png)
+
+3.	The most suitable models for the data type are automatically offered. For instance, with interval level data, the Smoothed Profile model is selected by default
+4.	The original 3 Forecaster models (Neural Networks, Decision Trees, and Regression) have been dropped in favour of more accurate models specifically tailored for time series analysis. Legacy models in existing projects will automatically be ported to the most suitable new model.
+5.	Move to 64 bit software: larger projects and larger forests of decision trees are now possible due to better memory usage.
+6.	New Export Data custom process allows more control over data export, including selecting forecast range only, and exporting to Excel format.
+7.	US date compatibility added (tick box in the Load With Harmonics importers)
+8.	Random Forests now have an option to run on binary (0/1) data, allowing the use for propensity modelling such as churn or sales propensity.
+
+### Usability
+1.	A new Model tab now holds all the modelling related functionality, to declutter the user interface.
+2.	New buttons for quick single-click data re-importation, and a single Forecast button replaces the old Train and Forecast buttons:
+3.	Many options that required a right-click are now more accessible through the Data tab ribbon
+4.	The forecast period now runs by default to the end of the dataset, avoiding the need to manually set the forecast length
+
+### Other
+1.	Manual overlays added to all forecast models
+2.	New ability to provide more accurate forecasts, by combining forecasts from different projects. When reading in forecasts from other projects, an option has been added to read in forecasts for all rows (in previous versions, actuals were automatically read in instead where available). This now means that multiple forecasts can be read in to a single project, and used as inputs in a forecast model (typically a Random Forest). This combined forecasting model will produce an improved forecast, by combining the best parts of each of the original forecasts.
+3.	Option added to the standard Load With Harmonics importers to manually specify the number of working days in the week. (This was previously inferred from the input data, which was not always robust.)
+4.	Simpler installation through a more integrated R environment – this should also minimise R package loading issues some users experienced in v3.3
+5.	Black surround removed from chart image copying
+6.	Public holiday data updated up to 2025, for a core range of countries (others available on request)
+
+
 ## Version 3.3 (July 2017)
 
 This release sees the introduction of new interval level models, as well as the ability to add in manual forecast overlays. Links between projects have been added, so you can now read in forecasts from one project into another. Installation is now extremely simple, through a completely integrated R environment.
@@ -9,7 +46,7 @@ These changes are since version 3.1, v3.2 being an internal release.
 ### Headlines
 
 1. Interval level Smoothed Profile models are added, which give more weight to recent weeks, and also let you add in a proportion of the previous years’ profile. This can be helpful in modelling seasonal changes with minimal lag
-2. Interval level Principal Components models are added. These work in a very different way, by determining a set of standard weekly profiles, then creating forecasts as a weighted combination of those profiles. This allows the use of different profiles at different times of year, or different intraday profiles in bank holiday periods
+2. Interval level Principal Components models are added. These work in a very different way, by determining a set of standard weekly profiles, then creating forecasts as a weighted combination of those profiles. This allows the use of different profiles at different times of year, or different intraday profiles in public holiday periods
 3. All interval profile models can now be used to match daily (or weekly) totals provided by another model
 4. Forecasts can be read in from other projects. This can be especially helpful when a business driver is not known into the future. Forecasts can be created for this driver in a separate project, and can then be read into the main project to use as an input
 5. Manual overlays can be applied to the main models, in order to overlay additional business knowledge on top of the data-driven forecasts
@@ -18,7 +55,7 @@ These changes are since version 3.1, v3.2 being an internal release.
 ### Usability
 
 1. Ability to freeze columns in the data grid – especially useful for interval level modelling, when you want to keep track of date and time as you scroll across the table
-2. New data columns can now be added within the Forecaster: useful for creating manual data overlays
+2. New data columns can now be added within Forecaster: useful for creating manual data overlays
 3. When setting up data exporters in a workflow, column selection is now much more flexible, and columns can be specified wither by index or by type (Target, Input, Forecast, etc.)…
 
 ### Other
@@ -33,7 +70,7 @@ This release sees the introduction of new interval level models, as well as the 
 ### Headlines
 
 1. Interval level Smoothed Profile models are added, which give more weight to recent weeks, and also let you add in a proportion of the previous years’ profile. This can be helpful in modelling seasonal changes with minimal lag.
-2. Interval level Principal Components models are added. These work in a very different way, by determining a set of standard weekly profiles, then creating forecasts as a weighted combination of those profiles. This allows the use of different profiles at different times of year, or different intraday profiles in bank holiday periods.
+2. Interval level Principal Components models are added. These work in a very different way, by determining a set of standard weekly profiles, then creating forecasts as a weighted combination of those profiles. This allows the use of different profiles at different times of year, or different intraday profiles in public holiday periods.
 3. All interval profile models can now be used to match daily (or weekly) totals provided by another model
 4. Forecasts can be read in from other projects. This can be especially helpful when a business driver is not known into the future. Forecasts can be created for this driver in a separate project, and can then be read into the main project to use as an input.
 5. Manual overlays can be applied to the main models, in order to overlay additional business knowledge on top of the data-driven forecasts.
@@ -41,7 +78,7 @@ This release sees the introduction of new interval level models, as well as the 
 ### Usability
 
 1. Ability to freeze columns in the data grid –especially useful for interval level modelling, when you want to keep track of date and time as you scroll across the table
-2. New data columns can now be added within the Forecaster: useful for creating manual data overlays
+2. New data columns can now be added within Forecaster: useful for creating manual data overlays
 3. When setting up data exporters in a workflow, column selection is now much more flexible, and columns can be specified wither by index or by type (Target, Input, Forecast, etc.)…
 
 ### Other
@@ -55,16 +92,16 @@ This release has a large number of improvements across the board, with new workf
 ### Headlines
 
 1. New workflow functionality: This allows any set of projects to be automatically updated with a single button press, including re-importing data, re-forecasting, and exporting data if required. This lets large number of models to be updated very quickly. In addition, it lets non-power users update models easily, with no need for any specific knowledge of the models.
-2. International public holidays: The Forecaster is shipped with public holidays for 7 countries, and this can be extended for new countries as required
+2. International public holidays: Forecaster is shipped with public holidays for 7 countries, and this can be extended for new countries as required
 3. New highly accurate Random Forests models: Random Forests have shown improved performance compared with regression. They are just as easy to use, and provide variable importance in the same way as for regression. Quite often, these models far outperform equivalent regression models, with no extra work for the user.
 4. New derived column functions allow for more natural delay curves, and can now also skip weekends and public holidays as needed
 
 ### Usability
 
-1. Improved custom model integration: Custom models and script parameters are now accessed through bespoke dialogs, rather than as comma separated text. In addition, the Forecaster is now more directly integrated with the scripts, making for faster and more robust operation.
+1. Improved custom model integration: Custom models and script parameters are now accessed through bespoke dialogs, rather than as comma separated text. In addition, Forecaster is now more directly integrated with the scripts, making for faster and more robust operation.
 2. Look and feel improvements across the entire application and charts, including brand new logo and slicker importation for interval level data
 3. Charts: Improved zooming, and new error bars
-4. Search for column ‘goto’ functionality 
+4. Search for column *goto* functionality 
 
 ### Bug Fixes
 
@@ -84,7 +121,7 @@ This release has a raft of improvements across the board, but the main improveme
 1. Look and feel improvements across the entire application and charts, including brand new icons
 2. Licence keys can now be renewed at any time via the About box
 3. All application settings are now easily accessible via the Options dialog
-4. Script Viewer now allows custom script viewing and editing from within the Forecaster
+4. Script Viewer now allows custom script viewing and editing from within Forecaster
 5. All settings are stored per user and do not require the registry, making the application easier to deploy, with less privileges needed
 6. Model History is now saved automatically on Train
 
@@ -160,7 +197,7 @@ Large range of improvements, in particular the addition of new simple forecast m
     - A derived column can now be used as input to another derived column, greatly increasing the scope of functions that can be created
     - A number of new formulae are provided, including a number of IF() functions
 3. Regression Models:
-    - Regression models have become far more transparent, and the Forecaster now displays both a measure of importance for each variable, and the explicit equation for each trained regression model
+    - Regression models have become far more transparent, and Forecaster now displays both a measure of importance for each variable, and the explicit equation for each trained regression model
     - Regression models can now be built using the log of the target variable. This lets models scale better when there are large changes in the scale of the target variable (while also generally providing more suitable models for count-type target variables such as call volumes). This is enabled through a simple tick-box in the forecast model settings
 4. New importation capability:
     - Script importation: Load With Harmonics augments a simple daily or weekly time-series with bank holiday flags, and a range of daily, weekly, and monthly harmonics
@@ -183,7 +220,7 @@ The main change is the addition of scripting capabilities (through the use of R)
 ### Headlines
 1. Scripting capability added (using R):
     - Script importation enables database queries to be run with a single click, pulling through the latest data, and streamlining the importation process.
-    - Custom models allow any external forecasting models to be used within the Forecaster. The Forecaster now ships with plug-ins for creating ARIMA and exponential smoothing models (through the R statistical computation environment). 
+    - Custom models allow any external forecasting models to be used. Forecaster now ships with plug-ins for creating ARIMA and exponential smoothing models (through the R statistical computation environment). 
     - External processes enable the use of R (a free statistical computation environment), which allows the use of any number of cutting edge algorithms, custom graphics, and data pre-and post-processing. External processes provide the ability to export and process data with a single click. This can be used for instance to push data back to databases, or to automatically produce custom reports and charts.
 2. Script support for decomposition forecasting:
     - A number of scripts are included to provide support for the Decomposition Forecasting approach to time-series prediction. 
@@ -210,7 +247,7 @@ This is the first version of Forecaster produced as a standalone Windows applica
 2. Charting:
     - Increased interactivity with the data and charts. Users can use just their mouse to set columns in their data that could be used in the forecasting process. Similarly they can interact with the charts just with a few mouse clicks which allow them to zoom, pan and scroll. 
 3. Project Management:
-    - The Forecaster has a solution with multiple projects all visible in the Solution explorer. Users can take snapshots of their projects and thus create a working hierarchy. Every snapshot inherits the properties, forecasting models and data of its parent, however it can used in parallel
+    - Forecaster has a solution with multiple projects all visible in the Solution explorer. Users can take snapshots of their projects and thus create a working hierarchy. Every snapshot inherits the properties, forecasting models and data of its parent, however it can used in parallel
     - Projects can be copied and pasted in other solutions.
     - No database is required for the projects; the application is completely stand-alone
 4. Forecasting Algorithms:

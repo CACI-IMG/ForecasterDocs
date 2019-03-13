@@ -25,7 +25,7 @@ Forecasts charts are available under the **Analysis** tab. These charts display 
 - Shift + mouse wheel zooms both horizontally and vertically
 
 
-For the Time Series Chart, the legend contains error metrics for each forecast project or snapshot so that the user can assess the performance of each forecast when compared to the actuals.  The three error metrics are root mean square, mean absolute error and PE and are calculated for the validation set only.
+For the Time Series Chart the legend contains, for each forecast project, error metrics that measure the performance of each forecast when compared to the actuals.  The two error metrics are Root Mean Square (RMS) and Mean Absolute Error (MAE), and are calculated for the forecast range only.
 
 
 ## Error metrics
@@ -41,4 +41,4 @@ For the 2 error metrics described below (RMS, MAE), errors are measured in the s
 | **Mean Absolute Error (MAE)**                                                                          |   $$ \frac{1}{n} \sum_{i=1}^n \left\lvert{f_i-\alpha_i}\right\rvert$$      | The average of the absolute error (i.e. the error with  the +/- sign removed) |
 
 
-Where $$n:=$$ number of observations in the validation set,  $$f_i:=$$ forecasted value for observation $$i$$, $$\alpha_i:=$$ actual value for observation $$i$$.
+Where $$n:=$$ number of observations in the forecast range,  $$f_i:=$$ forecast value for observation $$i$$, $$\alpha_i:=$$ actual value for observation $$i$$.

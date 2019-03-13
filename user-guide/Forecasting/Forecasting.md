@@ -3,7 +3,7 @@
 
 ### Forecasting
 
-Once the user has selected a forecast model, the user can select the **Forecast** icon in the **Data – Forecasting** ribbon.  This will populate the last two columns in the data grid: Forecast and Forecast Error.
+Once you've selected a forecast model, you can click on the **Forecast** button in the **Data – Forecasting** ribbon.  This will populate the last two columns in the data grid: Forecast and Forecast Error.
 
 ![Forecast](imgs/Forecasting_Forecast.png)
 
@@ -14,8 +14,8 @@ Progress on the forecast generation will be shown in the Output Window.  The per
 
 ### Model Details
 
-Once the forecast has been completed successfully, the user can see the model's details by clicking on the relevant button as in the image below.
+Once the forecast has been created, you can see the model's details by clicking on the relevant button as in the image below.
 
-Depending on the model, users can see additional insights about the forecast such as prediction accuracy and importance of each input variable.
+Depending on the model, this will show additional information about the forecast model, such as prediction accuracy and importance of each input variable.
 
 ![Model Details](imgs/Forecasting_ModelDetails.png)
