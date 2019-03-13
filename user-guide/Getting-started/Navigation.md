@@ -34,6 +34,7 @@ This tab holds chart for comparing the results of one or more forecasts.
 
 * [Automation](/user-guide/Automation/Automation.md): This tab is for automating the forecasting process by creating workflows that can create a project, import the data, setup models, generate the forecasts and export the results.
 
+![Automation Tab](imgs/AutomationTab.png)
 
 There is a natural order to building the forecasts, generally speaking the forecasting process starts with the Home tab, moves to Data, then to the Model and Analysis, and finally onto the Automation for productionising the process.  This follows the order of the ribbon tabs from left to right. However, the user is able to move around the application as they see fit, adapting forecasts and updating results.  
 

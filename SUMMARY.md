@@ -1,9 +1,9 @@
 # Table of contents
 
-* [About CACI Forecaster](README.md)
+* [CACI Forecaster Overview](Overview.md)
 
 ## User Guide
-* [Overview](user-guide/user-guide.md)
+* [About the User Guide](user-guide/user-guide.md)
 * [Getting Started with CACI Forecaster](user-guide/Getting-started/Getting-started.md)
     * [Quick Start](user-guide/Getting-started/Quick-start.md)
     * [Navigation](user-guide/Getting-started/Navigation.md)
@@ -36,10 +36,11 @@
 
 
 ## Use Cases
-* [Overview](use-cases/use-cases.md)
-* [Forecasting Models Overview](user-cases/Forecast-Models-Overview.md)
+* [About the Use Cases](use-cases/use-cases.md)
+* [Choosing the Best Forecasting Model](user-cases/Forecast-Models-Overview.md)
 * [Using Marketing Type Delays](user-cases/Delays.md)
 * [Interval Forecasting](user-cases/Interval-Forecasting.md)
+* [Decomposition Models](user-cases/Decomposition-Models.md)
 
 * [Forecasting Course]()
     * [Introduction to Forecasting]()

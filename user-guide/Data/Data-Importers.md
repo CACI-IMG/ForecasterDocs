@@ -24,6 +24,12 @@ If the importation wizard is used on a brand new project (with no existing data)
 You are able to cancel the import by pressing the cancel button at any time, alternatively if you need to change some wizard settings press the Back button to go back through the importation wizard process.
 
 
+{% hint style="info" %}
+You can click on any of the sections of this page from the CONTENTS menu to the right, which can be faster than scrolling down the page.
+{% endhint %}
+
+
+
 ##### Text Importer
 Once the user has selected Text – Import from the Data – Data Importers ribbon, the Comma Delimited Importer will open.  
 
