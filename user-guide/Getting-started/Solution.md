@@ -29,7 +29,7 @@ When creating a new solution, you're given the option to enter a solution name a
 
  Once these parameters have been specified, pressing the OK button creates the new solution. A new solution starts with a single empty project called *Project1*.
  
- For finding out how to new projects to a solution, use the link below:
+ For finding out how to add new projects to a solution, use the link below:
 
 {% page-ref page="Projects.md" %}
 

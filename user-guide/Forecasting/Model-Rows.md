@@ -11,7 +11,7 @@ To specify the forecast start point, scroll to the appropriate row in the data g
 
 ![Forecast Start](imgs/ModelRows_ForecastStart.png)
 
-<!-- You now need to define how many rows are included in the validation set.  This can be done by clicking on the **Data Ranges** button in the Data – Model Rows ribbon and then updating the Forecast Length.  If you want to set the validation set to run until the end of the data set, type in a very large number (e.g. 99999).  The application will automatically change this to the exact number of rows between the forecast start and end point. -->
+<!-- You now need to define how many rows are included in the forecast range.  This can be done by clicking on the **Data Ranges** button in the Data – Model Rows ribbon and then updating the Forecast Length.  If you want to set the forecast range to run until the end of the data set, type in a very large number (e.g. 99999).  The application will automatically change this to the exact number of rows between the forecast start and end point. -->
   
 
 
@@ -33,7 +33,7 @@ The training data set can be selected in two ways:
 
 
 
-### Forecasting Range
+### Forecast Range
 
 Similarly, the forecasting data set can be selected in two ways:
 

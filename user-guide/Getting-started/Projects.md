@@ -1,7 +1,7 @@
 # Projects
 
 
-The following section explains how to manage your projects in the Solution Explorer.  Once a solution has been created, there are number of management activities which can be carried out on projects within the solution.  Details are as follows:
+This section explains how to manage your projects in the Solution Explorer. 
 
 
 ## New Project
@@ -14,7 +14,7 @@ Alternatively, right-click on the solution name and select **New Project** from 
 
 
 ## Project Properties - Project Name
-To change the name of any project within a solution, right-click the item of interest from the Solution Explorer view and then select the **Properties** option.  The following dialog lets you change its name, as shown in the image below.  You can also add some comments to the project should this be required.  Additional information on the creation date and time and creator of the forecast or project is also shown here.
+To change the name of any project within a solution, right-click the project in the Solution Explorer view and then select the **Properties** option.  The following dialog lets you change its name, as shown below.  You're also able to add comments to the project if needed.  Additional information on the creation date and time and creator of the forecast or project is also shown here.
 
 
 ![Project Properties](imgs/Project_ProjectProperties.png)

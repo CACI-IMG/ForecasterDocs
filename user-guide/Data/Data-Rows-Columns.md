@@ -1,6 +1,6 @@
 # Data Columns
 
-The Columns group on the Data tab is concerned with deriving new fields from the imported data, deleting columns and providing summary statistics for each column.
+The Columns group on the Data tab is where you find the functionality for deriving new fields from the imported data, deleting columns and providing summary statistics for each column.
 
 ![Data / Rows and Columns group](imgs/Data_RowsAndColumns-Columns.png)
 
