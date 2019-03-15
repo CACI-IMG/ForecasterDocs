@@ -9,7 +9,7 @@ Make sure that you have the following:
 
 1. CACI Forecaster installed,
 2. A valid licence key (on first running Forecaster, an automatic key request will be generated - send this to us and we will get back to you with the relevant licence key)
-3. the "Car Insurance" dataset; this can be downloaded from the link below.
+3. The "Car Insurance" dataset; this can be downloaded from the link below.
 
 {% file src="data/Car-Insurance.csv" caption="Car-Insurance.csv" %}
 
@@ -110,4 +110,4 @@ The Forecast Error column holds expected forecast accuracy for each row. For thi
 
 
 - Jump to the following section for more information on viewing forecasts in the Analysis Tab.
-{% page-ref page="../Analysis.md" %}
+{% page-ref page="../Analysis/Analysis.md" %}
