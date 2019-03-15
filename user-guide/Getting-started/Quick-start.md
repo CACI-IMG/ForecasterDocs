@@ -114,3 +114,5 @@ Jump to the following section for more information on viewing forecasts in the A
 {% page-ref page="Analysis.md" %}
 
 {% page-ref page="Home-Solution.md" %}
+
+{% page-ref page="Solution.md" %}
