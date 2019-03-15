@@ -110,4 +110,4 @@ The Forecast Error column holds expected forecast accuracy for each row. For thi
 
 
 - Jump to the following section for more information on viewing forecasts in the Analysis Tab.
-{% page-ref page="Analysis/Analysis.md" %}
+{% page-ref page="../Analysis.md" %}
