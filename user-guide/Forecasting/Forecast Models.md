@@ -1,9 +1,9 @@
 ## Forecast Models
 
-Forecaster holds a wide range of models, ranging from simple seasonal profiles to more advanced techniques such as Random Forests. Each of these models can usually be used with default parameters, however 
+Forecaster lets you use a wide range of forecasting approaches or models. These range from simple seasonal profiles to more advanced techniques such as Random Forests. Each of these models is already set up with sensible default parameters, so can be used out of the box with a single click, without worrying about the details of the approach. However, if you do want more control over the details of a specific model, clicking on **Parameters** lets you view and edit the parameters used in training the model.
 
 
-Once you've selected a forecast model, you can click on the **Forecast** button in the **Data – Forecasting** ribbon.  This will populate the last two columns in the data grid: Forecast and Forecast Error.
+Once you've selected a forecast model, you can click on the **Forecast** button in the **Data – Forecasting** ribbon.  This will train the forecasting model on the data from the training range, and then used this model to the forecasts that then appear in the last two columns of the data grid: Forecast and Forecast Error.
 
 ![Forecast](imgs/Forecasting_Forecast.png)
 

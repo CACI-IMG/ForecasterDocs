@@ -3,7 +3,7 @@
 CACI Forecaster is designed to let you get started very quickly with producing your own data-driven forecasts. This section covers the creation of a simple forecasting project. This example will walk you through creating forecasts of car insurance call volumes, based on historical data. This dataset holds only historical call volumes and public holidays, so you'll use a simple seasonality-based model.
 
 
-## Before you start
+## Before you Start
 
 Make sure that you have the following:
 
@@ -61,8 +61,8 @@ Often, data re-importation is needed to update Forecaster with the very latest d
 ![Target Column](imgs/QuickStart_TargetColumn.png)
 
 
-- Forecaster works by first learning from historical data to create a trained model which can then be used for forecasting. A wide range of different forecasting models are available, and the most useful ones for your specific data appear as the first 3 buttons on the *Model Design* part of the ribbon. For this daily car insurance data, the first model, **Multi Profile** should already be automatically selected. 
-- Setting the forecast start point defines which rows Forecaster will used for training (learning or building) the model. All rows before the forecast start point are used for learning the predictive model. When used for generating a real live forecast, the forecast start point is typically set to the first row for which no target information is available. In this case, however, you can set this point a few weeks back from the last available data, so you can compare forecasts to the known actual values. Scroll down to row with date *01/11/2010* and select the row by clicking on the row header. Then click on the **Forecast Start** button - the forecast start point will be moved to this row, and the row will be highlighted in blue.
+- Forecaster works by first learning from past data to create a trained model which can then be used for forecasting. A wide range of different forecasting models are available, and the most useful ones for your specific data appear as the first 3 buttons on the *Model Design* part of the ribbon. For this daily car insurance data, the first model, **Multi Profile** should already be automatically selected. 
+- Setting the forecast start point defines which rows Forecaster will used for training (learning or building) the model. All rows before the forecast start point are used for learning the predictive model. When used for generating a real live forecast, the forecast start point is typically set to the first row for which no target information is available. In this case, however, you can set this point a few weeks back from the last available data, so forecasts can be compared with the known actual values. Scroll down to row with date *01/11/2010* and select the row by clicking on the row header. Then click on the **Forecast Start** button - the forecast start point will be moved to this row, and the row will be highlighted in blue.
 
 ![Forecast Start](imgs/QuickStart_ForecastStart.png)
 
@@ -109,3 +109,5 @@ The Forecast Error column holds expected forecast accuracy for each row. For thi
 
 
 
+- Jump to the following section for more information on viewing forecasts in the Analysis Tab.
+{% page-ref page="Analysis/Analysis.md" %}
