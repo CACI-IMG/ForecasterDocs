@@ -12,12 +12,10 @@ In this example, you can see a number of sub-forecast projects within the Motor 
 
 ## Solution Management
 
-A number of management activities can be carried out on Forecaster Solutions. 
+A number of management activities can be carried out on Forecaster Solutions - all under the *Home* tab. This section gives a quick overview of Solution operations - see [here](/user-guide/Home/Home-Solution.md) for more detail
 
 
-
-![Quick Access Toolbar](imgs/Solution_Ribbon.png)
-
+![Home Tab Ribbon](/user-guide/Getting-started/imgs/Home_Ribbon.png)
 
 ### Creating a New Solution
 
