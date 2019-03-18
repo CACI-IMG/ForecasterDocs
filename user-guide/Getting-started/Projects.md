@@ -31,6 +31,8 @@ A project can be deleted via the Solution Explorer by right-clicking on the rele
 
 ![Delete Project](imgs/Project_DeleteProject.png)
 
+
+# Where Next?
 For more detail on the various components of Forecaster, you can jump to any of the sections describing the main Forecaster tabs, from the menu to the left. Alternatively, you can visit the *Use Cases* section below that for more information on a range of forecasting topics, from model selection to dealing with marketing delay curves.
 
 

@@ -93,6 +93,6 @@ THe low level detail on any of Forecaster's data importers, forecast models, and
 
 ### Script folders
 
-## Proxy server settings
+### Proxy server settings
 
 
