@@ -16,7 +16,7 @@ To specify the forecast start point, scroll to the appropriate row in the data g
 
 
 ### Training Range
-In some situations, you may not want to include the earlier historical data when training the forecast model.  CACI Forecaster allows you to change the training dataset easily, without the need for you to delete rows from the original input file.
+In some situations, you may not want to include the earlier historical data when training the forecast model.  CACI Forecaster lets you change the training dataset easily, without the need for you to delete rows from the original input file.
 
 The training data set can be selected in two ways:
 

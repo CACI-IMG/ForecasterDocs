@@ -23,7 +23,7 @@ You can jump to any of the sections of this page using the CONTENTS menu to the 
 ## Create a new Solution
 - Open CACI Forecaster.
 
-- In Forecaster, under the *Home* tab, click **New** to create a new solution.
+- In Forecaster, under the *Home* tab, click **New** to create a new solution. A solution is a workspace that can hold any number of forecast projects.
 
 ![New Solution](imgs/QuickStart_NewSolution.png)
 
@@ -107,11 +107,9 @@ The Forecast Error column holds expected forecast accuracy for each row. For thi
 - Ctrl + mouse wheel zooms vertically only
 - Shift + mouse wheel zooms both horizontally and vertically
 
-
-
  For more information on viewing forecasts, see the section on the [Analysis Tab](/user-guide/Analysis/Analysis.md).
 
-<!-- This works -->
+<!-- This works: seems like you cannot get links like this to any file in a different folder -->
 <!-- {% page-ref page="Solution.md" %} --> 
 {% page-ref page="Analysis.md" %} <!-- Fail -->
 

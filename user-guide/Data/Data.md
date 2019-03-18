@@ -1,16 +1,14 @@
 # Data Tab
 
 
-The second item on the application ribbon is the Data tab.  This tab allows you to load or update data and derive new variables from the source data. The Data ribbon breaks down into 3 different groups:
+The second item on the main ribbon is the Data tab.  This tab lets you load or update data and derive new variables from the source data. The Data ribbon is divided into 3 groups:
 
-
-- **Data Importers:** Mechanisms to import data into the application.
+- **Data Importers:** Lets you import data from a range of different sources
 {% page-ref page="Data-Importers.md" %}
 
-
-- **Data Exporters:** Mechanisms to export data from the application.
+- **Data Exporters:** In order to export data from Forecaster
 {% page-ref page="Data-Exporters.md" %}
 
-- **Data Rows & Columns:** Mechanisms to create derived columns and manipulate the imported data rows and columns.
+- **Rows & Columns:** For creating new columns and operating on data rows and columns
 {% page-ref page="Data-Rows-Columns.md" %}
  

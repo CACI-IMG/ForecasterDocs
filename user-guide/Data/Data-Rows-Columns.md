@@ -41,7 +41,7 @@ To start the formula editor, click on the **Formula Editor** button in the *Data
 
 ![Formula Editor](imgs/DataColumns_FormulaEditor.png)
 
-The formula consists of a series of at least one function from the Expression Builder (listed in the table below), joined together by using the standard operators +, -, x or ÷.  This allows the creation of reasonably complex functions.
+The formula consists of a series of at least one function from the Expression Builder (listed in the table below), joined together by using the standard operators +, -, x or ÷.  This gives you the flexibility to build up potentially quite complex functions if needed.
 
 | Functions    |              |            |             |
 |--------------|--------------|------------|-------------|

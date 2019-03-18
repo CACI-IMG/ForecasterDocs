@@ -1,6 +1,6 @@
 # Automation
 
-The last item on the application ribbon is the Automation tab. This tab gives the user the tools to automate the whole forecasting process by creating **workflows**. Workflows are used to create a project, import the data, setup models, generate the forecasts and export the results.
+The last item on the main ribbon is the Automation tab. This tab gives the user the tools to automate the whole forecasting process by creating **workflows**. Workflows are used to create a project, import the data, setup models, generate the forecasts and export the results.
 
 
 ![Automation Tab](imgs/AutomationTab.png)

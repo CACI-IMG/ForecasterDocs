@@ -1,6 +1,6 @@
 # Markdown examples \(temp\)
 
-## Gitbbok Examples
+## Gitbook Examples
 
 # tests!
 
@@ -35,7 +35,10 @@ Once you're strong enough, save the world:
 echo 'You got to trust me on this, I saved the world'
 ```
 
+
 {% page-ref page="tests.md" %}
+(Seems like you can only link to pages in the same folder)
+
 
 {% api-method method="get" host="" path="" %}
 {% api-method-summary %}

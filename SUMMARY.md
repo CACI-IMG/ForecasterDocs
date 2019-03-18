@@ -1,8 +1,8 @@
 # Table of contents
 
-* [CACI Forecaster Overview](Overview.md)
+<!--* [CACI Forecaster Overview](Overview.md)-->
 
-## User Guide
+## USER GUIDE
 * [About the User Guide](user-guide/user-guide.md)
 * [Getting Started with CACI Forecaster](user-guide/Getting-started/Getting-started.md)
     * [Quick Start](user-guide/Getting-started/Quick-start.md)
@@ -35,7 +35,7 @@
     * [Running Workflows](user-guide/Automation/Running-workflows.md)
 
 
-## Use Cases
+## USE CASES
 * [About the Use Cases](use-cases/use-cases.md)
 * [Choosing the Best Forecasting Model](user-cases/Forecast-Models-Overview.md)
 * [Using Marketing Type Delays](user-cases/Delays.md)
@@ -66,9 +66,11 @@
         * [Decision Trees, Random Forests and Neural Networks](GettingStarted/GettingStarted.md#Projects)
     * [Client’s current forecasting models and any bespoke models and data connectivity](GettingStarted/GettingStarted.md#Projects)
 
-## Extra
+## FURTHER INFORMATION
 
-* [We love feedback](extra/we-love-feedback.md)
+* [Contact us](extra/contact-us.md)
 * [Releases](extra/releases.md)
-* [Contact us](extra/better-tools-for-authors.md)
+
+## TEMPORARY
+* [We love feedback](extra/we-love-feedback.md)
 * [Markdown examples (temp)](extra/markdown-examples.md)
