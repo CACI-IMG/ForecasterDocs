@@ -1,10 +1,7 @@
 # Home Tab - Solution Section
-The *Solution* section of the main Home tab lets you create and manage solutions and projects.  A solution is a workspace that can hold any number of forecast projects. A project holds data, a forecasting model, as well as the forecasts themselves.
+The *Solution* section of the main Home tab lets you create and manage solutions and projects.  A solution is a workspace that can hold any number of forecast projects. On the other hand, a project holds data, a forecasting model, as well as the forecasts themselves.
 
-
-The first part of the *Solution* section lets you create, save, open and close solutions. These are all the standard operations that you'd expect when creating, for example, a Word or Excel document. 
-
-The second part of the Solution group focusses on managing projects within the solution, and is covered in more detail in the following sections.
+The first part of the *Solution* section lets you create, save, open and close solutions. These buttons cover all the standard operations that you'd expect when creating, for example, a Word or Excel document.  The second part of the *Solution* group focusses on managing projects within the solution.
 
 ## Managing Solutions
 
@@ -29,14 +26,27 @@ All these actions can also be found on the quick access toolbar, right at the to
 ![Quick Access Toolbar](../Getting-started/imgs/Solution_QuickAccessToolbar.png)
 
 ## Recent solutions
-
 Links to recent solutions can be found either using the **Recent Solutions** button, or in the main window when you have the *Home* tab selected.  
 
-## Manually copying solutions
-When a solution is saved, a solution directory is created and a number of files are placed in this directory.  If you'd like to move a forecast solution without using Save As, for example if you have multiple solutions to move, you can simply copy the whole solution folder to the new location.
+## Moving solutions
+When a solution is saved, a solution directory is created and a number of files are placed in this directory.  If you'd like to move a forecast solution without using Save As (for example if you have multiple solutions to move, or if you want to move rather than copy the solution), you can simply copy the whole solution folder to the new location.
 
 ## Deleting solutions
 You can't delete a solution from within Forecaster, so the best way is to delete the solution folder using Windows Explorer (as you would for deleting a Word or Excel document - apart from the fact you're deleting a folder not a single file).
+
+
+## Managing Projects
+
+The right hand side of the Solution section of the Home tab ribbon holds basic porject operations, such as creating, copying, or deleting.
+
+![Project section of the Home ribbon](../Getting-started/imgs/Home_SolutionProjects.png)
+
+* To create a new project, click on the **New Project** button. A new empty project will be created and added to the solution. (A project can also be created by right-clicking the Solution name at the top of the Solution Explorer window, then selecting *New Project*.) 
+* To delete all projects within the solution, click on the **Delete All Projects** button.  (All projects can also be deleted by right-clicking the Solution name at the top of the Solution Explorer window, then selecting *Delete All Projects*.)  This operation cannot be undone, so a confirmation dialog will pop up to make sure that you definitely want to proceed.
+* To delete only the currently selected project (the one currently highlighted in the Solution Explorer), click on the **Delete Project** button.  (A project can also be deleted by right-clicking its name in the Solution Explorer window, then selecting *Delete Project*.)   This operation cannot be undone, so a confirmation dialog will pop up to make sure that you definitely want to proceed.
+* To create a copy of the currently selected project, click the **Duplicate Project** button.  This creates an identical copy of the project, including data, model and settings. To show the connection between the two projects, in the Solution Explorer the copy is placed below the original project. Focus moves to the new copy, and this new project is highlighted in the Solution Explorer.
+
+
 
 
 

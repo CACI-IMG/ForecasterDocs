@@ -12,11 +12,12 @@ To see column properties and summary statistics for each column, you can move th
 
 
 This will then display a dialog in which it is possible to:
--	Change its data type, by selecting a new type from the data type drop down list.  The system will attempt to convert the data format, however, if you continually toggle through different data types, there will be a loss of detail, e.g. going from double to integer and back to double will lose the decimal point detail
+-	Change its data type, by selecting a new type from the data type drop down list.  Forecaster will try to convert the data to the new format you've just specified. However, it's worth noting that in some cases there may well be a loss of detail.  For instance when going from double to integer you'll lose the fractional part (for example 3.5 would be replaced by 3).
+
 -	Change the model column type, i.e. whether a field is an input or target.  For more details on this, see the Forecasting\Model Columns section.
 -	Add comments about the column
 
-In addition to the operational details of the column, the system also calculates some summary statistics for numeric columns as shown in the table below.
+As well as providing high level information on the column, Forecaster also calculates some summary statistics for numeric columns as shown in the table below.
 
 
 | Statistic | Description                                         |
@@ -113,10 +114,10 @@ To delete an element of the formula press the red or grey `X` button to the righ
 
 
 ## Delete Column
-To delete any column from the data grid, select the column with a left mouse click and then press the **Delete Column** button.  The column will only be removed if it has no dependencies (i.e. othe).
+To delete any column from the data grid, select the column with a left mouse click and then press the **Delete Column** button.  The column will only be removed if it has no dependencies (i.e. other derived columns refer this column in their calculations).
 
 ### Example
-Following on from the previous example, let us suppose you want to delete the derived formula column.  To do this, you'll first need to select the NewColumn and click on the Delete Column button as shown below.
+Following on from the previous example, if you wanted to delete the derived formula column, you'd first need to select the NewColumn and click on the **Delete Column** button as shown below.
 
 
 ![Delete Column](imgs/DataColumns_DeleteColumn.png)

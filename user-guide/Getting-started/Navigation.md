@@ -1,14 +1,13 @@
 # Navigation
 
-This section covers the overall layout of Forecaster, and how to navigate around its various components.
+This section introduces the overall layout of Forecaster, and how to navigate around its various components.
 
 ## Navigation Tabs
-Forecaster is based around 5 main tabs. Generally the operation goes from left to right, following the order of these tabs. You typically would create a new solution in the Home tab, import data in the Data tab, build a forecast model in the Model tab, view the forecasts in the Analysis tab, and then automate the whole process if needed in the Automation tab. However, you can of course move around the application as you see fit, adapting forecasts and updating results.  
+Forecaster is based around 5 main ribbon tabs, across the top of the screen. Generally the operation goes from left to right, following the order of these tabs. You typically would create a new solution in the Home tab, import data in the Data tab, build a forecast model in the Model tab, view the forecasts in the Analysis tab, and then automate the whole process if needed in the Automation tab. However, you can of course move around the application as you see fit, adapting forecasts and updating results.  
 
 
 
-
-* [Home Tab](/user-guide/Home/Home.md) : This tab lets you manage the solution. This includes creating and managing both solutions and projects, as well as managing options and custom scripts. 
+* [Home Tab](/user-guide/Home/Home.md) : This tab lets you manage Forecaster solutions and and projects, as well as controlling options and custom scripts. 
 
 ![Home Tab](imgs/HomeTab.png)
 

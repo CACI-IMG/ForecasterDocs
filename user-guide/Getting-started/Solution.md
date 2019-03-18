@@ -10,9 +10,10 @@ Once a new solution has been created or loaded, its structure can be seen in the
 In this example, you can see a number of sub-forecast projects within the Motor Sales forecast.  Grouping forecasts together like this makes it easier to manage solutions, which is particularly valuable when dealing with larger numbers of forecasts. It can often be really useful to keep forecasts from a number of models side by side, so you can compare the relative performance of different forecasting models.
 
 
-## Solution Management
+## Managing Solutions
 
-A number of management activities can be carried out on Forecaster Solutions - all under the *Home* tab. This section gives a quick overview of Solution operations - see [here](/user-guide/Home/Home-Solution.md) for more detail
+A number of management activities can be carried out on Forecaster Solutions - all under the *Home* tab.
+
 
 
 ![Home Tab Ribbon](/user-guide/Getting-started/imgs/Home_Ribbon.png)
@@ -27,12 +28,12 @@ When creating a new solution, you're given the option to enter a solution name a
 
 ![New Solution Name & Location](imgs/Solution_NewSolutionWizard.png)
 
- Once these parameters have been specified, pressing the OK button creates the new solution. A new solution starts with a single empty project called *Project1*.
+ Once these parameters have been specified, pressing the OK button creates the new solution. This new solution starts out with a single empty project called *Project1*.
  
- For finding out how to add new projects to a solution, use the link below:
+ <!--For finding out how to add new projects to a solution, use the link below:
 
 {% page-ref page="Projects.md" %}
-
+-->
 
 ### Opening, Closing and Saving a Solution
 
@@ -48,25 +49,20 @@ A solution in Forecaster can be managed through the options available in the Hom
     -	**Save**:  Saves the solution under the current name.  Files can be saved directly by pressing the `Ctrl+S` keys
     -	**Save As**: This lets you save the solution under a new name or in a different location
 
-All of this functionality can also be reached from quick access toolbar in the top left of Forecaster. 
- 
 
-![Quick Access Toolbar](imgs/Solution_QuickAccessToolbar.png)
+All these actions can also be found on the quick access toolbar, right at the top left of the Forecaster window.
 
-
-{% hint style="info" %}
-When a solution is saved, a solution folder is created and a number of files are placed in this folder. You can move a forecast solution without using Save As (for example if you have multiple solutions to move), by directly copying the whole folder to the new location.
-{% endhint %}
+![Quick Access Toolbar](../Getting-started/imgs/Solution_QuickAccessToolbar.png)
 
 
+## Recent solutions
+Links to recent solutions can be found either using the **Recent Solutions** button, or in the main window when you have the *Home* tab selected.  
 
-### Deleting a Solution
-You can't delete a solution from within Forecaster, so to delete a solution, delete the solution folder using the usual Windows Explorer route.
+## Moving solutions
+When a solution is saved, a solution directory is created and a number of files are placed in this directory.  If you'd like to move a forecast solution without using Save As (for example if you have multiple solutions to move, or if you want to move rather than copy the solution), you can simply copy the whole solution folder to the new location.
 
-
-### Recent Solutions
-Quick links to recent solutions are available via the Home – Solution ribbon or in the main window in the Home tab.
-
+## Deleting solutions
+You can't delete a solution from within Forecaster, so the best way is to delete the solution folder using Windows Explorer (as you would for deleting a Word or Excel document - apart from the fact you're deleting a folder not a single file).
 
 
 

@@ -17,7 +17,7 @@ There are two different types of script:
 <br/>
 Once you have selected a particular importer (Text, Excel, or Script), click on Import to open the importation wizard.
 
-If the importation wizard is used on a brand new project (with no existing data), the only option is to start a new importation. The following sections will describe how to import data into a new project, using the three different importers. You can cancel the import at any time by pressing the cancel button. Alternatively if you need to change some wizard settings press the Back button to go back through the importation wizard process.
+If the importation wizard is used on a brand new project (with no existing data), the only option is to start a new importation. The following sections will describe how to import data into a new project, using the three different importers. You can cancel the import at any time by pressing the **Cancel** button. If at any point you need to change some wizard settings press the **Back** button to go back a step through the importation wizard process.
 
 
 {% hint style="info" %}
@@ -80,7 +80,7 @@ By clicking on Next, you will be able to insert the relevant path and file name 
 
 The following screen will ask you to select the relevant worksheet within the Excel file.
  
- **[ IMAGE ]**
+ <!-- TO DO: Add image -->
 Excel Import Wizard - Sheet Selection
 
 
@@ -107,8 +107,8 @@ Clicking on Next will bring you to the Column Configuration screen which is desc
 
 ##### Re-importing data
 
-Once a forecast has been developed and the results deployed, the usual next step is to re-forecast or re-build when new data becomes available.  To do this the system has a re-import facility.  To use this option, re-press the Import button.  This will bring up the first page of the relevant Importation Wizard (Text, MS Excel or Script).
- 
+When new data becomes available, it is generally worth re-importing this data, to update both the forecasting model and the resulting forecasts by taking into account the very latest data. The quickest way of re-importing data is to use the **Quick Re-import** button; this will re-import from the original data source, bringing in any new changes that may be present. 
+If you want more control over the re-importation process (e.g. to change the number of harmonics), you can instead click the **Import** button, which will take you through the importation wizard you used when you first set up the project. Typically you'll want to leave most of the parameters unchanged, but this does give you the flexibility to alter any aspect of the importation.
 
 ![Typical Import Wizard - Re-Import](imgs/Re-Import.png)
 

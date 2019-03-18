@@ -18,7 +18,7 @@ These are the changes with respect to the previous Forecaster version 3.3.
 3.	The most suitable models for the data type are automatically offered. For instance, with interval level data, the Smoothed Profile model is selected by default
 4.	The original 3 Forecaster models (Neural Networks, Decision Trees, and Regression) have been dropped in favour of more accurate models specifically tailored for time series analysis. Legacy models in existing projects will automatically be ported to the most suitable new model.
 5.	Move to 64 bit software: larger projects and larger forests of decision trees are now possible due to better memory usage.
-6.	New Export Data custom process allows more control over data export, including selecting forecast range only, and exporting to Excel format.
+6.	New Export Data external process allows more control over data export, including selecting forecast range only, and exporting to Excel format.
 7.	US date compatibility added (tick box in the Load With Harmonics importers)
 8.	Random Forests now have an option to run on binary (0/1) data, allowing the use for propensity modelling such as churn or sales propensity.
 

@@ -47,7 +47,7 @@ Similarly, the forecasting data set can be selected in two ways:
 
 
 ### Selecting/Deselecting Rows
-As well as selecting columns for the model, the system will allow you to deselect and reselect individual rows of data.  Deselecting rows could be necessary because of missing values or because certain rows contain exceptional data which you do not want to forecast.  
+As well as selecting columns for the model, Forecaster lets you deselect and reselect individual rows of data.  Deselecting rows could be necessary because of missing values or because certain rows contain unusual data which you wouldn't want a forecast model to use.  
 
 
 <!-- #### Selecting/deselecting specific rows -->
