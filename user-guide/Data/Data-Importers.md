@@ -23,20 +23,31 @@ This the most commonly used way of reading data into Forecaster. There are two m
     - Load with Harmonics scripts: These let you import from flat files such as csv files, while appending useful information on public holidays and harmonics (to help model seasonality). A range of scripts is available in order to load interval, daily, weekly, or monthly data.
     - Bespoke importation scripts: These can be created by CACI (or by users with R knowledge) in order to import specific business data. For instance, these could be set up to read directly from a database, as well as merging in data from reports and local flat files. To find out more, please contact CACI directly.
 
-<br/>
-Once you've selected a particular importer (Text, Excel, or Script), click on Import to open the importation wizard.
-
-The following sections will describe how to import data into a new project, using the three different importers. You can cancel the import at any time by pressing the **Cancel** button. If at any point you need to change some wizard settings press the **Back** button to go back a step through the importation wizard process.
 
 
 {% hint style="info" %}
 You can click on any of the sections of this page from the CONTENTS menu to the right, which can be faster than scrolling down the page.
 {% endhint %}
 
+## Importation Modes
+Whichever type of importer you use (Text, Excel, or Script), you can import data in 3 different ways:
+* **New importation**: Used when loading data into a project for the first time, or if you want to drop the existing data in a project and start afresh. If the project already has data, then all existing data and models will be dropped, and the new data will be read in to a clean project. This is the only option for a brand new project.
+* **Update Re-Import**: This option will keep all existing data, while adding in any new rows from the new dataset. If the new dataset has any rows that already exist in the project, this new data will overwrite the existing project data. All row and column selections, as well as any forecast models, are left unchanged. This is the default option if a project already holds some data.
+* **Clean Re-Import**: This option will drop all existing project data, and simply read in the new dataset. All row information, such as deselected rows or the forecast start point will be dropped. However, this option differs from the *New importation* option in that all column information and forecast models are preserved. This option can be really useful for providing a complete refresh of the project data, without losing any modelling information such as model inputs, or the forecast model and its parameters.
+
+
+<br/>
+Once you've selected a particular importer (Text, Excel, or Script), click on Import to open the importation wizard.
+
+The following sections will describe how to import data into a new project, using the three different importers. You can cancel the import at any time by pressing the **Cancel** button. If at any point you need to change some wizard settings press the **Back** button to go back a step through the importation wizard process.
+
+The following sections go into more detail on the 3 types of importer: Text, Excel, and Script.
 
 
 ## Text Importer
-Once you've selected *Text*, then clicked **Import** on the *Data Importers* section of the ribbon, the Comma Delimited Importer will open.  If this is a brand new importation, the only option available is to start a new importation. 
+The Text Importer is used to read in from a text file, for example in comma separated .csv format. This importer reads in the data as is, with very little additional processing. We would generally recommend using a *Load With Harmonics* Script Importer instead, which will give you far more flexibility.
+
+ Once you've selected *Text*, then clicked **Import** on the *Data Importers* section of the ribbon, the Comma Delimited Importer will open.  If this is a brand new importation, the only option available is to start a new importation. 
 
 <!-- TO DO: Details on various types of importation -->
 
@@ -49,6 +60,8 @@ Forecaster will automatically detect the datatype for each column. By default, i
 The *Quote character* box lets you select the character to be used to identify text.
 
 ![Text Import Wizard - Parameters](imgs/TextImportWizard_Parameters.png)
+
+### Column Configuration Dialog
 
 Clicking on Next brings you to the Column Configuration dialog where you can see a preview of the data, with the column identified as the key highlighted in blue.  This text importer assumes that the first column contains the key (usually a date or date-time).  However, if this first column contains duplicate values, an auto-generated key column will be created instead.  If you'd prefer to use an auto-generated key column instead of the default first column, tick the *Auto-Generate Key Column* option.
  
@@ -75,6 +88,8 @@ Clicking Next followed by Finish completes the importation.
 
 
 ## Excel Importer
+The Excel Importer is used to read in from Excel files. The formats .xls, .xlsx, .xlsm, and .xlsb are all supported. This functionality does require the presence of Excel on the host machine. All versions of Excel are supported **apart from Excel 2013.** This importer reads in the data as is, with very little additional processing. We would generally recommend saving the Excel document as csv, then reading in to Forecaster using a *Load With Harmonics* Script Importer, which will give you far more flexibility.
+
 Once you've selected *Excel*, then clicked **Import** on the *Data Importers* section of the ribbon, the Excel Importer will open.  If this is a brand new importation, the only option available is to start a new importation. 
  
  
@@ -103,29 +118,65 @@ Once you've selected *Script*, then clicked **Import** on the *Data Importers* s
 
 After clicking **Next**, the next dialog lets you select a particular Script Importer from a drop-down, and view and alter any parameters if needed. 
 
-The standard way of reading data into Forecaster is using one of the *Load With Harmonics* script importers. These append a range of useful additional data to any data import, including public holiday information for a range of countries. Simply choose the importer that matches the data you're reading in, whether that's interval level, daily, weekly, or monthly. 
+The standard way of reading data into Forecaster is using one of the *Load With Harmonics* script importers. These append a range of useful additional data to any data import, including public holiday information for a range of countries (and some regions). Simply choose the importer that matches the data you're reading in, whether that's interval level, daily, weekly, or monthly. 
 
 {% hint style="info" %}
 Additional customised importation scripts can also be created, in order to read, combine, or aggregate data from any range of files, data feeds, or databases. These can be created by CACI (or by users with R knowledge) in order to import specific business data. For instance, these could be set up to read directly from a database, as well as merging in data from reports and local flat files. To find out more, please contact CACI directly.
 {% endhint %}
 
 
+## *Load With Harmonics - Daily* Script Importer
+
+This section covers how to use the *Load With Harmonics - Daily* importer. The equivalent weekly and monthly importers (*Load With Harmonics - Weekly* and *Load With Harmonics - Monthly*) are identical, apart from their lack of daily harmonics (and lack of weekly harmonics for *Load With Harmonics - Monthly*).
+
+Once *Load With Harmonics - Daily* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You'll need to browse for the csv file to be read in, but apart from that you can very often run with the default parameters without needing to change anything else. THe parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
 
 ![Script Import Wizard - Script Selector](imgs/ScriptImportWizard_ScriptSelector.png) 
 
-After clicking on Next, progress of the importation will be visible in the import wizard, similar to that shown in the image below.
+### *Load With Harmonics - Daily* parameters
+
+- **csv file to read in**: Select the csv file to read in. Comma separated files only are accepted.
+- **Name of the date column**: If left blank, the first column in the file will be used
+- **Number of weekly harmonics**: The number of weekly harmonics columns to create. When added as inputs to forecast models such as regression, they help the models handle within-week seasonality. The default is 3. Increasing this number will have very little effect. Decreasing this number will lead to smoother within-week profiles. (This parameter is not present in *Load With Harmonics - Weekly* or *Load With Harmonics - Monthly*.)
+- **Number of monthly harmonics**: The number of monthly harmonics columns to create. When added as inputs to forecast models such as regression, they help the models handle within-month seasonality. The default is 4. Increasing this number will let a model handle spikier within-month profiles, while decreasing it will lead to smoother within-month profiles. (This parameter is not present in *Load With Harmonics - Monthly*.)
+- **Number of yearly harmonics**: The number of yearly harmonics columns to create. When added as inputs to forecast models
+such as regression, they help the models handle within-year seasonality. The default is 5.
+Increasing this number will let a model handle spikier within-year profiles,
+while decreasing it will lead to smoother within-year profiles.
+- **Country and region**: Public holidays will be appended for any country selected here. 
+Within each country, holidays for any particular region can be selected (selecting a region will also bring back national level holidays). If 'National' is selected, only national holidays will be included. If 'All' is selected, all national and regional holidays will be included. The current list of countries covers:
+    
+    * Belgium: National holidays only
+    * France: National and some regional holidays
+    * Germany: National and regional holidays
+    * Greece: National holidays only
+    * Italy: National and regional holidays
+    * Netherlands: National holidays only
+    * Poland: National holidays only
+    * Portugal: National holidays only
+    * Ireland: National holidays only
+    * Spain: National and regional holidays
+    * UK: National and regional holidays
+    * US: National and regional holidays
+    
+- **Project forecasts to read in**: This holds a drop-down list of all projects in the solution. Multiple projects can be selected, and forecasts from these projects will be read in as well. 
+- **Project forecasts: use actuals from training period**: Applies to forecasts read in from other projects. If ticked, actual values will be used up to the first forecast row, and forecast values after that. If unticked, forecasts only are read in for all available rows.
+- **UK date format**: If checked (the default), UK date format is assumed for the key column. If unchecked, US date format is assumed instead.
+- **Number of working days in the week**: Must be 5, 6, or 7. If 5, Monday to Friday are flagged as working days, if 6, Saturday is included as well, and if 7, all days are flagged as working days.
+
+
+
+After clicking on Next, the following window shows the progress of the importation, as seen below.
 
 ![Script Import Wizard - Script Progress](imgs/ScriptImportWizard_ScriptProgress.png)
 
 
-Clicking on Next will bring you to the Column Configuration screen which is described in section 5.1.1.  The importation will then complete by clicking on Next followed by Finish.
+Clicking on Next will bring you to the Column Configuration screen which has already been described higher up this page in the *Text Importer* [Column Configuration Dialog](#Column-Configuration-Dialog) section. You can complete the importation by clicking on Next followed by Finish.
+
+This Load With Harmonics script importer will have read in the original csv data, and augmented that dataset with a range of useful information, from public holidays, to workdays and harmonics (to help model seasonality in regression type models).
 
 
-## Re-importing data
-
-When new data becomes available, it is generally worth re-importing this data, to update both the forecasting model and the resulting forecasts by taking into account the very latest data. The quickest way of re-importing data is to use the **Quick Re-import** button; this will re-import from the original data source, bringing in any new changes that may be present. 
-If you want more control over the re-importation process (e.g. to change the number of harmonics), you can instead click the **Import** button, which will take you through the importation wizard you used when you first set up the project. Typically you'll want to leave most of the parameters unchanged, but this does give you the flexibility to alter any aspect of the importation.
-
+<!--
 ![Typical Import Wizard - Re-Import](imgs/Re-Import.png)
 
 
@@ -133,3 +184,13 @@ The import process will then make use of the key column.  It is assumed that the
  
 If Update Re-Import is selected, then any rows with key values not visible in the new source data will remain unchanged.  For example, if your import data file only contains data from March 2011, yet the data grid in Forecaster contains data from January 2011, then the updated data grid will contain data from January 2011, with the values from March 2011 taken from the new import file.  To prevent this from happening (and therefore only include the new source data in the data grid), select Clean Re-Import instead.
 
+
+
+## Re-importing data
+
+When new data becomes available, it is generally worth re-importing this data, to update both the forecasting model and the resulting forecasts by taking into account the very latest data. The quickest way of re-importing data is to use the **Quick Re-import** button; this will re-import from the original data source, bringing in any new changes that may be present. 
+
+![Data Importers Ribbon](imgs/Data_Importers.png)
+
+If you want more control over the re-importation process (e.g. to change the number of harmonics), you can instead click the **Import** button, which will take you through the importation wizard you used when you first set up the project. Typically you'll want to leave most of the parameters unchanged, but this does give you the flexibility to alter any aspect of the importation.
+-->
