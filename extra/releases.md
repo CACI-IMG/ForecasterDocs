@@ -101,7 +101,7 @@ This release has a large number of improvements across the board, with new workf
 1. Improved custom model integration: Custom models and script parameters are now accessed through bespoke dialogs, rather than as comma separated text. In addition, Forecaster is now more directly integrated with the scripts, making for faster and more robust operation.
 2. Look and feel improvements across the entire application and charts, including brand new logo and slicker importation for interval level data
 3. Charts: Improved zooming, and new error bars
-4. Search for column *goto* functionality 
+4. Search for column *go to* functionality 
 
 ### Bug Fixes
 

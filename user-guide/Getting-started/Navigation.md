@@ -9,6 +9,7 @@ Forecaster is based around 5 main ribbon tabs, across the top of the screen. Gen
 
 * [Home Tab](/user-guide/Home/Home.md) : This tab lets you manage Forecaster solutions and and projects, as well as controlling options and custom scripts. 
 
+<!-- TO DO: Update image -->
 ![Home Tab](imgs/HomeTab.png)
 
 

@@ -10,3 +10,4 @@
 * Column v field: Forecaster uses a mix, column in most places, but field in the formula editor. Best to stick to "column", and the formula editor should probably be updated to match
 * Number of spaces after a full stop has no effect - markdown rendering just shows 1 space
 * Avoid mention of **script**: refer to importers, models, or processes
+* Use 'TO DO' for things that still need updating

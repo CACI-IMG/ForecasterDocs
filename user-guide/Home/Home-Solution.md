@@ -37,7 +37,7 @@ You can't delete a solution from within Forecaster, so the best way is to delete
 
 ## Managing Projects
 
-The right hand side of the Solution section of the Home tab ribbon holds basic porject operations, such as creating, copying, or deleting.
+The right hand side of the Solution section of the Home tab ribbon holds basic project operations, such as creating, copying, or deleting.
 
 ![Project section of the Home ribbon](../Getting-started/imgs/Home_SolutionProjects.png)
 
