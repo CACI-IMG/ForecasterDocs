@@ -1,6 +1,6 @@
-# Quick Start
+# Tutorial
 
-CACI Forecaster is designed to let you get started very quickly with producing your own data-driven forecasts. This section covers the creation of a simple forecasting project. This example will walk you through creating forecasts of car insurance call volumes, based on historical data. This dataset holds only historical call volumes and public holidays, so you'll use a simple seasonality-based model.
+CACI Forecaster is designed to let you get started very quickly with producing your own data-driven forecasts. This quick start tutorial covers the creation of a simple forecasting project. This example will walk you through creating forecasts of car insurance call volumes, based on historical data. This dataset holds only historical call volumes and public holidays, so you'll use a simple seasonality-based model.
 
 
 ## Before you Start
@@ -113,7 +113,7 @@ The Forecast Error column holds expected forecast accuracy for each row. For thi
 - Ctrl + mouse wheel zooms vertically only
 - Shift + mouse wheel zooms both horizontally and vertically
 
- For more information on viewing forecasts, see the section on the [Analysis Tab](/user-guide/Analysis/Analysis.md).
+ For more information on viewing forecasts, see the section on the [Analysis Tab](/reference/Analysis/Analysis.md).
 
 <!-- This works: seems like you cannot get links like this to any file in a different folder -->
 <!-- {% page-ref page="Solution.md" %} --> 
@@ -124,8 +124,8 @@ The Forecast Error column holds expected forecast accuracy for each row. For thi
 
 {% page-ref page="../Analysis/Analysis.md" %} <!-- Fail -->
 
-{% page-ref page="user-guide/Analysis/Analysis.md" %} <!-- Fail -->
+{% page-ref page="reference/Analysis/Analysis.md" %} <!-- Fail -->
 
-{% page-ref page="./user-guide/Analysis/Analysis.md" %} <!-- Fail -->
+{% page-ref page="./reference/Analysis/Analysis.md" %} <!-- Fail -->
 
-{% page-ref page="/user-guide/Analysis/Analysis.md" %} <!-- Fail -->
+{% page-ref page="/reference/Analysis/Analysis.md" %} <!-- Fail -->

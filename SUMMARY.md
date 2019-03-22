@@ -4,39 +4,39 @@
 
 <!--* [CACI Forecaster Overview](Overview.md)-->
 
-## QUICK START
-* [About the User Guide](user-guide/user-guide.md)
-* [Getting Started with CACI Forecaster](user-guide/Getting-started/Getting-started.md)
-    * [Quick Start](user-guide/Getting-started/Quick-start.md)
-    * [Navigation](user-guide/Getting-started/Navigation.md)
-    * [Solutions](user-guide/Getting-started/Solution.md)
-    * [Projects](user-guide/Getting-started/Projects.md)
+## GETTING STARTED
+* [About the User Guide](getting-started/user-guide.md)
+* [Getting Started with CACI Forecaster](getting-started/Getting-started.md)
+* [Quick Start Tutorial](getting-started/Tutorial.md)
+* [Navigation](getting-started/Navigation.md)
+* [Solutions](getting-started/Solution.md)
+* [Projects](getting-started/Projects.md)
 
 ## REFERENCE
-* [Home Tab](user-guide/Home/Home.md)
-    * [Managing Solutions & Projects](user-guide/Home/Home-Solution.md)
-    * [Managing Global Settings](user-guide/Home/Home-Tools.md)
-    * [Help](user-guide/Home/Home-Help.md) 
-  
-* [Data Tab](user-guide/Data/Data.md)
-    * [Importing Data](user-guide/Data/Data-Importers.md)
-        * [Load With Harmonics Daily](user-guide/Data/Importers/Load-With-Harmonics-Daily.md)
-    * [Exporting Data](user-guide/Data/Data-Exporters.md)
-    * [Data Rows & Columns](user-guide/Data/Data-Rows-Columns.md)
+* [Home Tab](reference/Home/Home.md)
+    * [Managing Solutions & Projects](reference/Home/Home-Solution.md)
+    * [Managing Global Settings](reference/Home/Home-Tools.md)
+    * [Help](reference/Home/Home-Help.md) 
+ 
+ * [Data Tab](reference/Data/Data.md)
+    * [Importing Data](reference/Data/Data-Importers.md)
+        * [Load With Harmonics Daily](reference/Data/Importers/Load-With-Harmonics-Daily.md)
+    * [Exporting Data](reference/Data/Data-Exporters.md)
+    * [Data Rows & Columns](reference/Data/Data-Rows-Columns.md)
 
 * [Model Tab]()
-    * [Model Types](user-guide/Forecasting/Model-Type.md)
-    * [Model Rows](user-guide/Forecasting/Model-Rows.md)
-    * [Model Columns](user-guide/Forecasting/Model-Columns.md)
-    * [Model Design](user-guide/Forecasting/Model-Design.md)
-    * [Forecasting](user-guide/Forecasting/Forecasting.md)
+    * [Model Types](reference/Forecasting/Model-Type.md)
+    * [Model Rows](reference/Forecasting/Model-Rows.md)
+    * [Model Columns](reference/Forecasting/Model-Columns.md)
+    * [Model Design](reference/Forecasting/Model-Design.md)
+    * [Forecasting](reference/Forecasting/Forecasting.md)
   
 * [Analysis Tab]()
-    * [Charts](user-guide/Analysis/Charts-And-Error-Metrics.md)
+    * [Charts](reference/Analysis/Charts-And-Error-Metrics.md)
 
-* [Automation Tab](user-guide/Automation/Automation.md)
-    * [Workflows](user-guide/Automation/Workflows.md)
-    * [Running Workflows](user-guide/Automation/Running-workflows.md)
+* [Automation Tab](reference/Automation/Automation.md)
+    * [Workflows](reference/Automation/Workflows.md)
+    * [Running Workflows](reference/Automation/Running-workflows.md)
 
 
 ## HOW TO...
@@ -45,28 +45,30 @@
 * [Use Marketing Type Delays](user-cases/Delays.md)
 * [Do Interval Forecasting](user-cases/Interval-Forecasting.md)
 * [Use Decomposition Models](user-cases/Decomposition-Models.md)
+
+
 <!--
 * [Forecasting Course]()
     * [Introduction to Forecasting]()
-        * [Forecasts – usefulness and limitations](user-guide/part-i/writing-is-nice.md)
-        * [Models](user-guide/part-i/gitbook-is-nice.md)
+        * [Forecasts – usefulness and limitations](reference/part-i/writing-is-nice.md)
+        * [Models](reference/part-i/gitbook-is-nice.md)
         * [Model and forecast quality](GettingStarted/GettingStarted.md#Projects)
         * [From simple to complex models](GettingStarted/GettingStarted.md#Projects)
         * [Seasonal models in Forecaster](GettingStarted/GettingStarted.md#Projects)
 
-    * [Regression Models](user-guide/part-i/README.md)
-        * [Regression models – theory and practice](user-guide/part-i/writing-is-nice.md)
-        * [Derived columns, ranges, overfitting](user-guide/part-i/gitbook-is-nice.md)
+    * [Regression Models](reference/part-i/README.md)
+        * [Regression models – theory and practice](reference/part-i/writing-is-nice.md)
+        * [Derived columns, ranges, overfitting](reference/part-i/gitbook-is-nice.md)
         * [Custom models and importation processes](GettingStarted/GettingStarted.md#Projects)
 
-    * [Dealing with Time](user-guide/part-i/README.md)
-        * [Advanced regression modelling](user-guide/part-i/writing-is-nice.md)
-        * [Pure time series models](user-guide/part-i/gitbook-is-nice.md)
+    * [Dealing with Time](reference/part-i/README.md)
+        * [Advanced regression modelling](reference/part-i/writing-is-nice.md)
+        * [Pure time series models](reference/part-i/gitbook-is-nice.md)
         * [Decomposition forecasting](GettingStarted/GettingStarted.md#Projects)
 
-    * [Automation and further Algorithms](user-guide/part-i/README.md)
-        * [Automation: using workflows](user-guide/part-i/writing-is-nice.md)
-        * [Forecasting at interval level](user-guide/part-i/gitbook-is-nice.md)
+    * [Automation and further Algorithms](reference/part-i/README.md)
+        * [Automation: using workflows](reference/part-i/writing-is-nice.md)
+        * [Forecasting at interval level](reference/part-i/gitbook-is-nice.md)
         * [Decision Trees, Random Forests and Neural Networks](GettingStarted/GettingStarted.md#Projects)
     * [Client’s current forecasting models and any bespoke models and data connectivity](GettingStarted/GettingStarted.md#Projects)
 -->

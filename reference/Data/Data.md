@@ -2,7 +2,7 @@
 
 The second item on the main ribbon is the Data tab.  This tab helps you load or update data, and derive new variables from the source data. 
 
-![Data Tab Ribbon](/user-guide/Getting-started/imgs/DataTab.png)
+![Data Tab Ribbon](/reference/Getting-started/imgs/DataTab.png)
 
 The Data ribbon is divided into 3 groups:
 

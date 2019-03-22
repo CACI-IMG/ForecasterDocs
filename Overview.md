@@ -1,5 +1,8 @@
+!!!!!!!!!!!!!!!!!!
+!!!!NOT USED!!!!!!
+!!!!!!!!!!!!!!!!!!
 
-![CACI Forecaster](user-guide/Getting-started/imgs/ForecasterSplashWide.png)
+![CACI Forecaster](reference/Getting-started/imgs/ForecasterSplashWide.png)
 
 ## CACI FORECASTER
 
@@ -15,13 +18,13 @@ Backed up by a scientific and transparent approach, Forecaster can be used acros
 
 This User Guide is formed of two main sections, the User Guide itself, and a Use Cases section. 
 
-### [User Guide](/user-guide/user-guide.md)
+### [User Guide](/reference/user-guide.md)
 The User Guide provides detailed information on all Forecaster functionality, with a structure reflecting that of Forecaster itself. It starts with the 'Getting Started' section as a quick introduction to getting running with the tool, and subsequent sections cover the 5 main Forecaster tabs. 
-* [Getting Started](/user-guide/Getting-started/Getting-started.md): New users should start here
-* [Home Tab](/user-guide/Home/Home.md)
-* [Data Tab](/user-guide/Data/Data.md)
-* [Model Tab](/user-guide/Forecasting/Forecasting.md)
-* [Automation Tab](/user-guide/Automation/Automation.md)
+* [Getting Started](/reference/Getting-started/Getting-started.md): New users should start here
+* [Home Tab](/reference/Home/Home.md)
+* [Data Tab](/reference/Data/Data.md)
+* [Model Tab](/reference/Forecasting/Forecasting.md)
+* [Automation Tab](/reference/Automation/Automation.md)
 
 
 ### [Use Cases](/use-cases/use-cases.md)

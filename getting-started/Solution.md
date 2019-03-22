@@ -16,7 +16,7 @@ A number of management activities can be carried out on Forecaster Solutions - a
 
 
 
-![Home Tab Ribbon](/user-guide/Getting-started/imgs/Home_Ribbon.png)
+![Home Tab Ribbon](/reference/Getting-started/imgs/Home_Ribbon.png)
 
 ### Creating a New Solution
 
