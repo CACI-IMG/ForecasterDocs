@@ -129,7 +129,7 @@ Additional customised importation scripts can also be created, in order to read,
 
 This section covers how to use the *Load With Harmonics - Daily* importer. The equivalent weekly and monthly importers (*Load With Harmonics - Weekly* and *Load With Harmonics - Monthly*) are identical, apart from their lack of daily harmonics (and lack of weekly harmonics for *Load With Harmonics - Monthly*).
 
-Once *Load With Harmonics - Daily* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You'll need to browse for the csv file to be read in, but apart from that you can very often run with the default parameters without needing to change anything else. THe parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
+Once *Load With Harmonics - Daily* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You'll need to browse for the csv file to be read in, but apart from that you can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
 
 ![Script Import Wizard - Script Selector](imgs/ScriptImportWizard_ScriptSelector.png) 
 

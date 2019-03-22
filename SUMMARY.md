@@ -4,7 +4,7 @@
 
 <!--* [CACI Forecaster Overview](Overview.md)-->
 
-## USER GUIDE
+## QUICK START
 * [About the User Guide](user-guide/user-guide.md)
 * [Getting Started with CACI Forecaster](user-guide/Getting-started/Getting-started.md)
     * [Quick Start](user-guide/Getting-started/Quick-start.md)
@@ -12,6 +12,7 @@
     * [Solutions](user-guide/Getting-started/Solution.md)
     * [Projects](user-guide/Getting-started/Projects.md)
 
+## REFERENCE
 * [Home Tab](user-guide/Home/Home.md)
     * [Managing Solutions & Projects](user-guide/Home/Home-Solution.md)
     * [Managing Global Settings](user-guide/Home/Home-Tools.md)
@@ -19,6 +20,7 @@
   
 * [Data Tab](user-guide/Data/Data.md)
     * [Importing Data](user-guide/Data/Data-Importers.md)
+        * [Load With Harmonics Daily](user-guide/Data/Importers/Load-With-Harmonics-Daily.md)
     * [Exporting Data](user-guide/Data/Data-Exporters.md)
     * [Data Rows & Columns](user-guide/Data/Data-Rows-Columns.md)
 
@@ -37,13 +39,13 @@
     * [Running Workflows](user-guide/Automation/Running-workflows.md)
 
 
-## USE CASES
-* [About the Use Cases](use-cases/use-cases.md)
-* [Choosing the Best Forecasting Model](user-cases/Forecast-Models-Overview.md)
-* [Using Marketing Type Delays](user-cases/Delays.md)
-* [Interval Forecasting](user-cases/Interval-Forecasting.md)
-* [Decomposition Models](user-cases/Decomposition-Models.md)
-
+## HOW TO...
+* [About the How To Section](use-cases/use-cases.md)
+* [Choose the Best Forecasting Model](user-cases/Forecast-Models-Overview.md)
+* [Use Marketing Type Delays](user-cases/Delays.md)
+* [Do Interval Forecasting](user-cases/Interval-Forecasting.md)
+* [Use Decomposition Models](user-cases/Decomposition-Models.md)
+<!--
 * [Forecasting Course]()
     * [Introduction to Forecasting]()
         * [Forecasts – usefulness and limitations](user-guide/part-i/writing-is-nice.md)
@@ -67,12 +69,15 @@
         * [Forecasting at interval level](user-guide/part-i/gitbook-is-nice.md)
         * [Decision Trees, Random Forests and Neural Networks](GettingStarted/GettingStarted.md#Projects)
     * [Client’s current forecasting models and any bespoke models and data connectivity](GettingStarted/GettingStarted.md#Projects)
+-->
 
 ## FURTHER INFORMATION
 
 * [Contact us](extra/contact-us.md)
 * [Releases](extra/releases.md)
 
+<!--
 ## TEMPORARY
 * [We love feedback](extra/we-love-feedback.md)
 * [Markdown examples (temp)](extra/markdown-examples.md)
+-->
