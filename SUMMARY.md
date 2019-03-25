@@ -32,7 +32,7 @@
     * [Data Exporters](reference/Data/Data-Exporters.md)
     * [Data Rows & Columns](reference/Data/Data-Rows-Columns.md)
 
-* [Model Tab](reference/Forecasting/Forecasting-ribbon.md)
+* [Model Tab](reference/Forecasting/Forecasting-Overview.md)
     * [Model Types](reference/Forecasting/Model-Type.md)
     * [Model Rows](reference/Forecasting/Model-Rows.md)
     * [Model Columns](reference/Forecasting/Model-Columns.md)

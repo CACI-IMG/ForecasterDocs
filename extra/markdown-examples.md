@@ -229,6 +229,7 @@ Paragraphs and Line Breaks
 
 GFM a-tail link @pandao
 
+<!-- JT 2019-03-25: Can't get this to work on Gitbook -->
 Relative Internal Link to a [heading](#Test-2) in the SAME article: (Spaces replaced with -)
 
 ### Test 2
