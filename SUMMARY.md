@@ -17,9 +17,9 @@
     * [Solution Section](reference/Home/Home-Solution.md)
     * [Tools Section](reference/Home/Home-Tools.md)
     * [All External Processes](reference/Home/External-Processes/External-Processes.md)
-        - [Export Data](Export-Data.md)
-        - [R Diagnostics](R-Diagnostics.md)
-        - [Export Project Data](Export-Project-Data.md)
+        - [Export Data](reference/Home/External-Processes/Export-Data.md)
+        - [R Diagnostics](reference/Home/External-Processes/R-Diagnostics.md)
+        - [Export Project Data](reference/Home/External-Processes/Export-Project-Data.md)
     * [Help Section](reference/Home/Home-Help.md) 
  
 * [Data Tab](reference/Data/Data.md)
