@@ -26,6 +26,13 @@ This the most commonly used way of reading data into Forecaster. There are two m
 
 {% hint style="info" %}
 For details of all Script Importers, see the full list here:  [**Importers**](/Importers/Importers.md). 
+For details of all Script Importers, see the full list here:  [**Importers**](Importers/Importers.md). 
+For details of all Script Importers, see the full list here:  [**Importers**](/Data/Importers/Importers.md). 
+For details of all Script Importers, see the full list here:  [**Importers**](Data/Importers/Importers.md). 
+For details of all Script Importers, see the full list here:  [**Importers**](../Importers/Importers.md). 
+For details of all Script Importers, see the full list here:  [**Importers**](../Data//Importers/Importers.md). 
+For details of all Script Importers, see the full list here:  [**Importers**](./Importers/Importers.md). 
+For details of all Script Importers, see the full list here:  [**Importers**](./Data/Importers/Importers.md). 
 {% endhint %}
 
 ## Importation Modes
