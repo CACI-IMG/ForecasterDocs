@@ -24,7 +24,7 @@
  
 * [Data Tab](reference/Data/Data.md)
     * [Importing Data](reference/Data/Data-Importers.md)
-    * [All Script Importers](reference/Data/Importers/Load-With-Harmonics-Daily.md)
+    * [All Script Importers](reference/Data/Importers/Importers.md)
         * [Load With Harmonics Daily](reference/Data/Importers/Load-With-Harmonics-Daily.md)
         * [Load With Harmonics Weekly](reference/Data/Importers/Load-With-Harmonics-Weekly.md)
         * [Load With Harmonics Monthly](reference/Data/Importers/Load-With-Harmonics-Monthly.md)
