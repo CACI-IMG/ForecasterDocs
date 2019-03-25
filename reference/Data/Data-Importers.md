@@ -189,6 +189,16 @@ Clicking on Next will bring you to the Column Configuration screen which has alr
 This Load With Harmonics script importer will have read in the original csv data, and augmented that dataset with a range of useful information, from public holidays, to workdays and harmonics (to help model seasonality in regression type models).
 
 
+
+# H1
+
+## H2
+
+### H3
+
+
+![Script Import Wizard - Script Progress](imgs/ScriptImportWizard_ScriptProgress.png)
+
 [H1](#H1)
 
 [H1](Data-Importers.md/#H1)
@@ -203,16 +213,6 @@ This Load With Harmonics script importer will have read in the original csv data
 
 
 
-![Script Import Wizard - Script Progress](imgs/ScriptImportWizard_ScriptProgress.png)
-
-
-
-
-# H1
-
-## H2
-
-### H3
 
 <!--
 ![Typical Import Wizard - Re-Import](imgs/Re-Import.png)
