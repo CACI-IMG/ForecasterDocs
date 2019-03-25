@@ -48,12 +48,13 @@
 
 
 ## HOW TO...
+<!--
 * [About the How To Section](use-cases/use-cases.md)
-* [Choose the Best Forecasting Model](user-cases/Forecast-Models-Overview.md)
-* [Use Marketing Type Delays](user-cases/Delays.md)
-* [Do Interval Forecasting](user-cases/Interval-Forecasting.md)
-* [Use Decomposition Models](user-cases/Decomposition-Models.md)
-
+* [Choose the Best Forecasting Model](use-cases/Forecast-Models-Overview.md)
+* [Use Marketing Type Delays](use-cases/Delays.md)
+* [Do Interval Forecasting](use-cases/Interval-Forecasting.md)
+* [Use Decomposition Models](use-cases/Decomposition-Models.md)
+-->
 
 <!--
 * [Forecasting Course]()
