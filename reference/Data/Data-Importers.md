@@ -25,14 +25,9 @@ This the most commonly used way of reading data into Forecaster. There are two m
 
 
 {% hint style="info" %}
-For details of all Script Importers, see the full list here:  [**Importers**](/Importers/Importers.md). 
-For details of all Script Importers, see the full list here:  [**Importers**](Importers/Importers.md). 
-For details of all Script Importers, see the full list here:  [**Importers**](/Data/Importers/Importers.md). 
-For details of all Script Importers, see the full list here:  [**Importers**](Data/Importers/Importers.md). 
-For details of all Script Importers, see the full list here:  [**Importers**](../Importers/Importers.md). 
-For details of all Script Importers, see the full list here:  [**Importers**](../Data//Importers/Importers.md). 
-For details of all Script Importers, see the full list here:  [**Importers**](./Importers/Importers.md). 
-For details of all Script Importers, see the full list here:  [**Importers**](./Data/Importers/Importers.md). 
+For details of all Script Importers, see the full list here:  [**Importers**](Importers/Importers.md).
+<!--For details of all Script Importers, see the full list here:  [**Importers**](../Data//Importers/Importers.md). OK
+For details of all Script Importers, see the full list here:  [**Importers**](./Importers/Importers.md). OK -->
 {% endhint %}
 
 ## Importation Modes
@@ -189,7 +184,7 @@ After clicking on Next, the following window shows the progress of the importati
 ![Script Import Wizard - Script Progress](imgs/ScriptImportWizard_ScriptProgress.png)
 
 
-Clicking on Next will bring you to the Column Configuration screen which has already been described higher up this page in the *Text Importer* [Column Configuration Dialog](#Column-Configuration-Dialog) section. You can complete the importation by clicking on Next followed by Finish.
+Clicking on Next will bring you to the Column Configuration screen which has already been described higher up this page in the *Text Importer* [Column Configuration Dialog](Data-Importers.md#Column-Configuration-Dialog) section. You can complete the importation by clicking on Next followed by Finish.
 
 This Load With Harmonics script importer will have read in the original csv data, and augmented that dataset with a range of useful information, from public holidays, to workdays and harmonics (to help model seasonality in regression type models).
 
