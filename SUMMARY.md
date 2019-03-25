@@ -23,13 +23,13 @@
     * [Help Section](reference/Home/Home-Help.md) 
  
 * [Data Tab](reference/Data/Data.md)
-    * [Importing Data](reference/Data/Data-Importers.md)
+    * [Data Importers](reference/Data/Data-Importers.md)
     * [All Script Importers](reference/Data/Importers/Importers.md)
         * [Load With Harmonics Daily](reference/Data/Importers/Load-With-Harmonics-Daily.md)
         * [Load With Harmonics Weekly](reference/Data/Importers/Load-With-Harmonics-Weekly.md)
         * [Load With Harmonics Monthly](reference/Data/Importers/Load-With-Harmonics-Monthly.md)
         * [Load With Harmonics Interval](reference/Data/Importers/Load-With-Harmonics-Interval.md)
-    * [Exporting Data](reference/Data/Data-Exporters.md)
+    * [Data Exporters](reference/Data/Data-Exporters.md)
     * [Data Rows & Columns](reference/Data/Data-Rows-Columns.md)
 
 * [Model Tab](reference/Forecasting/Forecasting-ribbon.md)
