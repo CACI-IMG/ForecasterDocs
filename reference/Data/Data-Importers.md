@@ -24,9 +24,8 @@ This the most commonly used way of reading data into Forecaster. There are two m
     - Bespoke importation scripts: These can be created by CACI (or by users with R knowledge) in order to import specific business data. For instance, these could be set up to read directly from a database, as well as merging in data from reports and local flat files. To find out more, please contact CACI directly.
 
 
-
 {% hint style="info" %}
-You can click on any of the sections of this page from the CONTENTS menu to the right, which can be faster than scrolling down the page.
+For details of all Script Importers, see the full list here:  [**Importers**](Importers/Importers.md). 
 {% endhint %}
 
 ## Importation Modes
@@ -36,7 +35,15 @@ Whichever type of importer you use (Text, Excel, or Script), you can import data
 * **Clean Re-Import**: This option will drop all existing project data, and simply read in the new dataset. All row information, such as deselected rows or the forecast start point will be dropped. However, this option differs from the *New importation* option in that all column information and forecast models are preserved. This option can be really useful for providing a complete refresh of the project data, without losing any modelling information such as model inputs, or the forecast model and its parameters.
 
 
-<br/>
+## Quick Re-import
+
+When new data becomes available, it is generally worth re-importing this data, to update both the forecasting model and the resulting forecasts by taking into account the very latest data. The quickest way of re-importing data is to use the **Quick Re-import** button; this will re-import from the original data source, bringing in any new changes that may be present. 
+
+![Data Importers Ribbon](imgs/Data_Importers.png)
+
+If you want more control over the re-importation process (e.g. to change the number of harmonics), you can instead click the **Import** button, which will take you through the importation wizard you used when you first set up the project. Typically you'll want to leave most of the parameters unchanged, but this does give you the flexibility to alter any aspect of the importation.
+
+## The Importers
 Once you've selected a particular importer (Text, Excel, or Script), click on Import to open the importation wizard.
 
 The following sections will describe how to import data into a new project, using the three different importers. You can cancel the import at any time by pressing the **Cancel** button. If at any point you need to change some wizard settings press the **Back** button to go back a step through the importation wizard process.
@@ -125,13 +132,17 @@ Additional customised importation scripts can also be created, in order to read,
 {% endhint %}
 
 
-## *Load With Harmonics - Daily* Script Importer
+## Importing data using the *Load With Harmonics - Daily* Script Importer
 
-This section covers how to use the *Load With Harmonics - Daily* importer. The equivalent weekly and monthly importers (*Load With Harmonics - Weekly* and *Load With Harmonics - Monthly*) are identical, apart from their lack of daily harmonics (and lack of weekly harmonics for *Load With Harmonics - Monthly*).
+This section covers how to use a typical Script Importer, using the *Load With Harmonics - Daily* importer as an example. The equivalent weekly and monthly importers (*Load With Harmonics - Weekly* and *Load With Harmonics - Monthly*) are identical, apart from their lack of daily harmonics (and lack of weekly harmonics for *Load With Harmonics - Monthly*).
+
+{% hint style="info" %}
+For details of all Script Importers, see the full list here:  [**Importers**](Importers/Importers.md). 
+{% endhint %}
 
 Once *Load With Harmonics - Daily* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You'll need to browse for the csv file to be read in, but apart from that you can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
 
-![Script Import Wizard - Script Selector](imgs/ScriptImportWizard_ScriptSelector.png) 
+![Script Import Wizard - Script Selector](Importers/imgs/ScriptImporter_LoadWithHarmonicsDaily.png) 
 
 ### *Load With Harmonics - Daily* parameters
 

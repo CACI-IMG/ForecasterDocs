@@ -1,23 +1,70 @@
-# Data Columns
+# Rows and Columns
 
-The Columns group on the Data tab is where you find the functionality for deriving new fields from the imported data, deleting columns and providing summary statistics for each column.
+The *Rows and Columns* section on the Data tab's ribbon is where you find the functionality for deriving new fields from the imported data, creating or deleting columns, as well as providing summary statistics for each column.
+
+![Rows and Columns Ribbon Section](imgs/Data_RowsAndColumnsFull.png)
+
+## New Column
+Clicking the **New Column** button lets you create a new column in two different ways: either adding a pure data column which can be manually edited, or using a formula.
+
+1. **Add Column**: This option lets you create a pure data column that can be manually edited. This can be useful for instance when wanting to add manual overlays to forecasts. A column added in this way will initially be all blank, and any values can be added in manually as needed. This column could then be selected when building a forecast model as one of the overlay columns, to overwrite or tweak the Forecaster's initial data-drive forecast. The dialog that pops up here lets you set the name of the new column, and also select the data type. The data type can be one of:
+
+    * DOUBLE: To store real or continuous number, i.e. a number with decimal places (e.g. 1.234). This is the default, and is usually the best choice for numeric data
+    * INTEGER: A whole number, such as 1, 2, 3, or 4
+    * DATE: For dates
+    * TEXT: For any other non-numeric or date values
+
+2. **Add Formula**: This option lets you define a column that is defined by a formula, usually feeding off other columns. This can be really useful for instance in modelling marketing time delays, where outbound activity may well affect demand a few days after the known drop date.
+
+
+## New Row(s)
+ The **New Row(s)** ribbon button lets you insert rows either at the start or end of the dataset. The *Enter Value* dialog lets you select the number of rows you'd like added to the start or the end of the dataset. 
+ 
+{% hint style="info" %}
+ As this **New Row(s)** option simply adds blank rows, its usefulness can be quite limited in most cases. A better way of extending datasets is usually by reading in additional rows from the raw data. Using one of the standard *Load With Harmonics* importers, any rows added to the start or end of the raw csv file will be read into Forecaster. This then has the advantage that all the ancillary public holiday and seasonal columns will also be fully populated.
+{% endhint %}
+
+## Delete Column
+![Delete Column](imgs/DataColumns_DeleteColumn.png)
+To delete any column from the data grid, select the column with a left mouse click and then press the **Delete Column** button.  The column will only be removed if it has no dependencies (i.e. other derived columns refer this column in their calculations).
+
+### Example
+Following on from the previous example, if you wanted to delete the derived formula column, you'd first need to select the NewColumn and click on the **Delete Column** button as shown below.
+
+
+
+## Delete Row(s)
+The **Delete Row(s)** ribbon button lets you delete a number of rows from either the start or the end of the dataset. The *Enter Value* dialog lets you select the number of rows you'd like removed from the start or the end of the dataset. 
+
+{% hint style="info" %}
+ Row that are part of the training or forecast ranges cannot be deleted. To do so, first change the training or forecast ranges so that the rows to be deleted are no longer highlighted (the row index is not bold orange for training range, or bold blue for forecast range).
+{% endhint %}
+
+
 
 ![Data / Rows and Columns group](imgs/Data_RowsAndColumns-Columns.png)
+## Find Column
+The **Find Column** button lets you search for a column by name. You can pick up the same functionality from the binoculars icon underneath the data grid. You can search using partial names, and the dialog will return a list of the columns that start with those characters. NB: You must type in the first characters at start of the column name - this does not try and match within the column names. Clicking the **Go To** button jumps to the requested column.
+
+## Toggle Column Freeze
+The **Toggle Column Freeze** button lets you move columns to the far left of the data grid. This can be handy for moving together columns that you'd like to compare side by side. NB: This re-ordering is not saved within the project, and column order will be reset if you move away to another project.
+
+## AutoFit Columns
+The **AutoFit Columns** button resizes columns so that the column name is fully visible. This can be of great help with long column names that might not be initially all visible. NB: This re-sizing of columns is based purely on the length of the column names, and doesn't necessarily guarantee that all the data within the column will be completely visible.
+
 
 ## Column Properties
-To see column properties and summary statistics for each column, you can move the mouse pointer over to the column name of interest in the data grid and wait for the tool-tip to be displayed.  Alternatively, select the column of interest and click the **Column Properties** button in the *Data – Data Columns* ribbon.  
- 
- 
+
+To see full column properties and summary statistics for a column, select the column, then click the **Column Properties** button to the right of the *Data* tab ribbon. This will bring up the following dialog, which shows you all column information, some of which can be edited.
+  
 ![Column Properties Example](imgs/DataColumns_ColumnProperties.png)
 
-
-This will then display a dialog in which it is possible to:
--	Change its data type, by selecting a new type from the data type drop down list.  Forecaster will try to convert the data to the new format you've just specified. However, it's worth noting that in some cases there may well be a loss of detail.  For instance when going from double to integer you'll lose the fractional part (for example 3.5 would be replaced by 3).
-
--	Change the model column type, i.e. whether a field is an input or target.  For more details on this, see the Forecasting\Model Columns section.
+From this dialog, you can:
+-	Change a column's data type, by selecting a new type from the *Data Type* drop down list.  Forecaster will try to convert the data to the new format you've just specified. (It is worth noting that in some cases there may well be a loss of detail.  For instance when going from double to integer you'll lose the fractional part (for example 3.5 would be replaced by 3).)
+-	Change the model column type, i.e. whether a field is an input or target.  For more details on this, see the [Model Columns](../Forecasting/Model-Columns.md) section.
 -	Add comments about the column
 
-As well as providing high level information on the column, Forecaster also calculates some summary statistics for numeric columns as shown in the table below.
+As well as providing high level information on the column, Forecaster also calculates the following summary statistics (for numeric columns):
 
 
 | Statistic | Description                                         |
@@ -30,95 +77,13 @@ As well as providing high level information on the column, Forecaster also calcu
 | Missing   | The number of missing values recorded in the column |
 
 
-Additionally these statistical details will be displayed if you move the mouse pointer over the column name in the data grid.
+{% hint style="info" %}
+These quick statistics will also be displayed in a pop-up if you hover the mouse pointer over any column name in the data grid.
+{% endhint %}
 
-## The Formula Editor
+Clicking on the **Formula Editor** button in this dialog will bring up the Formula Editor, if this is a derived column.
 
-The formula editor lets you derive any number of new columns based on the imported project data.  These formulae let you better align the input data to the target.  For example, marketing data is often recorded as amount spent or volumes dispatched.  With both traditional and electronic mail, it is unlikely that the message will have an immediate effect on the customer contacting the business, people will contact the business when it suits them.  This will introduce a time delay to response, and this delay needs to be reflected in the input to the model, otherwise the predictive relationship is lost.
+For detailed information on the Formula Editor:
+{% page-ref page="Formula-Editor.md" %}
 
-Within the formula editor, a formula can be broken down into a number of predefined functions and then an unlimited number of add, subtract, divide and multiply operations can be used to chain these functions together.
-To start the formula editor, click on the **Formula Editor** button in the *Data – Data Columns* ribbon.  The dialog in the image below will be displayed.
- 
-
-![Formula Editor](imgs/DataColumns_FormulaEditor.png)
-
-The formula consists of a series of at least one function from the Expression Builder (listed in the table below), joined together by using the standard operators +, -, x or ÷.  This gives you the flexibility to build up potentially quite complex functions if needed.
-
-| Functions    |              |            |             |
-|--------------|--------------|------------|-------------|
-| ABS          | COSHARMONIC  | IFLESS_EQ  | POLYASMOOTHING |
-| ADDSMOOTHING | COSOFDOW     | LOG        | SIN            |
-| AVERAGE      | EXP          | MAXCOL     | SINHARMONIC    |
-| AVERAGEBY    | EXPSMOOTHING | MAXROW     | SINOFDOW       |
-| CEILING      | FLOOR        | MINCOL     | SKIP           |
-| COLUMN       | IFEQUAL      | MINROW     | SQRT           |
-| CONCATENATE  | IFGREATER    | MOVAVERAGE | SUBSTRING      |
-| CONSTANT     | IFGREATER_EQ | OFFSET     | SUM            |
-| COS          | IFLESS       | PI         | WEEKDAY        |
-
-
-Once you have given your new column a name, you will need to start the formula by clicking on `< Expression Builder…>`. The required function can then be selected from the drop-down list in the image below.
- 
- ![Functions](imgs/DataColumns_Functions.png)
-
-
-Once a function has been chosen, a description of the function will appear along with a list of required arguments.  By clicking on each argument text box, a description of what is required will appear, as shown  in the image below.
-
-![Example Function](imgs/DataColumns_Functions_Example.png)
-
-
-In some cases, you will be able to select the argument value from a drop-down list rather than typing in the information.
-
-### Example
-Suppose you want to create a new column which is a function of three other columns: `A x (B + C)`.  The order of precedence for this system is similar to how a basic calculator works - those functions higher up the calculation are completed first.  You therefore want to create the formula as `B + C x A`.
-
-- First click on `< Expression Builder…>` and select the COLUMN() function which only requires one argument – the name of the column you want to use.  From the Argument 1 drop-down list, select column B.
- 
-
- ![Expression Builder](imgs/DataColumns_Functions_Example_ColumnB.png)
-
-
-- Clicking on OK will return you to the Formula Editor.
- 
-
- ![Formula Editor - First Expression](imgs/DataColumns_Functions_Example_FirstExpresion.png)
-
-
-- You now want to add column C to this subtotal.  Currently the next operator is `+` (shown by `<Add>`).  By clicking on this, you can see that you can also use `-`, `÷` or `x`.  For now, you should use Add.
-
-
- ![Formula Editor - Changing the Operator](imgs/DataColumns_Functions_Example_Operator.png)
-
-
-- Clicking on the `+` sign will generate an extra expression builder
-
-
- ![Formula Editor - Second Expression Builder](imgs/DataColumns_Functions_Example_SecondExpresion.png)
-
-- Choose the second expression to be COLUMN(C)
-
-
- ![Formula Editor - Second Expression](imgs/DataColumns_Functions_Example_ColumnC.png)
-
-- As this current subtotal should be multiplied by column A, you first need to change the second `<Add>` to `<Multiply>` from the drop-down list.
-
-- Now add a third expression: COLUMN(A)
-
-
- ![Formula Editor - Third Expression](imgs/DataColumns_Functions_Example_ThirdExpresion.png)
-
-
-- Now that the third expression has been entered, you can click on OK.  Note that the third operator (`<Add>`) is ignored as there is no fourth expression
-
-To delete an element of the formula press the red or grey `X` button to the right of each function definition.  
-
-
-## Delete Column
-To delete any column from the data grid, select the column with a left mouse click and then press the **Delete Column** button.  The column will only be removed if it has no dependencies (i.e. other derived columns refer this column in their calculations).
-
-### Example
-Following on from the previous example, if you wanted to delete the derived formula column, you'd first need to select the NewColumn and click on the **Delete Column** button as shown below.
-
-
-![Delete Column](imgs/DataColumns_DeleteColumn.png)
 

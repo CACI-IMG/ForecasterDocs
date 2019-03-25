@@ -2,8 +2,6 @@
 # Home Tab - Help Section
 
 
-
-
 The Help section of the main ribbon's Home tab provides a range of help options, ranging from filing error reports to version information. It holds four buttons as shown below.
 
 ![Home Tab Help Buttons](imgs/Home_Help.png)

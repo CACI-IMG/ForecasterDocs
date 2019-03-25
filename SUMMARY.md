@@ -14,13 +14,21 @@
 
 ## REFERENCE
 * [Home Tab](reference/Home/Home.md)
-    * [Managing Solutions & Projects](reference/Home/Home-Solution.md)
-    * [Managing Global Settings](reference/Home/Home-Tools.md)
-    * [Help](reference/Home/Home-Help.md) 
+    * [Solution Section](reference/Home/Home-Solution.md)
+    * [Tools Section](reference/Home/Home-Tools.md)
+    * [All External Processes](reference/Home/External-Processes/External-Processes.md)
+        - [Export Data](Export-Data.md)
+        - [R Diagnostics](R-Diagnostics.md)
+        - [Export Project Data](Export-Project-Data.md)
+    * [Help Section](reference/Home/Home-Help.md) 
  
- * [Data Tab](reference/Data/Data.md)
+* [Data Tab](reference/Data/Data.md)
     * [Importing Data](reference/Data/Data-Importers.md)
+    * [All Script Importers](reference/Data/Importers/Load-With-Harmonics-Daily.md)
         * [Load With Harmonics Daily](reference/Data/Importers/Load-With-Harmonics-Daily.md)
+        * [Load With Harmonics Weekly](reference/Data/Importers/Load-With-Harmonics-Weekly.md)
+        * [Load With Harmonics Monthly](reference/Data/Importers/Load-With-Harmonics-Monthly.md)
+        * [Load With Harmonics Interval](reference/Data/Importers/Load-With-Harmonics-Interval.md)
     * [Exporting Data](reference/Data/Data-Exporters.md)
     * [Data Rows & Columns](reference/Data/Data-Rows-Columns.md)
 
