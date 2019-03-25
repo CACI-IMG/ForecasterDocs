@@ -184,10 +184,35 @@ After clicking on Next, the following window shows the progress of the importati
 ![Script Import Wizard - Script Progress](imgs/ScriptImportWizard_ScriptProgress.png)
 
 
-Clicking on Next will bring you to the Column Configuration screen which has already been described higher up this page in the *Text Importer* [Column Configuration Dialog](Data-Importers.md#Column-Configuration-Dialog) section. You can complete the importation by clicking on Next followed by Finish.
+Clicking on Next will bring you to the Column Configuration screen which has already been described higher up this page in the *Text Importer* [Column Configuration Dialog](#Column-Configuration-Dialog) section. You can complete the importation by clicking on Next followed by Finish.
 
 This Load With Harmonics script importer will have read in the original csv data, and augmented that dataset with a range of useful information, from public holidays, to workdays and harmonics (to help model seasonality in regression type models).
 
+
+[H1](#H1)
+
+[H1](Data-Importers.md/#H1)
+
+[H2](#H2)
+
+[H2](Data-Importers.md/#H2)
+
+[H3](#H3)
+
+[H3](Data-Importers.md/#H3)
+
+
+
+![Script Import Wizard - Script Progress](imgs/ScriptImportWizard_ScriptProgress.png)
+
+
+
+
+# H1
+
+## H2
+
+### H3
 
 <!--
 ![Typical Import Wizard - Re-Import](imgs/Re-Import.png)

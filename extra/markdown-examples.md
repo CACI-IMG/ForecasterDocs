@@ -231,7 +231,7 @@ GFM a-tail link @pandao
 
 Relative Internal Link to a [heading](#Test-2) in the SAME article: (Spaces replaced with -)
 
-# Test 2
+### Test 2
 
 #### Code Blocks \(multi-language\) & highlighting
 
