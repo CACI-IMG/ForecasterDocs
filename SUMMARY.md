@@ -24,12 +24,12 @@
     * [Exporting Data](reference/Data/Data-Exporters.md)
     * [Data Rows & Columns](reference/Data/Data-Rows-Columns.md)
 
-* [Model Tab]()
+* [Model Tab](reference/Forecasting/Forecasting-ribbon.md)
     * [Model Types](reference/Forecasting/Model-Type.md)
     * [Model Rows](reference/Forecasting/Model-Rows.md)
     * [Model Columns](reference/Forecasting/Model-Columns.md)
     * [Model Design](reference/Forecasting/Model-Design.md)
-    * [Forecasting](reference/Forecasting/Forecasting.md)
+    * [Forecasting](reference/Forecasting/Forecasting-ribbon.md)
   
 * [Analysis Tab]()
     * [Charts](reference/Analysis/Charts-And-Error-Metrics.md)

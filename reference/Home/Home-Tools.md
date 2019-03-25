@@ -2,7 +2,7 @@
 
 The Tools section of the main ribbon's Home tab provides a range of tools for viewing scripts (Forecaster uses these typically for importing and exporting data, as well as providing all the forecasting models) and managing settings. It holds 3 buttons as shown here.
 
-![Tools section of the Home ribbon](../Getting-started/imgs/Home_Tools.png)
+![Tools section of the Home ribbon](imgs/Home_Tools.png)
 
 The following sections cover the operation of these 3 buttons
 

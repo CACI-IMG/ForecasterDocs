@@ -1,7 +1,6 @@
+# Model Tab Forecasting Section
 
-
-
-### Forecasting
+## Forecasting
 
 Once you've selected a forecast model, you can click on the **Forecast** button in the **Data – Forecasting** ribbon.  This will populate the last two columns in the data grid: Forecast and Forecast Error.
 
@@ -12,7 +11,7 @@ Note that if the forecast model contains inputs, each input column needs to be p
 Progress on the forecast generation will be shown in the Output Window.  The performance of the forecast is now ready to be reviewed using the **Analysis** tab.
 
 
-### Model Details
+## Model Details
 
 Once the forecast has been created, you can see the model's details by clicking on the relevant button as in the image below.
 

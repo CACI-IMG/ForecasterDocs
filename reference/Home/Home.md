@@ -1,7 +1,7 @@
 # Home Tab
 
 <!--![Home Tab Ribbon](/reference/Getting-started/imgs/HomeTab.png) -->
-![Home Tab Ribbon](/reference/Getting-started/imgs/Home_Ribbon.png)
+![Home Tab Ribbon](/getting-started/imgs/Home_Ribbon.png)
 
 The first tab on the Forecaster ribbon is the Home tab.  This tab lets you create and manipulate Solutions and Projects, manage application settings, as well as providing help. The Home ribbon breaks down into 3 groups:
 

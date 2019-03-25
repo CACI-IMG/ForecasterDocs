@@ -1,7 +1,7 @@
 ![CACI Forecaster](imgs/ForecasterSplashWide.png)
 # Getting Started with CACI Forecaster
 
-If you're new to Forecaster, the following quick start Tutorial takes you through setting up your first Forecaster project:
+If you're new to Forecaster, the following quick start tutorial takes you through setting up your first Forecaster project:
 {% page-ref page="Tutorial.md" %}
 
 Navigating in Forecaster is explained here:
