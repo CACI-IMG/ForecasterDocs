@@ -14,7 +14,3 @@ The Help section of the main ribbon's Home tab provides a range of help options,
 | About Forecaster   | To show details of the current Forecaster version, your current licensing status, and the Forecaster licence key. |
 
 The email functionality here has certain requirements on the way your email is set up, so may not always be available. You can however always contact CACI directly using forecasting@caci.co.uk.
-
-# Test
-
-# Test 2
