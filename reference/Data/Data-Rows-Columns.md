@@ -45,7 +45,7 @@ The **Delete Row(s)** ribbon button lets you delete a number of rows from either
 ![Rows and Columns ribbon group](imgs/Data_RowsAndColumns-Columns.png)
 
 ## Find Column
-The **Find Column** button lets you search for a column by name. You can pick up the same functionality from the binoculars icon underneath the data grid. You can search using partial names, and the dialog will return a list of the columns that start with those characters. NB: You must type in the first characters at start of the column name - this does not try and match within the column names. Clicking the **Go To** button jumps to the requested column.
+The **Find Column** button lets you search for a column by name. The same functionality can be found using the binoculars icon underneath the data grid. You can search using partial names, and the dialog will return a list of the columns that start with those characters. NB: You must type in the first characters at start of the column name - this does not try and match within the column names. Clicking the **Go To** button jumps to the requested column.
 
 ## Toggle Column Freeze
 The **Toggle Column Freeze** button lets you move columns to the far left of the data grid. This can be handy for moving together columns that you'd like to compare side by side. NB: This re-ordering is not saved within the project, and column order will be reset if you move away to another project.
