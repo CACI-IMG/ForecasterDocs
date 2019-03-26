@@ -2,7 +2,7 @@
 
 This User Guide has 3 main sections: this Quick Start section, a Reference section, a How To section. 
 
-1.  This **Quick Start** section starts with a quick tutorial on how to set up a very basic model in Forecaster. Subsequent sections give a brief overview of the main Forecaster functionality. 
+1.  The [Quick Start](/getting-started/Getting-started.md) section starts with a quick tutorial on how to set up a very basic model in Forecaster. Subsequent sections give a brief overview of the main Forecaster functionality. 
 
 2. The [Reference](/reference/reference.md) section provides detailed information on all Forecaster functionality, with a structure reflecting that of Forecaster itself.
 
