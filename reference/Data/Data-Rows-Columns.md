@@ -26,6 +26,7 @@ Clicking the **New Column** button lets you create a new column in two different
 
 ## Delete Column
 ![Delete Column](imgs/DataColumns_DeleteColumn.png)
+
 To delete any column from the data grid, select the column with a left mouse click and then press the **Delete Column** button.  The column will only be removed if it has no dependencies (i.e. other derived columns refer this column in their calculations).
 
 ### Example
@@ -34,15 +35,14 @@ Following on from the previous example, if you wanted to delete the derived form
 
 
 ## Delete Row(s)
-The **Delete Row(s)** ribbon button lets you delete a number of rows from either the start or the end of the dataset. The *Enter Value* dialog lets you select the number of rows you'd like removed from the start or the end of the dataset. 
+The **Delete Row(s)** ribbon button lets you delete a number of rows from either the start or the end of the dataset. The *Enter Value* dialog lets you select the number of rows you'd like to remove from the start or the end of the dataset. 
 
 {% hint style="info" %}
  Rows that are part of the training or forecast ranges cannot be deleted. To do so, first change the training or forecast ranges so that the rows to be deleted are no longer highlighted (the row index is not bold orange for training range, or bold blue for forecast range).
 {% endhint %}
 
 
-
-![Data / Rows and Columns group](imgs/Data_RowsAndColumns-Columns.png)
+![Rows and Columns ribbon group](imgs/Data_RowsAndColumns-Columns.png)
 
 ## Find Column
 The **Find Column** button lets you search for a column by name. You can pick up the same functionality from the binoculars icon underneath the data grid. You can search using partial names, and the dialog will return a list of the columns that start with those characters. NB: You must type in the first characters at start of the column name - this does not try and match within the column names. Clicking the **Go To** button jumps to the requested column.
@@ -84,7 +84,6 @@ These quick statistics will also be displayed in a pop-up if you hover the mouse
 
 Clicking on the **Formula Editor** button in this dialog will bring up the Formula Editor, if this is a derived column.
 
-For detailed information on the Formula Editor:
-{% page-ref page="Formula-Editor.md" %}
+For detailed information on the Formula Editor, see the next section:
 
 
