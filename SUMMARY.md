@@ -40,8 +40,7 @@
     * [Model Design](reference/Forecasting/Model-Design.md)
     * [Forecasting](reference/Forecasting/Forecasting-ribbon.md)
   
-* [Analysis Tab]()
-    * [Charts](reference/Analysis/Charts-And-Error-Metrics.md)
+* [Analysis Tab](reference/Analysis/Analysis.md)
 
 * [Automation Tab](reference/Automation/Automation.md)
     * [Workflows](reference/Automation/Workflows.md)

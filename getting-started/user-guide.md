@@ -16,7 +16,7 @@ This User Guide has 3 main sections: this Quick Start section, a Reference secti
 * [Solutions](/getting-started/Solution.md)
 * [Projects](/getting-started/Projects.md)
 
-## [Reference](/reference/user-guide.md)
+## [Reference](/reference/reference.md)
 * [Home Tab](/reference/Home/Home.md)
 * [Data Tab](/reference/Data/Data.md)
 * [Model Tab](/reference/Forecasting/Forecasting-Overview.md)
