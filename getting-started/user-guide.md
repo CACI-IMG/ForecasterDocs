@@ -8,7 +8,7 @@ This User Guide has 3 main sections: this Quick Start section, a Reference secti
 
 3. The [How To](/how-to/how-to.md) section on the other hand is written around specific topics, such as how to choose the best forecast model, or how to deal with interval data.
 
-## Quick Start
+## [Quick Start](/getting-started/Getting-started.md)
 <!--* [About the User Guide](getting-started/user-guide.md) -->
 * [Getting Started with CACI Forecaster](/getting-started/Getting-started.md)
 * [Quick Start Tutorial](/getting-started/Tutorial.md)
