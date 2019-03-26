@@ -10,11 +10,11 @@ This User Guide has 3 main sections: this Quick Start section, a Reference secti
 
 ## Quick Start
 <!--* [About the User Guide](getting-started/user-guide.md) -->
-* [Getting Started with CACI Forecaster](/Getting-started/Getting-started.md)
-* [Quick Start Tutorial](getting-started/Tutorial.md)
-* [Navigation](getting-started/Navigation.md)
-* [Solutions](getting-started/Solution.md)
-* [Projects](getting-started/Projects.md)
+* [Getting Started with CACI Forecaster](/getting-started/Getting-started.md)
+* [Quick Start Tutorial](/getting-started/Tutorial.md)
+* [Navigation](/getting-started/Navigation.md)
+* [Solutions](/getting-started/Solution.md)
+* [Projects](/getting-started/Projects.md)
 
 ## [Reference](/reference/user-guide.md)
 * [Home Tab](/reference/Home/Home.md)
@@ -25,6 +25,7 @@ This User Guide has 3 main sections: this Quick Start section, a Reference secti
 
 ## [How To](/how-to/how-to.md)
 Under development...
+
 <!--
 * [Forecasting Models Overview](user-cases/Forecast-Models-Overview.md)
 * [Using Marketing Type Delays](user-cases/Delays.md)
