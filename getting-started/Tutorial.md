@@ -115,22 +115,22 @@ The Forecast Error column holds expected forecast accuracy for each row. For thi
 
  For more information on viewing forecasts, see the section on the [Analysis Tab](/reference/Analysis/Analysis.md).
 
- [Analysis Tab](../Analysis/Analysis.md).
 
-
-{% page-ref page="Solution.md" %}
 
 <!-- This works: seems like you cannot get links like this to any file in a different folder -->
-<!-- {% page-ref page="Solution.md" %} --> 
+
+1
+{% page-ref page="Solution.md" %}
+2
 {% page-ref page="Analysis.md" %} <!-- Fail -->
-
+3
 {% page-ref page="Home-Solution.md" %} <!-- Fail -->
-
+4
 
 {% page-ref page="../Analysis/Analysis.md" %} <!-- Fail -->
-
+5
 {% page-ref page="reference/Analysis/Analysis.md" %} <!-- Fail -->
-
+6
 {% page-ref page="./reference/Analysis/Analysis.md" %} <!-- Fail -->
-
+7
 {% page-ref page="/reference/Analysis/Analysis.md" %} <!-- Fail -->
