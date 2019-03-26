@@ -43,6 +43,7 @@ The **Delete Row(s)** ribbon button lets you delete a number of rows from either
 
 
 ![Data / Rows and Columns group](imgs/Data_RowsAndColumns-Columns.png)
+
 ## Find Column
 The **Find Column** button lets you search for a column by name. You can pick up the same functionality from the binoculars icon underneath the data grid. You can search using partial names, and the dialog will return a list of the columns that start with those characters. NB: You must type in the first characters at start of the column name - this does not try and match within the column names. Clicking the **Go To** button jumps to the requested column.
 
