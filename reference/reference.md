@@ -4,18 +4,18 @@ This reference section gives detailed information on all aspects of Forecaster. 
 
 
 You typically would create a new solution in the Home tab...
-{% page-ref page="Home.md" %}
+{% page-ref page="/reference/Home/Home.md" %}
 
 ...then import data in the Data tab...
-{% page-ref page="Data.md" %}
+{% page-ref page="./Data/Data.md" %}
 
 ... build and manage models and forecasts in the Model tab...
-{% page-ref page="Forecasting.md" %}
+{% page-ref page="/Forecasting/Forecasting-Overview.md" %}
 
 ... view the forecasts in the Analysis tab...
-{% page-ref page="Analysis.md" %}
+{% page-ref page="./Analysis/Analysis.md" %}
 
 ... automate the whole process if needed in the Automation tab.
-{% page-ref page="Automation.md" %}
+{% page-ref page="reference/Automation/Automation.md" %}
 
 

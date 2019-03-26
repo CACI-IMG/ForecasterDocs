@@ -14,9 +14,7 @@ In this example, you can see a number of sub-forecast projects within the Motor 
 
 A number of management activities can be carried out on Forecaster Solutions - all under the *Home* tab.
 
-
-
-![Home Tab Ribbon](/reference/Getting-started/imgs/Home_Ribbon.png)
+![Home Tab Ribbon](/getting-started/imgs/Home_Ribbon.png)
 
 ### Creating a New Solution
 
@@ -52,7 +50,7 @@ A solution in Forecaster can be managed through the options available in the Hom
 
 All these actions can also be found on the quick access toolbar, right at the top left of the Forecaster window.
 
-![Quick Access Toolbar](../Getting-started/imgs/Solution_QuickAccessToolbar.png)
+![Quick Access Toolbar](/getting-started/imgs/Solution_QuickAccessToolbar.png)
 
 
 ## Recent solutions

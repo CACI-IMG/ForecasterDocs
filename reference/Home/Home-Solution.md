@@ -7,7 +7,7 @@ The first part of the *Solution* section lets you create, save, open and close s
 
 The **New Solution** button (or quick keys `Ctrl+N`) is used to create a new forecast solution. This is a workspace that can hold any number of forecast projects. When a new solution is created, it is given a name, and saved into a specific folder.  
 
-![New Solution](../Getting-started/imgs/QuickStart_NewSolution.png)
+![New Solution](/getting-started/imgs/QuickStart_NewSolution.png)
 
 Once these parameters have been specified and the **OK** button is clicked, the new solution is created.  This solution is a folder with a number of files (*.fsol for the solution itself, and *.fmp for individual projects within the solution).
  
@@ -23,7 +23,7 @@ The solution **Open**, **Close** and **Save** buttons are pretty standard, and w
 
 All these actions can also be found on the quick access toolbar, right at the top left of the Forecaster window.
 
-![Quick Access Toolbar](../Getting-started/imgs/Solution_QuickAccessToolbar.png)
+![Quick Access Toolbar](/getting-started/imgs/Solution_QuickAccessToolbar.png)
 
 ## Recent solutions
 Links to recent solutions can be found either using the **Recent Solutions** button, or in the main window when you have the *Home* tab selected.  
@@ -39,7 +39,7 @@ You can't delete a solution from within Forecaster, so the best way is to delete
 
 The right hand side of the Solution section of the Home tab ribbon holds basic project operations, such as creating, copying, or deleting.
 
-![Project section of the Home ribbon](../Getting-started/imgs/Home_SolutionProjects.png)
+![Project section of the Home ribbon](/getting-started/imgs/Home_SolutionProjects.png)
 
 * To create a new project, click on the **New Project** button. A new empty project will be created and added to the solution. (A project can also be created by right-clicking the Solution name at the top of the Solution Explorer window, then selecting *New Project*.) 
 * To delete all projects within the solution, click on the **Delete All Projects** button.  (All projects can also be deleted by right-clicking the Solution name at the top of the Solution Explorer window, then selecting *Delete All Projects*.)  This operation cannot be undone, so a confirmation dialog will pop up to make sure that you definitely want to proceed.

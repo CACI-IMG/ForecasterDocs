@@ -18,16 +18,14 @@ Forecaster is based around 5 main ribbon tabs, across the top of the screen. Gen
 ![Data Tab](imgs/DataTab.png)
 
 
-* [Model Tab](/reference/Model/Model.md) : The core of Forecaster, this tab is all about defining your forecasting model and creating the forecasts.
+* [Model Tab](/reference/Forecasting/Forecasting-Overview.md) : The core of Forecaster, this tab is all about defining your forecasting model and creating the forecasts.
 
-![Model Tab](imgs/ModelTab2.png)
+![Model Tab](imgs/ModelTab.png)
 
 
 * [Analysis Tab](/reference/Analysis/Analysis.md) : For viewing the forecasting charts
 
 ![Analysis Tab](imgs/AnalysisTab.png)
-
-
 
 * [Automation Tab](/reference/Automation/Automation.md) : This tab lets you set up workflows in order to automate parts or even all of the forecasting process. You might use these to perform operations across a range of forecasts, for example creating new projects, importing data, setting up models, generating forecasts and exporting the results.
 
@@ -35,9 +33,9 @@ Forecaster is based around 5 main ribbon tabs, across the top of the screen. Gen
 
 
 
-## [Solution Explorer](/reference/Getting-started/Solution.md)
+## [Solution Explorer](/reference/getting-started/Solution.md)
 The Solution Explorer window (usually to the left of the screen) shows details of all available projects within the solution. The Solution Explorer is visible in all tabs.
 
 ![Forecaster](imgs/ForecasterMainScreen.png)
-{% page-ref page="reference/Getting-started/Solution.md" %}
+
 

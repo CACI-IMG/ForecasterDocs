@@ -118,11 +118,10 @@ The Forecast Error column holds expected forecast accuracy for each row. For thi
 
 <!-- These work: 
 {% page-ref page="Solution.md" %}
-
 {% page-ref page="/reference/Analysis/Analysis.md" %} 
+{% page-ref page="../reference/Analysis/Analysis.md" %} 
  -->
 
-{% page-ref page="../reference/Analysis/Analysis.md" %} 
 
 <!-- These don't work:
 2
