@@ -20,6 +20,7 @@ This User Guide has 3 main sections: this Quick Start section, a Reference secti
 * [Home Tab](/reference/Home/Home.md)
 * [Data Tab](/reference/Data/Data.md)
 * [Model Tab](/reference/Forecasting/Forecasting-Overview.md)
+* [Analysis Tab](/reference/Analysis/Analysis.md)
 * [Automation Tab](/reference/Automation/Automation.md)
 
 
