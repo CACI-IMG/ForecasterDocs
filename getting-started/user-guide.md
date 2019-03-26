@@ -4,28 +4,30 @@ This User Guide has 3 main sections: this Quick Start section, a Reference secti
 
 1.  This **Quick Start** section starts with a quick tutorial on how to set up a very basic model in Forecaster. Subsequent sections give a brief overview of the main Forecaster functionality. 
 
-2. The [Reference](/reference/user-guide.md) section provides detailed information on all Forecaster functionality, with a structure reflecting that of Forecaster itself.
+2. The [Reference](/reference/reference.md) section provides detailed information on all Forecaster functionality, with a structure reflecting that of Forecaster itself.
 
-3. The [How To](/use-cases/use-cases.md) section on the other hand is written around specific topics, such as how to choose the best forecast model, or how to deal with interval data.
+3. The [How To](/how-to/how-to.md) section on the other hand is written around specific topics, such as how to choose the best forecast model, or how to deal with interval data.
 
 ## Quick Start
 <!--* [About the User Guide](getting-started/user-guide.md) -->
 * [Getting Started with CACI Forecaster](/Getting-started/Getting-started.md)
-* [Quick Start Tutorial](reference/Getting-started/Tutorial.md)
-* [Navigation](reference/Getting-started/Navigation.md)
-* [Solutions](reference/Getting-started/Solution.md)
-* [Projects](reference/Getting-started/Projects.md)
+* [Quick Start Tutorial](getting-started/Tutorial.md)
+* [Navigation](getting-started/Navigation.md)
+* [Solutions](getting-started/Solution.md)
+* [Projects](getting-started/Projects.md)
 
 ## [Reference](/reference/user-guide.md)
 * [Home Tab](/reference/Home/Home.md)
 * [Data Tab](/reference/Data/Data.md)
-* [Model Tab](/reference/Forecasting/Forecasting.md)
+* [Model Tab](/reference/Forecasting/Forecasting-Overview.md)
 * [Automation Tab](/reference/Automation/Automation.md)
 
 
-## [How To](/use-cases/use-cases.md)
+## [How To](/how-to/how-to.md)
+Under development...
+<!--
 * [Forecasting Models Overview](user-cases/Forecast-Models-Overview.md)
 * [Using Marketing Type Delays](user-cases/Delays.md)
 * [Interval Forecasting](user-cases/Interval-Forecasting.md)
-
+-->
 

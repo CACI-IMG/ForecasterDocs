@@ -13,6 +13,7 @@
 * [Projects](getting-started/Projects.md)
 
 ## REFERENCE
+* [About the Reference Section](reference/reference.md)
 * [Home Tab](reference/Home/Home.md)
     * [Solution Section](reference/Home/Home-Solution.md)
     * [Tools Section](reference/Home/Home-Tools.md)
@@ -48,8 +49,9 @@
 
 
 ## HOW TO...
+* [About the How To Section](how-to/how-to.md)
+
 <!--
-* [About the How To Section](use-cases/use-cases.md)
 * [Choose the Best Forecasting Model](use-cases/Forecast-Models-Overview.md)
 * [Use Marketing Type Delays](use-cases/Delays.md)
 * [Do Interval Forecasting](use-cases/Interval-Forecasting.md)
