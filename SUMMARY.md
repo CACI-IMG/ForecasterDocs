@@ -32,6 +32,8 @@
         * [Load With Harmonics Interval](reference/Data/Importers/Load-With-Harmonics-Interval.md)
     * [Data Exporters](reference/Data/Data-Exporters.md)
     * [Data Rows & Columns](reference/Data/Data-Rows-Columns.md)
+    * [Formula Editor](reference/Data/Formula-Editor.md)
+    
 
 * [Model Tab](reference/Forecasting/Forecasting-Overview.md)
     * [Model Types](reference/Forecasting/Model-Type.md)

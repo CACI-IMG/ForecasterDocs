@@ -5,7 +5,7 @@ The *Data Exporters* section of the *Data* tab ribbon lets you set up and contro
 ![Data Exporters Ribbon Section](imgs/DataExporters.png)
 
 {% hint style="info" %}
-For more flexible exportation, which also gives the option to select just the forecast range, as well having the option to export to Excel, another alternative is the *Export Data* External Process described [here]().
+For more flexible exportation, which also gives the option to select just the forecast range, as well having the option to export to Excel, another alternative is the *Export Data* External Process described [here](../Home/External-Processes/Export-Data.md).
 {% endhint %}
 
 

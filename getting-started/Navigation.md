@@ -33,7 +33,7 @@ Forecaster is based around 5 main ribbon tabs, across the top of the screen. Gen
 
 
 
-## [Solution Explorer](/reference/getting-started/Solution.md)
+## [Solution Explorer](/getting-started/Solution.md)
 The Solution Explorer window (usually to the left of the screen) shows details of all available projects within the solution. The Solution Explorer is visible in all tabs.
 
 ![Forecaster](imgs/ForecasterMainScreen.png)

@@ -10,12 +10,12 @@ You typically would create a new solution in the Home tab...
 {% page-ref page="./Data/Data.md" %}
 
 ... build and manage models and forecasts in the Model tab...
-{% page-ref page="/Forecasting/Forecasting-Overview.md" %}
+{% page-ref page="./Forecasting/Forecasting-Overview.md" %}
 
 ... view the forecasts in the Analysis tab...
 {% page-ref page="./Analysis/Analysis.md" %}
 
 ... automate the whole process if needed in the Automation tab.
-{% page-ref page="reference/Automation/Automation.md" %}
+{% page-ref page="./Automation/Automation.md" %}
 
 

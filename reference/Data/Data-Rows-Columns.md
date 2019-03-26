@@ -37,7 +37,7 @@ Following on from the previous example, if you wanted to delete the derived form
 The **Delete Row(s)** ribbon button lets you delete a number of rows from either the start or the end of the dataset. The *Enter Value* dialog lets you select the number of rows you'd like removed from the start or the end of the dataset. 
 
 {% hint style="info" %}
- Row that are part of the training or forecast ranges cannot be deleted. To do so, first change the training or forecast ranges so that the rows to be deleted are no longer highlighted (the row index is not bold orange for training range, or bold blue for forecast range).
+ Rows that are part of the training or forecast ranges cannot be deleted. To do so, first change the training or forecast ranges so that the rows to be deleted are no longer highlighted (the row index is not bold orange for training range, or bold blue for forecast range).
 {% endhint %}
 
 
