@@ -13,8 +13,6 @@ Make sure that you have the following:
 
 {% file src="data/Car-Insurance.csv" caption="Car-Insurance.csv" %}
 
-
-
 {% hint style="info" %}
 You can jump to any of the sections of this page using the CONTENTS menu to the right.
 {% endhint %}

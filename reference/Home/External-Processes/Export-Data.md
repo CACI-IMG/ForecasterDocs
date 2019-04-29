@@ -6,7 +6,7 @@ This External Process provides a very flexible means of exporting data from Fore
 ## Parameters
  You can also get parameter information within Forecaster, by hovering over the blue **(i)** information icons
 * **Output Folder**: The output folder to which the data should be exported
-* **Output Filename**: The name of the file to which the data should be exported
+* **Output Filename**: The name of the file to which the data should be exported. If empty, the project's name will be used
 * **Export as Excel .xlsx format**: If ticked, will export as Excel *.xlsx format, rather than the default csv format
 * **Export Forecast Period Only**: If selected, only data from the forecast period will be exported.  If deselected, all rows are exported
 * **Export All Columns**: If ticked, all columns will be exported
