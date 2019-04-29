@@ -13,11 +13,11 @@ Interval level models are in a separate section below, as these typically work i
 
 Those simple seasonal models are easy to interpret, are robust, and can work very well even when no business drivers are available. They can work surprisingly well, and are always worth trying as a first pass on a new problem, even if only to set a quick performance benchmark. For more powerful machine learning, and to infer the effects of business drivers (inputs), look instead to the *Moving Average Regression* or *Random Forest* models under the **Generic Models** section below.
 
-- [**Multi Profile Daily**](Multi-Profile-Daily.md): 
+- [**Multi Profile Daily**](Multi-Profile-Daily.md): Creates a seasonal profile model for daily data, using weekly, monthly, and yearly profiles, as well as a moving average. If required, it also handles public holidays, by determining factors for public holidays and the days directly before and after a public holiday.
 
-- [**Multi Profile Weekly**](Multi-Profile-Weekly.md): 
+- [**Multi Profile Weekly**](Multi-Profile-Weekly.md): Creates a seasonal profile model for weekly data, using monthly and yearly profiles, as well as a moving average. If required, also determines a multiplicative factor for public holidays.
 
-- [**Multi Profile Monthly**](Multi-Profile-Monthly.md): 
+- [**Multi Profile Monthly**](Multi-Profile-Monthly.md): Creates a seasonal profile model for monthly data, using a combination of a moving average and a month of year profile. If required, also determines a multiplicative factor for public holidays.
 
 
 ## Generic Models
