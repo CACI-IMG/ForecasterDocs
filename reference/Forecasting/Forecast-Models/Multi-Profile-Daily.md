@@ -1,38 +1,28 @@
 
 # *Multi Profile Daily* Forecast Model
 
-This section covers how to use the *ARIMA Auto* forecast model. ARIMA models are good at following trends, and can also learn from business drivers (inputs) when available.
+This section covers how to use the *Multi Profile Daily* forecast model. Those simple seasonal models are easy to interpret, are robust, and can work very well even when no business drivers are available. They can work surprisingly well, and are always worth trying as a first pass on a new problem, even if only to set a quick performance benchmark. For more powerful machine learning, and to infer the effects of business drivers (inputs), look instead to the *Moving Average Regression* or *Random Forest* models under the **Generic Models** section below.
 
-Once *ARIMA Auto* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
+If the project holds daily data, you can select a *Multi Profile Daily* model from the **Multi Profile** button on the *Model Design* section of the *Model* Forecaster tab. (For a new project, this is selected by default). To view model details and parameters, click on the *Parameters* button, to bring up the *Model Parameters* dialog. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
 
-![ARIMA Auto](imgs/ScriptImporter_LoadWithHarmonicsDaily.png) 
+![Multi Profile Daily](imgs/ScriptImporter_LoadWithHarmonicsDaily.png) 
 
-## *Load With Harmonics - Daily* parameters
+## *Multi Profile Daily* parameters
 
-- **csv file to read in**: Select the csv file to read in. Comma separated files only are accepted.
-- **Name of the date column**: If left blank, the first column in the file will be used
-- **Number of weekly harmonics**: The number of weekly harmonics columns to create. When added as inputs to forecast models such as regression, they help the models handle within-week seasonality. The default is 3. Increasing this number will have very little effect. Decreasing this number will lead to smoother within-week profiles. (This parameter is not present in *Load With Harmonics - Weekly* or *Load With Harmonics - Monthly*.)
-- **Number of monthly harmonics**: The number of monthly harmonics columns to create. When added as inputs to forecast models such as regression, they help the models handle within-month seasonality. The default is 4. Increasing this number will let a model handle spikier within-month profiles, while decreasing it will lead to smoother within-month profiles. (This parameter is not present in *Load With Harmonics - Monthly*.)
-- **Number of yearly harmonics**: The number of yearly harmonics columns to create. When added as inputs to forecast models such as regression, they help the models handle within-year seasonality. The default is 5. Increasing this number will let a model handle spikier within-year profiles, while decreasing it will lead to smoother within-year profiles.
-- **Country and region**: Public holidays will be appended for any country selected here. 
-Within each country, holidays for any particular region can be selected (selecting a region will also bring back national level holidays). If 'National' is selected, only national holidays will be included. If 'All' is selected, all national and regional holidays will be included. The current list of countries covers:
-    
-    * Belgium: National holidays only
-    * France: National and some regional holidays
-    * Germany: National and regional holidays
-    * Greece: National holidays only
-    * Italy: National and regional holidays
-    * Netherlands: National holidays only
-    * Poland: National holidays only
-    * Portugal: National holidays only
-    * Ireland: National holidays only
-    * Spain: National and regional holidays
-    * UK: National and regional holidays
-    * US: National and regional holidays
-    
-- **Project forecasts to read in**: This holds a drop-down list of all projects in the solution. Multiple projects can be selected, and forecasts from these projects will be read in as well. 
-- **Project forecasts: use actuals from training period**: Applies to forecasts read in from other projects. If ticked, actual values will be used up to the first forecast row, and forecast values after that. If unticked, forecasts only are read in for all available rows.
-- **UK date format**: If checked (the default), UK date format is assumed for the key column. If unchecked, US date format is assumed instead.
-- **Number of working days in the week**: Must be 5, 6, or 7. If 5, Monday to Friday are flagged as working days, if 6, Saturday is included as well, and if 7, all days are flagged as working days.
+*Multi Profile Daily* creates a seasonal profile model for daily data, using weekly, monthly, and yearly profiles, as well as a moving average. If required, it also handles public holidays, by determining factors for public holidays and the days directly before and after a public holiday.
+
+
+- **Use public holiday factors**: If selected, multiplicative factors are determined for public holidays, as well as the days directly before and after a public holiday
+- **Public holidays column**: If left blank, defaults to IsHoliday
+- **Long term moving average**: If deselected, no trends are assumed. If selected, uses an Exponential Moving Average to follow any long term trends. The length of this moving average is determined automatically from the data
+- **Use day of week profile**: Use this if a weekly profile is expected
+- **Use week of month profile**: Use this if a monthly profile is expected. (Days 1 to 7 of the month count as first week of the month.)
+- **Use month of year profile**: Use this if a yearly profile is expected. 2 years' worth of data is recommended to be able to identify seasonality well. If strong seasonality is known to be present, less than 2 years can be used.
+- **Short term moving average**: If selected, uses an Exponential Moving Average to follow any short term trends. The length of this moving average is set using the parameter below. If 'Positive only' is selected below, this moving average will be multiplicative, otherwise it will be additive. 
+- **Short term moving average length in days**: Moving average length in days for the short term moving average. Only applies if 'Short term moving average above' is selected.
+- **Overlay column - overwrite**: Non-missing values in this column are used to overwrite the model forecast
+- **Overlay columns - multiply**: Non-missing values in these columns are used to multiply the model forecast (after any overwrite overlays)
+- **Overlay columns - add**: Non-missing values in these columns are added to the model forecast (after any multiplicative overlays)
+- **Positive only**: Select this if forecasts are strictly positive or zero.
 
 
