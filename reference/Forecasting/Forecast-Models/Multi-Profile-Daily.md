@@ -5,7 +5,7 @@ This section covers how to use the *Multi Profile Daily* forecast model. Those s
 
 If the project holds daily data, you can select a *Multi Profile Daily* model from the **Multi Profile** button on the *Model Design* section of the *Model* Forecaster tab. (For a new project, this is selected by default). To view model details and parameters, click on the *Parameters* button, to bring up the *Model Parameters* dialog. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
 
-![Multi Profile Daily](imgs/ScriptImporter_LoadWithHarmonicsDaily.png) 
+![Multi Profile Daily](imgs/Model_MultiProfileDaily.png) 
 
 ## *Multi Profile Daily* parameters
 

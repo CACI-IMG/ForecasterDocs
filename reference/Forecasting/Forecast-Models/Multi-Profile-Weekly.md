@@ -6,7 +6,7 @@ This section covers how to use the *Multi Profile Weekly* forecast model. Those 
 If the project holds weekly data, you can select a *Multi Profile Weekly* model from the **Multi Profile** button on the *Model Design* section of the *Model* Forecaster tab. (For a new project, this is selected by default). To view model details and parameters, click on the *Parameters* button, to bring up the *Model Parameters* dialog. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
 
 
-![Multi Profile Weekly](imgs/ScriptImporter_LoadWithHarmonicsDaily.png) 
+![Multi Profile Weekly](imgs/Model_MultiProfileWeekly.png) 
 
 ## *Multi Profile Weekly* parameters
 
