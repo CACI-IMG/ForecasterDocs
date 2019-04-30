@@ -1,38 +1,25 @@
 
 # *Moving Average Regression* Forecast Model
 
-This section covers how to use the *ARIMA Auto* forecast model. ARIMA models are good at following trends, and can also learn from business drivers (inputs) when available.
+This section covers how to use the *Moving Average Regression* forecast model. This model is based on Stepwise regression, with the addition of both long term and short term moving averages to handle trends. This is one of the most useful Forecaster models, able to learn from business drivers, select the most useful ones, and provide feedback on their relative importance.
 
-Once *ARIMA Auto* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
+Once *Moving Average Regression* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
 
-![ARIMA Auto](imgs/ScriptImporter_LoadWithHarmonicsDaily.png) 
+![Moving Average Regression](imgs/Model_MovingAverageRegression.png) 
 
-## *Load With Harmonics - Daily* parameters
+## *Moving Average Regression* parameters
 
-- **csv file to read in**: Select the csv file to read in. Comma separated files only are accepted.
-- **Name of the date column**: If left blank, the first column in the file will be used
-- **Number of weekly harmonics**: The number of weekly harmonics columns to create. When added as inputs to forecast models such as regression, they help the models handle within-week seasonality. The default is 3. Increasing this number will have very little effect. Decreasing this number will lead to smoother within-week profiles. (This parameter is not present in *Load With Harmonics - Weekly* or *Load With Harmonics - Monthly*.)
-- **Number of monthly harmonics**: The number of monthly harmonics columns to create. When added as inputs to forecast models such as regression, they help the models handle within-month seasonality. The default is 4. Increasing this number will let a model handle spikier within-month profiles, while decreasing it will lead to smoother within-month profiles. (This parameter is not present in *Load With Harmonics - Monthly*.)
-- **Number of yearly harmonics**: The number of yearly harmonics columns to create. When added as inputs to forecast models such as regression, they help the models handle within-year seasonality. The default is 5. Increasing this number will let a model handle spikier within-year profiles, while decreasing it will lead to smoother within-year profiles.
-- **Country and region**: Public holidays will be appended for any country selected here. 
-Within each country, holidays for any particular region can be selected (selecting a region will also bring back national level holidays). If 'National' is selected, only national holidays will be included. If 'All' is selected, all national and regional holidays will be included. The current list of countries covers:
-    
-    * Belgium: National holidays only
-    * France: National and some regional holidays
-    * Germany: National and regional holidays
-    * Greece: National holidays only
-    * Italy: National and regional holidays
-    * Netherlands: National holidays only
-    * Poland: National holidays only
-    * Portugal: National holidays only
-    * Ireland: National holidays only
-    * Spain: National and regional holidays
-    * UK: National and regional holidays
-    * US: National and regional holidays
-    
-- **Project forecasts to read in**: This holds a drop-down list of all projects in the solution. Multiple projects can be selected, and forecasts from these projects will be read in as well. 
-- **Project forecasts: use actuals from training period**: Applies to forecasts read in from other projects. If ticked, actual values will be used up to the first forecast row, and forecast values after that. If unticked, forecasts only are read in for all available rows.
-- **UK date format**: If checked (the default), UK date format is assumed for the key column. If unchecked, US date format is assumed instead.
-- **Number of working days in the week**: Must be 5, 6, or 7. If 5, Monday to Friday are flagged as working days, if 6, Saturday is included as well, and if 7, all days are flagged as working days.
+When used with the long term trend enabled, the model will be highly robust, but unable to learn long term effects from regression inputs (as these are hidden by the trend removal). With the long term trend disabled, the regression is capable of learning any long term effects due to inputs, but may fail if no input can adequately explain the longer term trends.
 
-
+- **Long term moving average**: If selected, uses an Exponential Moving Average to follow any long term trends. The length of this moving average is set using the parameter below.
+- **Long term moving average length in rows**: Moving average length in rows for the long term moving average. Only applies if 'Long term moving average above' is selected. The target value is first detrended by first removing this long term trend, then the regression model is trained and used to produce a first forecast. Finally this forecast is then scaled back up by factoring the trend back in.
+- **Long term average type**: How to remove the long term trend. The default is Multiplicative, where the target is divided by the long term trend. Additive means that the long term trend is to be subtracted from the target instead. Multiplicative tends to scale better over large scale changes.
+- **Inputs to always include in the model**: The columns selected here will always be used by the model, even if not statistically significant. NB: These columns must also be flagged up as Input to be used.
+- **Short term moving average**: If selected, uses an Exponential Moving Average to follow any short term trends. The length of this moving average is set using the parameter below.
+- **Short term moving average length in rows**: Moving average length in rows for the short term moving average. Only applies if 'Short term moving average above' is selected.
+- **Match aggregate totals column**: If selected, total forecasts will be scaled to match the aggregate totals from this column (daily, weekly, or monthly). This is particularly useful when creating interval level forecasts, when you want the totals (daily, weekly, or monthly) to match those already provided, or created by another forecast
+- **Aggregate type**: The aggregation level of the totals column
+- **Date column - for interval aggregate totals**: Only needed when matching aggregate totals in an interval level project
+- **Overlay column - overwrite**: Non-missing values in this column are used to overwrite the model forecast
+- **Overlay columns - multiply**: Non-missing values in these columns are used to multiply the model forecast (after any overwrite overlays)
+- **Overlay columns - add**: Non-missing values in these columns are added to the model forecast (after any multiplicative overlays)

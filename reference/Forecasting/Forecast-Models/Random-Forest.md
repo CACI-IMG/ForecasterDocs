@@ -1,38 +1,24 @@
 
 # *Random Forest* Forecast Model
 
-This section covers how to use the *ARIMA Auto* forecast model. ARIMA models are good at following trends, and can also learn from business drivers (inputs) when available.
+This section covers how to use the *Random Forest* forecast model. This is a combination of a large number of decision trees. Only statistically relevant inputs are used, and the importance of each variable is provided as an output. This model is more powerful than regression, and can perform well without the need for harmonics. However, this type of model cannot forecast values outside the range seen in the training data.
 
-Once *ARIMA Auto* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
+If 'Binary Target' is ticked, this will assume the target holds binary 0 or 1 values only, and will build a categorical model instead of a regression model.
 
-![ARIMA Auto](imgs/ScriptImporter_LoadWithHarmonicsDaily.png) 
+Once *RandomForest* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
 
-## *Load With Harmonics - Daily* parameters
+![Random Forest](imgs/Model_RandomForest.png) 
 
-- **csv file to read in**: Select the csv file to read in. Comma separated files only are accepted.
-- **Name of the date column**: If left blank, the first column in the file will be used
-- **Number of weekly harmonics**: The number of weekly harmonics columns to create. When added as inputs to forecast models such as regression, they help the models handle within-week seasonality. The default is 3. Increasing this number will have very little effect. Decreasing this number will lead to smoother within-week profiles. (This parameter is not present in *Load With Harmonics - Weekly* or *Load With Harmonics - Monthly*.)
-- **Number of monthly harmonics**: The number of monthly harmonics columns to create. When added as inputs to forecast models such as regression, they help the models handle within-month seasonality. The default is 4. Increasing this number will let a model handle spikier within-month profiles, while decreasing it will lead to smoother within-month profiles. (This parameter is not present in *Load With Harmonics - Monthly*.)
-- **Number of yearly harmonics**: The number of yearly harmonics columns to create. When added as inputs to forecast models such as regression, they help the models handle within-year seasonality. The default is 5. Increasing this number will let a model handle spikier within-year profiles, while decreasing it will lead to smoother within-year profiles.
-- **Country and region**: Public holidays will be appended for any country selected here. 
-Within each country, holidays for any particular region can be selected (selecting a region will also bring back national level holidays). If 'National' is selected, only national holidays will be included. If 'All' is selected, all national and regional holidays will be included. The current list of countries covers:
-    
-    * Belgium: National holidays only
-    * France: National and some regional holidays
-    * Germany: National and regional holidays
-    * Greece: National holidays only
-    * Italy: National and regional holidays
-    * Netherlands: National holidays only
-    * Poland: National holidays only
-    * Portugal: National holidays only
-    * Ireland: National holidays only
-    * Spain: National and regional holidays
-    * UK: National and regional holidays
-    * US: National and regional holidays
-    
-- **Project forecasts to read in**: This holds a drop-down list of all projects in the solution. Multiple projects can be selected, and forecasts from these projects will be read in as well. 
-- **Project forecasts: use actuals from training period**: Applies to forecasts read in from other projects. If ticked, actual values will be used up to the first forecast row, and forecast values after that. If unticked, forecasts only are read in for all available rows.
-- **UK date format**: If checked (the default), UK date format is assumed for the key column. If unchecked, US date format is assumed instead.
-- **Number of working days in the week**: Must be 5, 6, or 7. If 5, Monday to Friday are flagged as working days, if 6, Saturday is included as well, and if 7, all days are flagged as working days.
+## *Random Forest* parameters
 
 
+- **Additional inputs**: The columns selected here will also be used as model inputs. This allows non-numeric inputs to be added. Any inputs here will be not be used if they have more than 53 distinct levels.
+- **The number of random trees to grow**: Using 150 trees is recommended. For better accuracy, increase the number of trees to 500 or above (forecasting will take longer as a result). For faster forecasting and lower memory usage, this can be dropped, at the risk of potentially decreased performance. Minimum number of trees is 2.
+- **Manually set minimum node size**: Use this to manually set the minimum node size - the number of training examples in each node at which to stop growing the tree. The number is set in the box below. The default is 5, and increasing this value will lead to smaller trees. This may increase performance on large datasets, by allowing larger trees to be grown and still fit in memory.
+- **The minimum node size**: If the tick box above is selected, this can be used to manually set the minimum node size - the number of training examples in each node at which to stop growing the tree. The default is 5, and increasing this value will lead to smaller trees. This may increase performance on large datasets, by allowing larger trees to be grown and still fit in memory.
+- **Short term moving average**: If selected, uses an Exponential Moving Average to follow any short term trends. The length of this moving average is set using the parameter below.
+- **Short term moving average length in rows**: Moving average length in rows for the short term moving average. Only applies if 'Short term moving average above' is selected.
+- **Overlay column - overwrite**: Non-missing values in this column are used to overwrite the model forecast
+- **Overlay columns - multiply**: Non-missing values in these columns are used to multiply the model forecast (after any overwrite overlays)
+- **Overlay columns - add**: Non-missing values in these columns are added to the model forecast (after any multiplicative overlays)
+- **Binary Target**: If ticked, this model will assume the target holds binary 0 or 1 values only, and will build a categorical model instead of a regression model

@@ -21,21 +21,20 @@ Those simple seasonal models are easy to interpret, are robust, and can work ver
 
 
 ## Generic Models
-- [**ARIMA Auto**](ARIMA-Auto.md): ARIMA models are good at following trends, and can also learn from business drivers (inputs) when available. This *Auto* version searches for the optimal set of parameters. For more manual control, use *ARIMA-Manual* instead
+- [**ARIMA Auto**](ARIMA-Auto.md): ARIMA models are good at following trends, and can also learn from business drivers (inputs) when available. This *Auto* version searches for the optimal set of parameters. For more manual control, use *ARIMA Manual* instead
 
-- [**ARIMA Manual**](ARIMA-Manual.md): ARIMA models are good at following trends, and can also learn from business drivers (inputs) when available. This *Manual* version gives you the most control over individual model parameters. For more automation, use *ARIMA-Auto* instead.
+- [**ARIMA Manual**](ARIMA-Manual.md): ARIMA models are good at following trends, and can also learn from business drivers (inputs) when available. This *Manual* version gives you the most control over individual model parameters. For more automation, use *ARIMA Auto* instead.
 
-- [**Exponential Smoothing Auto**](Exponential-Smoothing-Auto.md): 
+- [**Exponential Smoothing Auto**](Exponential-Smoothing-Auto.md): Exponential smoothing models are basic models that can be good at following trends, as well as handling simple seasonality. They can be useful for simple yearly or monthly level forecasts, or as the trend following component of a decomposition model. This *Auto* version searches for the optimal set of parameters. For more manual control, use *Exponential Smoothing Manual* instead
 
-- [**Exponential Smoothing Manual**](Exponential-Smoothing-Manual.md): 
+- [**Exponential Smoothing Manual**](Exponential-Smoothing-Manual.md): Exponential smoothing models are basic models that can be good at following trends, as well as handling simple seasonality. They can be useful for simple yearly or monthly level forecasts, or as the trend following component of a decomposition model. This *Manual* version gives you the most control over individual model parameters. For more automation, use *Exponential Smoothing Auto* instead
 
-- [**Forecast From Columns**](Forecast-From-Columns.md): 
+- [**Forecast From Columns**](Forecast-From-Columns.md): Creates a forecast directly from input columns: one column is used as the Forecast, and another as the Forecast Error
 
-- [**Formula Forecast**](Formula-Forecast.md): 
+- [**Formula Forecast**](Formula-Forecast.md): Creates the forecast (and forecast error if needed) from user provided formulae
 
-- [**Moving Average Regression**](Moving-Average-Regression.md): 
-
-- [**Random Forest**](Random-Forest.md): 
+- [**Moving Average Regression**](Moving-Average-Regression.md): Stepwise regression, with both long term and short term moving averages to handle trends. This is one of the most useful Forecaster models, able to learn from business drivers, select the most useful ones, and provide feedback on their relative importance.
+- [**Random Forest**](Random-Forest.md): Creates a random forest model, which is a combination of a large number of decision trees.  This model is more powerful than regression, and can also select inputs based on their significance.  Random Forests can also be used to predict binary outcomes, such as churn.
 
 - [**Regression Line**](Regression-Line.md): 
 
