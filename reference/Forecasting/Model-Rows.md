@@ -1,5 +1,3 @@
-
-
 # Model Rows
 
 The next step is to define the row on which training data ceases and forecast data starts (this is called the forecast start point).  When developing a time-series model, it is good practice to measure the predictive performance of the model by holding back some of the data.  Typically this is from the most recent period of historical data, since it is more likely that this data is more representative of the future unknown activity.  (This subset of data is is often referred to as the validation set.)

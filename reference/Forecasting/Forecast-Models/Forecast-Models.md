@@ -7,7 +7,7 @@ The first section to be added to the How To... section will cover the advantages
 For each data type (interval, daily, weekly, etc.), the top 3 models appear on individual buttons under the Model Design section of the Model tab. They can typically be run with default parameters, but the *Parameters* button provides details of the algorithm used, as well as information and control over all parameters. 
 
 {% hint style="info" %}
-As a rule of thumb, for daily data or above it is always worth starting with simple seasonal models with few if any inputs, then moving to more advanced models that learn from inputs as appropriate. Those simple seasonal models are easy to interpret, are robust, and can work very well even when no business drivers are available. To get the absolute best forecasts, however, machines learning models such as Regression or Random Forests are recommended, in order to learn as much as possible from business drivers (inputs). For daily to monthly data, the relevant *Multi Profile Model* is recommended as a first model, moving then to *Moving Average Regression* or *Random Forest* as needed.
+As a rule of thumb, for daily data or above it is always worth starting with simple seasonal models with few if any inputs, then moving to more advanced models that learn from inputs as appropriate. Those simple seasonal models are easy to interpret, are robust, and can work very well even when no business drivers are available. To get the absolute best forecasts, however, machine learning models such as Regression or Random Forests are recommended, in order to learn as much as possible from business drivers (inputs). For daily to monthly data, the relevant *Multi Profile Model* is recommended as a first model, moving then to *Moving Average Regression* or *Random Forest* as needed.
 {% endhint %}
 
 Interval level models are in a separate section below, as these typically work in a different way from daily and above models (although machines learning models such as *Moving Average Regression* or *Random Forest* can sometimes be used to great benefit on interval data, in particular when many business inputs are available).
@@ -50,7 +50,9 @@ These models can typically be applied to any type of data, from interval to mont
 
 
 ## Interval Models
+
 ![Interval Level Ribbon Models](imgs/Ribbon_ModelsInterval.png) 
+
 Forecaster provides a range of models for using on interval level data. This section covers models that are specifically designed for interval data. These models are generally based purely on seasonality, without using additional business drivers. Other models such as Regression or Random Forest can also be used on interval data. Although those other kinds of models are used less frequently on interval data, they can be extremely useful when business drivers are present.
 
 {% hint style="info" %}
@@ -67,6 +69,7 @@ This process will ensure that any daily business drivers are exploited by the da
 ### Allowed intervals
 Any intervals that fit neatly within an hour are allowed (e.g. 12, 15, 30 minute intervals are allowed, 13 minute intervals are not). In addition, for intervals larger than an hour, hourly multiples are also allowed  (e.g. 2h, 3h intervals are allowed, 2h30 intervals are not).
 
+### Interval Models
 - [**Weekly Interval Profile Smoothed**](Weekly-Interval-Profile-Smoothed.md): This is the default interval level model, and will appear as the first button on the model ribbon (as *Smoothed Profile*). This model creates a forecast based on the average value for each interval of the week over the training set. Recent weeks are given more weight than older weeks, and you can also include a percentage of the previous year's values.
 
 - [**Weekly Interval Profile Principal Components**](Weekly-Interval-Profile-Principal-Components.md): Creates forecasts based on a combination of standard weekly profiles (called principal components). Standard weekly profiles are automatically learned from the data, then forecasts are created from a weighted combination of those profiles. This approach should work well for profiles that have consistent changes within the month or within the year.
