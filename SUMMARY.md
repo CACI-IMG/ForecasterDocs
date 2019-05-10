@@ -37,8 +37,8 @@
 
 * [Model Tab](reference/Forecasting/Forecasting-Overview.md)
     * [Model Types](reference/Forecasting/Model-Type.md)
-    * [Model Rows](reference/Forecasting/Model-Rows.md)
     * [Model Columns](reference/Forecasting/Model-Columns.md)
+    * [Model Rows](reference/Forecasting/Model-Rows.md)
     * [Model Design](reference/Forecasting/Model-Design.md)
     * [All Forecast Models](reference/Forecasting/Forecast-Models/Forecast-Models.md)
         * [Multi Profile Daily](reference/Forecasting/Forecast-Models/Multi-Profile-Daily.md)

@@ -8,15 +8,18 @@ The Model tab ribbon contains the following sections
 For selecting between Simple and Decomposition models:
 {% page-ref page="Model-Type.md" %}
 
-For managing model rows, including deselecting and setting training and forecast ranges:
-{% page-ref page="Model-Rows.md" %}
-
 For managing model columns, for instance choosing model inputs and target:
 {% page-ref page="Model-Columns.md" %}
+
+For managing model rows, including deselecting and setting training and forecast ranges:
+{% page-ref page="Model-Rows.md" %}
 
 For selecting the forecast model to use:
 {% page-ref page="Model-Design.md" %}
 
+For the list of all forecast models:
+{% page-ref page="Forecast-Models.md" %}
+
 For running and viewing the forecast model:
-{% page-ref page="Forecasting.md" %}
+{% page-ref page="Forecasting-ribbon.md" %}
 
