@@ -5,7 +5,7 @@ This section covers how to use the *Random Forest* forecast model. This is a com
 
 If 'Binary Target' is ticked, this will assume the target holds binary 0 or 1 values only, and will build a categorical model instead of a regression model.
 
-Once *RandomForest* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
+Once *Random Forest* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
 
 ![Random Forest](imgs/Model_RandomForest.png) 
 

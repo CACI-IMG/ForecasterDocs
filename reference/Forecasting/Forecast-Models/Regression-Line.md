@@ -3,7 +3,7 @@
 
 This section covers how to use the *Regression Line* forecast model. This model simply fits a straight line to the data from the training range, and uses this to forecast.
 
-Once *ARIMA Auto* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
+Once *Regression Line* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
 
 ![Regression Line](imgs/Model_RegressionLine.png) 
 

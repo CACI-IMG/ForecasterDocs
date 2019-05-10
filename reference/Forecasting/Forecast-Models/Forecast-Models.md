@@ -41,11 +41,9 @@ These models can typically be applied to any type of data, from interval to mont
 
 - [**Regression Line**](Regression-Line.md): Simply fits a straight line to the data from the training range, and uses this to forecast.
 
-- [**STL Decomposition Auto**](STL-Decompositon-Auto.md): 
+- [**STL Decomposition Auto**](STL-Decompositon-Auto.md): Creates a seasonal and trend decomposition model. This kind of model can handle trends and basic seasonality well, however, input variables are not used. 
 
-- [**Random Forest**](Random-Forest.md): 
-
-- [**Weekly Profile**](Weekly-Profile.md): 
+- [**Weekly Profile**](Weekly-Profile.md): Creates a forecast based on the average value for each day of the week over the training set. If required, also handles public holidays, and determines factors for public holidays and the days directly before and after a public holiday.
 
 
 ## Interval Models
