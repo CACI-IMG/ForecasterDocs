@@ -5,7 +5,7 @@ This sections gives details of all the Forecast Models (found in the Model Tab).
 The first section to be added to the How To... section will cover the advantages and drawbacks of each of these models, as well as talking about the best places to use each of these.
 For each data type (interval, daily, weekly, etc.), the top 3 models appear on individual buttons under the Model Design section of the Model tab. They can typically be run with default parameters, but the *Parameters* button provides details of the algorithm used, as well as information and control over all parameters. 
 
-As a rule of thumb, it is always worth starting with simple seasonal models with few if any inputs, then moving to more advanced models that learning from inputs as appropriate. Those simple seasonal models are easy to interpret, are robust, and can work very well even when no business drivers are available. To get the absolute best forecasts, however, machines learning models such as Regression or Random Forests are recommended in order to learn as much as possible from business drivers (inputs). For daily to monthly data, the relevant *Multi Profile Model* is recommended as a first model, moving then to *Moving Average Regression* or *Random Forest* as needed.
+As a rule of thumb, it is always worth starting with simple seasonal models with few if any inputs, then moving to more advanced models that learn from inputs as appropriate. Those simple seasonal models are easy to interpret, are robust, and can work very well even when no business drivers are available. To get the absolute best forecasts, however, machines learning models such as Regression or Random Forests are recommended, in order to learn as much as possible from business drivers (inputs). For daily to monthly data, the relevant *Multi Profile Model* is recommended as a first model, moving then to *Moving Average Regression* or *Random Forest* as needed.
 
 Interval level models are in a separate section below, as these typically work in a different way from daily and above models (although machines learning models such as *Moving Average Regression* or *Random Forest* can sometimes be used to great benefit on interval data, in particular when many business inputs are available).
 
@@ -21,6 +21,9 @@ Those simple seasonal models are easy to interpret, are robust, and can work ver
 
 
 ## Generic Models
+
+These models can typically be applied to any type of data, from interval to monthly, yearly, or even non time-based data. Random Forests can also be used to predict binary outcomes, such as churn.
+
 - [**ARIMA Auto**](ARIMA-Auto.md): ARIMA models are good at following trends, and can also learn from business drivers (inputs) when available. This *Auto* version searches for the optimal set of parameters. For more manual control, use *ARIMA Manual* instead
 
 - [**ARIMA Manual**](ARIMA-Manual.md): ARIMA models are good at following trends, and can also learn from business drivers (inputs) when available. This *Manual* version gives you the most control over individual model parameters. For more automation, use *ARIMA Auto* instead.
@@ -36,7 +39,7 @@ Those simple seasonal models are easy to interpret, are robust, and can work ver
 - [**Moving Average Regression**](Moving-Average-Regression.md): Stepwise regression, with both long term and short term moving averages to handle trends. This is one of the most useful Forecaster models, able to learn from business drivers, select the most useful ones, and provide feedback on their relative importance.
 - [**Random Forest**](Random-Forest.md): Creates a random forest model, which is a combination of a large number of decision trees.  This model is more powerful than regression, and can also select inputs based on their significance.  Random Forests can also be used to predict binary outcomes, such as churn.
 
-- [**Regression Line**](Regression-Line.md): 
+- [**Regression Line**](Regression-Line.md): Simply fits a straight line to the data from the training range, and uses this to forecast.
 
 - [**STL Decomposition Auto**](STL-Decompositon-Auto.md): 
 

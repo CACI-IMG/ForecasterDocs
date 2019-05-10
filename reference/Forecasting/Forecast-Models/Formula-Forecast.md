@@ -1,6 +1,6 @@
 # *Formula Forecast* Forecast Model
 
-This section covers how to use the *Formula Forecast* forecast model. This model lets you create the forecast (and forecast error if needed) by simply typing in formulae
+This section covers how to use the *Formula Forecast* forecast model. This model lets you create the forecast (and forecast error if needed) by simply typing in formulae.
 
 Once *Formula Forecast* is selected from the drop-down at the top of the Script Selector dialog, you should see the parameters as shown below. You can very often run with the default parameters without needing to change anything else. The parameters and their effects are described here, but these details can also be found by hovering over the blue **(i)** icon in front of each parameter name.
 
