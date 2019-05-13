@@ -20,7 +20,7 @@ Data is saved in comma-separated csv format.  An example of output data is shown
 
 This process exports additional information columns:
 * **selected**: This column holds 1 for all rows that are selected, and 0 for all deselected rows.  This flag is controlled by the user de-selecting and selecting rows in the Forecaster's main data grid
-* **missing**: This column holds 1 for all missing rows (rows that are all blank), and 0 if any column (apart from the key column) in the row has a non-missing value.  This flag is set automatically by Forecaster based on the data in each row
+* **missing**: This column holds 1 for all missing rows (rows that hold only missing values), and 0 if any column (apart from the key column) in the row has a non-missing value.  This flag is set automatically by Forecaster based on the data in each row
 * **training**: This column holds 1 for all rows in the training range, and 0 otherwise
 * **forecasting**: This column holds 1 for all rows that are in the forecast range, and 0 otherwise
 

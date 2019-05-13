@@ -1,19 +1,50 @@
 # Charts and Error Metrics
-Forecasts charts are available under the **Analysis** tab. These charts display both actual target values as well as the forecasts.The data can be viewed in two different chart types; a time series plot or a scatter plot, as below.
+Forecasts charts are available under the **Analysis** tab, and are typically the best way of viewing and understanding forecast performance. Any number of forecasts can be plotted on the same chart in order to help comparison, and error metrics (accuracy estimates) are shown for all selected forecasts.
+
+
+![Analysis Tab](imgs/Analysis_Overview.png)
+
+
+{% hint style="info" %}
+Although the *Solution Explorer* window is usually present on the left hand side of the Analysis tab, this has no effect on this tab, and can be minimised if needed to free up more screen space (by resizing, or by unpinning using the pin at the top right of the *Solution Explorer* pane).
+{% endhint %}
+
+These charts display both actual target values as well as the forecasts (where multiple forecasts from a range of projects can be shown). 
+
+
+
+## The Analysis Tab Ribbon
+
+![Analysis Tab Ribbon](imgs/Analysis_Ribbon.png)
+
+The data can be viewed in two different chart types; a time series plot or a scatter plot, as show below. The **Line** and **Scatter** buttons on the left hand side of the main ribbon let you switch between these two chart types. In these charts, actuals are always shown in blue, whilst forecasts can be any one of a range of colours.
 
 
 ![Time Series Chart](imgs/Charts_TimeSeriesChart.png)
 
 
-![Scatterplot](imgs/Charts_Scatterplot.png)
+![Scatter Chart](imgs/Charts_Scatterplot.png)
+
+
+## The Analysis Tab Ribbon - Chart Section
+
+* **Copy Picture** button: Copies the current chart to the Clipboard, so that it can be pasted into any other app such as Word or PowerPoint
+* **Copy Data** button: This copies actuals and forecast data from all series in the chart, in a format that can be easily pasted into Excel
+* **Print** button: Sends the chart to the default printer, if available
+* **Show Full Range** button: When selected, zooms the chart out to view the full range of data. When deselected, shows purely the forecast range.
+* **Show Markers** button: Shows markers for each data point (provided the date range is not too large, and there are too many data points to show)
+* **Show Error Bars** button: Shows error bars for each data point (provided the date range is not too large, and there are too many data points to show). These error bars are the expected accuracy, output by the model in the *Forecast Error* column of the main data grid
+
 
 
 ## Selecting Actual and Predicted values
 
-| Group                                                                                                                                                                                | Description                                                                                                                                                                                                   |
+To the left of the main chart, the *Select from Actuals* and *Select from Predicted* boxes let you select the source projects of both the actuals data (shown in blue) and the forecast data. 
+
+| Box                                                                                                                                                                                | Description                                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Select from Actuals                                                                                                                                                                  | Select the project or snapshot which contains the relevant actuals.  Only one project can be selected. This selection defines the x axis, the training and forecast start lines (orange and blue respectively), and the Actual (target column) values.                                                                                              |
-| Select from Predicted                                                                                                                                                                | Any number of projects can be selected here. As the x axis of the chart is defined by the Actuals selection, data must cover a similar time range (and the same granularity, such as daily or interval). |
+| Select from Actuals                                                                                                                                                                  | Lets you s the project which contains the actual target data.  Only one project can be selected. This selection defines the x axis, the training and forecast start lines (orange and blue respectively), and the Actual (target column) values.                                                                                              |
+| Select from Predicted                                                                                                                                                                | Forecast values from all these projects will be shown on the chart. Any number of projects can be selected here. As the x axis of the chart is defined by the Actuals selection, data must cover a similar time range (and the same granularity, such as daily or interval). |
 
 ## Navigating the charts
 
@@ -37,8 +68,9 @@ For the 2 error metrics described below (RMS, MAE), errors are measured in the s
 
 | Error Metric                                                                                        | Formula | Description                                                                   |
 |-----------------------------------------------------------------------------------------------------|:---:|-------------------------------------------------------------------------------|
-| **Root Mean Square (RMS)**                                                                              |   $$\sqrt{\frac{1}{n}  \sum_{i=1}^n(f_i-\alpha_i)^2}$$      | The square root of the average of the squared errors. This is similar to a 1 sigma credible interval, so we'd expect around 68% of calls to lie within this distance of the forecasts.                         |
+| **Root Mean Square Error (RMS)**                                                                              |   $$\sqrt{\frac{1}{n}  \sum_{i=1}^n(f_i-\alpha_i)^2}$$      | The square root of the average of the squared errors. This is similar to a 1 sigma credible interval, so we'd expect around 68% of actuals to lie within this distance of the forecasts (and 95% of actuals to be within twice this range)
 | **Mean Absolute Error (MAE)**                                                                          |   $$ \frac{1}{n} \sum_{i=1}^n \left\lvert{f_i-\alpha_i}\right\rvert$$      | The average of the absolute error (i.e. the error with  the +/- sign removed) |
 
-
+<!-- This bit doesn't display correctly in the VS Code preview, but is OK live -->
 Where $$n:=$$ number of observations in the forecast range,  $$f_i:=$$ forecast value for observation $$i$$, $$\alpha_i:=$$ actual value for observation $$i$$.
+

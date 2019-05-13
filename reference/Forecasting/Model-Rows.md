@@ -68,7 +68,7 @@ Selecting or deselecting a row can be done in two different ways:
 - After selecting at least one row, right-click on a selected row number and choose **Select/Deselect** from the list of options
 
 
-In certain cases you may want to deselect rows for which the target column is either missing or zero. (This should not occur very often, as forecast models generally ignore rows with missing target values. Rows in which the target value is zero are also worth training on in the vast majority of cases). Once you have set the target column (as described in next section - [Model Columns](Model-Columns.md#column-types)), you can deselect any blank or zero target values in a couple of steps:
+In certain cases you may want to deselect rows for which the target column is either missing or zero. (This should not occur very often, as forecast models generally ignore rows with missing target values. Rows in which the target value is zero are also worth training on in the vast majority of cases.) Once you have set the target column (as described in next section - [Model Columns](Model-Columns.md#column-types)), you can deselect any missing or zero target rows by:
 
-- Select all rows by clicking on the blank column heading above the row numbers
-- Right-click on any row number so that the list of row options appears.  Select **Deselect Blank Targets**, or **Deselect Zero Targets**
+- Selecting a range of rows by clicking on the missing rows' header to the left of the data grid
+- Right-clicking on any row number so that the list of row options appears.  Select **Deselect Blank Targets**, or **Deselect Zero Targets**
