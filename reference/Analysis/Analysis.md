@@ -1,5 +1,5 @@
 # Charts and Error Metrics
-Forecasts charts are available under the **Analysis** tab, and are typically the best way of viewing and understanding forecast performance. Any number of forecasts can be plotted on the same chart in order to help comparison, and error metrics (accuracy estimates) are shown for all selected forecasts.
+Forecasts charts are shown under the **Analysis** tab, and are typically the best way of viewing and understanding forecast performance. Any number of forecasts can be plotted on the same chart in order to help comparison, and error metrics (accuracy estimates) are shown for all selected forecasts.
 
 
 ![Analysis Tab](imgs/Analysis_Overview.png)
@@ -43,7 +43,7 @@ To the left of the main chart, the *Select from Actuals* and *Select from Predic
 
 | Box                                                                                                                                                                                | Description                                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Select from Actuals                                                                                                                                                                  | Lets you s the project which contains the actual target data.  Only one project can be selected. This selection defines the x axis, the training and forecast start lines (orange and blue respectively), and the Actual (target column) values.                                                                                              |
+| Select from Actuals                                                                                                                                                                  | Lets you chose the project which contains the actual target data.  Only one project can be selected. This selection defines the x axis, the training and forecast start lines (orange and blue respectively), and the Actual (target column) values.                                                                                              |
 | Select from Predicted                                                                                                                                                                | Forecast values from all these projects will be shown on the chart. Any number of projects can be selected here. As the x axis of the chart is defined by the Actuals selection, data must cover a similar time range (and the same granularity, such as daily or interval). |
 
 ## Navigating the charts
@@ -56,12 +56,9 @@ To the left of the main chart, the *Select from Actuals* and *Select from Predic
 - Shift + mouse wheel zooms both horizontally and vertically
 
 
-For the Time Series Chart the legend contains, for each forecast project, error metrics that measure the performance of each forecast when compared to the actuals.  The two error metrics are Root Mean Square (RMS) and Mean Absolute Error (MAE), and are calculated for the forecast range only.
-
-
 ## Error metrics
 
-Error metrics for each Predicted series are shown in the chart legend below the plot. Error metrics show the accuracy of a forecast by summarising the different between actual values and a model's forecasts. Small values show that the error is small, meaning that forecasts and actuals are close. The error metrics shown on these charts are calculated over the **forecast range only** (on the chart, this is generally all the rows after the dotted blue line for which both actual and forecast values are available).
+For the Time Series Chart, error metrics for each Predicted series are shown in the chart legend below the plot. Error metrics show the accuracy of a forecast by summarising the different between actual values and a model's forecasts. Small values show that the error is small, meaning that forecasts and actuals are close. The error metrics shown on these charts are calculated over the **forecast range only** (on the chart, this is generally all the rows after the dotted blue line for which both actual and forecast values are available).
 
 For the 2 error metrics described below (RMS, MAE), errors are measured in the same units as the forecasts, so an error of 30 on a daily call volume forecast means that the difference between actuals and forecasts is around 30 calls.
 
