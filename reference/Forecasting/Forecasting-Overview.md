@@ -21,7 +21,7 @@ For selecting the forecast model to use:
 {% page-ref page="Model-Design.md" %}
 
 For the list of all forecast models:
-{% page-ref page="Forecast-Models.md" %}
+{% page-ref page="Forecast-Models/Forecast-Models.md" %}
 
 For running and viewing the forecast model:
 {% page-ref page="Forecasting-ribbon.md" %}
