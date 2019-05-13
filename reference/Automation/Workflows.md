@@ -20,9 +20,11 @@ This section to the left of the main *Automation* ribbon lets you perform basic 
 
 
 ![New Workflow](imgs/Workflows_NewWorkflow.png)
-To create a new workflow, click on the **New Workflow** button under the Automation tab, as in the image below.
+
+To create a new workflow, click on the **New Workflow** button under the Automation tab, as above.
 
 ![Rename Workflow](imgs/Workflows_WorkflowName.png)
+
 The title of a Workflow can be changed from the *Workflow name* field.
 
 Once the Workflow has been initialized, you can start building up a sequence of Workflow Tasks. 
@@ -32,8 +34,7 @@ Once the Workflow has been initialized, you can start building up a sequence of 
 
 ![Duplicate Workflow](imgs/Workflows_DuplicateWorkflow.png)
 
-To create a copy of a workflow click on the **Duplicate Workflow** button as shown below.
-
+To create a copy of a workflow click on the **Duplicate Workflow** button as above.
 
 
 ### Delete Workflow
@@ -41,7 +42,7 @@ To create a copy of a workflow click on the **Duplicate Workflow** button as sho
 ![Delete Workflow](imgs/Workflows_DeleteWorkflow.png)
 
 
-To delete a workflow click on the **Delete Workflow** button as shown below.
+To delete a workflow click on the **Delete Workflow** button as shown above.
 
 
 
@@ -53,7 +54,7 @@ This ribbon section lets you layout and edit workflows within the main workflow 
 ![Tools Ribbon Section](imgs/AutomationTab_Tools.png)
 
 - **Pointer Tool**: When selected (the default), this lets you select and move tasks within the workflow.
-- **Connector**: When selected, this lets you draw connections between workflow tasks. (This isn't needed very often, as when adding a new task to a workflow is it automatically connected to the last task in the workflow.) 
+- **Connector**: When selected, this lets you draw connections between workflow tasks. (This isn't needed very often, as when adding a new task to a workflow it is automatically connected to the last task in the workflow.) 
 - **Arrange Tasks**: Clicking this button re-arranges workflow tasks in a tidy manner
 
 Connections can be removed at any time by simply selecting the connection and pressing `Delete`.
@@ -80,7 +81,7 @@ Tasks can be added to the Workflow by simply dragging and dropping them from the
 
 
 ### Deleting a Workflow Task
-To delete a Workflow Task select the task within the workflow and press the `delete` key.
+To delete a Workflow Task select the task within the workflow and press the `Delete` key.
 
 
 
@@ -129,15 +130,21 @@ The Set Rows task is used to specify the starting point and the length of the fo
 
 #### Forecast Start
  As shown in the screenshot above, this can be set in 4 different ways, in the *Forecast Start* section:
+
  1. **After Last Target Value**: This sets the forecast start point to the first row after the that containing the last valid target value. This is often the best and safest option to use, particularly when running across multiple projects that may hold different data
+
  2. **Move by rows**: This lets you step forward (or move back) the forecast start point by a given number of rows. This can be useful for instance, if you'd like to step all forecast start points by 7 days (7 rows). This option is generally not recommended, as it makes it harder to track exactly where the forecast starts. (For example, if a workflow were stopped half way through, then restarted, this would lead to different forecast start point changes across different projects.)
+
  3. **Date / Interval Key**: Lets you specify the key for the forecast start point, for date or interval based projects
+
  4. **Integer Key**: Let you set the key for the forecast start point, for non time (key index based) projects
 
 
 #### Forecast Length
  As shown in the screenshot above, this can be set in two different ways, in the *Forecast Length* section:
+
 1. **Set Forecast Length to the last Row**: This will set the forecast period to run all the way to the end of the dataset (the default)
+
 2. **Set Forecast Length to**: Lets you directly set the length of the forecast period (in rows). 
 
 
@@ -148,7 +155,7 @@ Forecasts will generally be produced for all rows, not just those in the Forecas
 
 ### Workflow Task: Forecast
 
-This workflow task lets you select the forecast model to be used for the forecast. You can either re-use the model selected within the project (using *Reuse Existing*) or setup a new one (using *Setup New**, and selecting the model from the dropdown). Clicking on the "..." button next to the right of the model name brings up the Model Parameters screen, where you can view and change the model's parameters.
+This workflow task lets you select the forecast model to be used for the forecast. You can either re-use the model selected within the project (using *Reuse Existing*) or setup a new one (using *Setup New*, and selecting the model from the dropdown). Clicking on the `...` button next to the right of the model name brings up the Model Parameters screen, where you can view and change the model's parameters.
 
 ![Forecast](imgs/Workflows_Forecast.png)
 
@@ -161,7 +168,7 @@ When setting up a new exporter, the target directory can be selected from the *T
 
 
 {% hint style="info" %}
-For more flexible exportation, including the ability to select data ranges and export as Excel workbooks, you can instead use the *Export Data* External Process (using an External Process workflow node rather than this *Export Data* node).
+For more flexible exportation, including the ability to select data ranges and export as Excel workbooks, you can instead use the *Export Data* External Process (using an *External Process* workflow node rather than this *Export Data* node).
 {% endhint %}
 
 ![Export Data](imgs/Workflows_ExportData.png)
