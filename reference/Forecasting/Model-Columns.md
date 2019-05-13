@@ -6,7 +6,7 @@ The *Model Columns* section of the *Model* ribbon lets you select which columns 
 
 
 ## Selecting Columns
-Columns can be flagged up in two ways: 
+Columns can be flagged up as one of two types: 
 -	**Input**:  Column is allowed as an input to the forecast model (provided the model in question uses inputs). For some models, all input columns will be used, however, for more powerful models such as *Moving Average Regression* or *Random Forest*, the models themselves will learn which of these permitted inputs are relevant, and will usually just chose a subset of these input columns.
 -	**Target**:  Column to be forecast (only one can be selected)
 
@@ -14,7 +14,7 @@ To flag up a column as a given column type, select the column or range of column
 Once complete, the column background colour will change to reflect the colours of the column type: inputs are yellow whilst the target column is green, as shown below.
  
 
-![Target and Inputs in the Data Grid](imgs/ModelColumns_TargetInput.png)
+![Model Columns Ribbon Section](imgs/ModelColumns_TargetInput.png)
 
 
 ## Excluding Columns

@@ -3,10 +3,9 @@
 ![Ribbon Models](imgs/Ribbon_Models.png) 
 
 This sections gives details of all the Forecast Models (found in the Model Tab). These really are the core of Forecaster, and are the algorithms that produce the forecasts, based on learning from historical data and user overlays.
-The first section to be added to the How To... section will cover the advantages and drawbacks of each of these models, as well as talking about the best places to use each of these.
 For each data type (interval, daily, weekly, etc.), the top 3 models appear on individual buttons under the Model Design section of the Model tab. They can typically be run with default parameters, but the *Parameters* button provides details of the algorithm used, as well as information and control over all parameters. 
 The recommended approach is to create initial forecasts with a simple but robust model such as a Multi Profile model. That will get robust ballpark forecasts very quickly. When generating large numbers of low volume forecasts, that's probably the best approach. For higher volume or higher value lines, analysts can then go in and work on adding drivers using more advanced models such as Regression and Random Forests. 
-
+The first section to be added to the How To... section will cover the advantages and drawbacks of each of these models, as well as talking about the best places to use each of these.
 
 {% hint style="info" %}
 As a rule of thumb, for daily data or above it is always worth starting with simple seasonal models with few if any inputs, then moving to more advanced models that learn from inputs as appropriate. Those simple seasonal models are easy to interpret, are robust, and can work very well even when no business drivers are available. To get the absolute best forecasts, however, machine learning models such as Regression or Random Forests are recommended, in order to learn as much as possible from business drivers (inputs). For daily to monthly data, the relevant *Multi Profile Model* is recommended as a first model, moving then to *Moving Average Regression* or *Random Forest* as needed.

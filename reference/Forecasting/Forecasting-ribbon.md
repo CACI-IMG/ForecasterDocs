@@ -2,11 +2,14 @@
 
 ## Forecasting
 
-Once you've selected a forecast model, you can click on the **Forecast** button in the **Data – Forecasting** ribbon.  This will populate the last two columns in the data grid, Forecast and Forecast Error:
+Once you've selected a forecast model, you can click on the **Forecast** button in the *Forecasting* section of the *Model* ribbon.  
+
+![Forecast](imgs/Forecasting_Forecast.png)
+
+This will populate the last two columns in the data grid, Forecast and Forecast Error:
 - **Forecast** column holds the forecast created for the target column, which will generally be populated for all selected rows of the data grid  
 - **Forecast Error** holds the accuracy estimate for this forecast, in the same units as the forecast itself. So, for example, if for a daily call volume forecast, *Forecast* is 100 and *Forecast Error* is 20, this means that the model estimates forecast volumes will be 100 on that day, with an estimated accuracy of 20 calls. This *Forecast Error* is the one standard deviation estimate, so this implies that actuals should fall within this range around 68% of the time. (Doubling this range would be 2 standard deviations, and imply a 95% confidence of actuals falling within the range.)
 
-![Forecast](imgs/Forecasting_Forecast.png)
 
 
 {% hint style="info" %}
