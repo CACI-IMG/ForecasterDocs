@@ -5,12 +5,17 @@
 This sections gives details of all the Forecast Models (found in the Model Tab). These really are the core of Forecaster, and are the algorithms that produce the forecasts, based on learning from historical data and user overlays.
 The first section to be added to the How To... section will cover the advantages and drawbacks of each of these models, as well as talking about the best places to use each of these.
 For each data type (interval, daily, weekly, etc.), the top 3 models appear on individual buttons under the Model Design section of the Model tab. They can typically be run with default parameters, but the *Parameters* button provides details of the algorithm used, as well as information and control over all parameters. 
+The recommended approach is to create initial forecasts with a simple but robust model such as a Multi Profile model. That will get robust ballpark forecasts very quickly. When generating large numbers of low volume forecasts, that's probably the best approach. For higher volume or higher value lines, analysts can then go in and work on adding drivers using more advanced models such as Regression and Random Forests. 
+
 
 {% hint style="info" %}
 As a rule of thumb, for daily data or above it is always worth starting with simple seasonal models with few if any inputs, then moving to more advanced models that learn from inputs as appropriate. Those simple seasonal models are easy to interpret, are robust, and can work very well even when no business drivers are available. To get the absolute best forecasts, however, machine learning models such as Regression or Random Forests are recommended, in order to learn as much as possible from business drivers (inputs). For daily to monthly data, the relevant *Multi Profile Model* is recommended as a first model, moving then to *Moving Average Regression* or *Random Forest* as needed.
 {% endhint %}
 
 Interval level models are in a separate section below, as these typically work in a different way from daily and above models (although machines learning models such as *Moving Average Regression* or *Random Forest* can sometimes be used to great benefit on interval data, in particular when many business inputs are available).
+
+Additional bespoke models can also be created and easily added to Forecaster, by creating models in script using the R language. This can be hugely valuable when replicating existing business specific models.
+
 
 ## Multi Profile Models
 
@@ -53,7 +58,7 @@ These models can typically be applied to any type of data, from interval to mont
 
 ![Interval Level Ribbon Models](imgs/Ribbon_ModelsInterval.png) 
 
-Forecaster provides a range of models for using on interval level data. This section covers models that are specifically designed for interval data. These models are generally based purely on seasonality, without using additional business drivers. Other models such as Regression or Random Forest can also be used on interval data. Although those other kinds of models are used less frequently on interval data, they can be extremely useful when business drivers are present.
+Forecaster provides a range of models specifically designed for use on interval level data. This section covers models that are specifically designed for interval data. These models are generally based purely on seasonality, without using additional business drivers. Other models such as Regression or Random Forest can also be used on interval data. Although those other kinds of models are used less frequently on interval data, they can be extremely useful when business drivers are present.
 
 {% hint style="info" %}
 It is generally recommended to use these specific interval level models for interval level data. If business drivers are available and relevant, these are generally defined at daily level, and can be more effectively used by daily level models. If daily forecasts are available, these daily forecasts can be used by the interval level models to define daily totals.
@@ -77,6 +82,10 @@ Any intervals that fit neatly within an hour are allowed (e.g. 12, 15, 30 minute
 - [**Weekly Interval Profile**](Weekly-Interval-Profile.md): The simplest interval level model. Creates a forecast based on the average value for interval of each day of the week over the training set. If required, also handles public holidays, by simply removing them from the training data.
 
 
+
+## Additional Bespoke Forecasting Models
+
+Additional bespoke models can also be created and easily added to Forecaster, by creating models in script using the R language. This can be hugely valuable when replicating existing business specific models. For more details on this functionality, please contact CACI for details. If you are comfortable working in the R environment, we can tell you all about how you can go about wrapping up your own models for use in Forecaster. Alternatively, we're more than happy to build those bespoke forecasting models for you as required. 
 
 
 

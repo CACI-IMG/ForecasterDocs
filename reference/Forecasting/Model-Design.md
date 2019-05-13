@@ -1,30 +1,21 @@
 # Model Design
 
-A number of forecasting methods are available in Forecaster.
+The *Model Design* section of the model tab lets you select and control the forecast model used for creating the forecast. These really are the core of Forecaster, and are the algorithms that produce the forecasts, based on learning from historical data and user overlays. 
+
+A wide range of forecasting methods are available in Forecaster, however, the most useful models for your specific data are always highlighted in the ribbon. For each data type (interval, daily, weekly, etc.), the top 3 models appear on individual buttons under the Model Design section of the Model tab. They can typically be run with default parameters, but the *Parameters* button provides details of the algorithm used, as well as information and control over all parameters. The recommended best 3 models for your data have their own buttons on the ribbon, while the full range of models is available from the *Other Models* button. Although all models should work well with default parameters, the *Parameters* button lets you change any of the parameters as needed, while also providing more information on each of the models.
+
+This section provides an overview of the *Model Design* ribbon section operation. For in depth information on each of the forecasting models, see the [**All Forecast Models**](Forecast-Models/Forecast-Models.md) section.
+
+For daily data or above it is generally worth starting with simple seasonal models with few if any inputs (*Multi Profile* models), then moving to more advanced models that learn from inputs as appropriate (*Moving Average Regression* and *Random Forest* models). This approach is mirrored in the ribbon section, with the *Multi Profile* model selected by default, and the other recommended models assigned their own buttons:
+![Daily, Weekly, Monthly Ribbon Models](Forecast-Models/imgs/Ribbon_Models.png) 
 
 
-### The Three Core Forecasting Methods
-Forecaster offers three core forecasting models, each requiring input columns which are incorporated into the forecast as additional drivers. This is available from the **Parameters** button once you have selected the relevant forecasting model.
+Forecaster provides a range of models specifically designed for use on interval level data. For interval level projects, the ribbon highlights these models instead. These models are generally based purely on seasonality, without using additional business drivers. Other models such as Regression or Random Forest can also be used on interval data. Although those other kinds of models are used less frequently on interval data, they can be extremely useful when business drivers are present.
+
+![Interval Ribbon Models](Forecast-Models/imgs/Ribbon_ModelsInterval.png) 
 
 
-| Method          | Description                                                                                                                                                                                                                                                  | Input Columns                                                                                                                                        |
-|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Simple Profile  | Creates a daily level multi profile model, based on day of week, week of month and month of year profiles.                                   | Automatically selects the most relevant input columns                                                                                                |
-| Regression      | Using a stepwise approach, the application generates an equation to calculate the target variable using a linear combination of the most relevant inputs.  A multiplicative model is also possible by taking the natural logarithm of the target variable.   | Automatically selects the most relevant input columns                                                                                                |
-| Random Forests  | Based on Decision Trees, Random Forests is a flexible and powerful machine learning algorithm that produces a great result most of the time.                                   | Automatically selects the most relevant input columns                                                                                                |
+ For in depth information on each of the forecasting models, see the All Forecast Models section:
+ {% page-ref page="Forecast-Models/Forecast-Models.md" %}
 
 
-
-The general approach is to create all the forecasts with a simple but robust model such as the Simple Profile. That will get robust ballpark forecasts very quickly. For most of the smaller volume lines, that's probably the best approach. For higher volume or higher value lines, analysts can then go in and work on adding drivers using more advanced models such as Regression and Random Forests. 
-
-
-<!-- When including inputs, it is usually best to start with the regression model as it will select the most appropriate inputs and provide you with a visible formula (therefore giving insight into the problem).  Once you have generated a regression model, you may find that a decision tree model shows better performance.  After filtering out any irrelevant inputs, neural networks can be used for maximum performance. -->
-
-
-### Custom Models
-In addition to the three core methods described above, CACI Forecaster offers a number of custom models that focus more on time series methods such as *ARIMA* and *Exponential Smoothing*.  
-
-<!-- Table 10 provides a description of each model and its general performance with different types of data.  More details can be found in a separate document on custom models [2].
-It is worth mentioning that, apart from the ARIMA models, any input columns will be ignored. -->
-
-Bespoke forecasting models can be created by CACI if required. For more details on additional consultancy, contact CACI.
