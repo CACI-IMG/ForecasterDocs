@@ -8,7 +8,7 @@ Columns can be flagged up in two ways:
 -	**Target**:  Column to be forecast (only one can be selected)
 
 To assign a column to a given column type, select the column name or range of columns. (Multiple columns can be selected using the `shift` key.) The selected columns will turn light blue as selected.  At this point you can select one of the column types: Input or Target.  
-Once complete, the column background colour will change to reflect the colours of the column type: inputs are yellow whilst the target column is green.  The data grid should then appear similar to that shown in Figure 35.
+Once complete, the column background colour will change to reflect the colours of the column type: inputs are yellow whilst the target column is green, as shown below.
  
 
 ![Target and Inputs in the Data Grid](imgs/ModelColumns_TargetInput.png)
@@ -16,4 +16,4 @@ Once complete, the column background colour will change to reflect the colours o
 
 ### Excluding Columns
 To exclude any data columns from any specific model (either as input or target), select the columns and then press the **Exclude Columns** button. This will not delete the columns, but will remove them from the model. The background colour of these columns will be returned to white.
-To delete columns completely, you can instead use the **Delete Column** button on the *Data* tab.
+(To delete columns completely, you should instead use the **Delete Column** button on the *Data* tab.)
