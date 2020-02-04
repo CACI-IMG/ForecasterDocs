@@ -19,7 +19,7 @@ You can jump to any of the sections of this page using the CONTENTS menu to the 
 
 
 ## Create a new Solution
-- Open CACI Forecaster.
+- Open CACI Forecaster
 
 - In Forecaster, under the *Home* tab, click **New** to create a new solution. A solution is a workspace that can hold any number of forecast projects.
 
