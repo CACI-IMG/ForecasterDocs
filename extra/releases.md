@@ -1,5 +1,21 @@
 # Releases
 
+## Version 4.1 (December 2022)
+
+The main change in this release is the removal of licence key functionality – once installed, Forecaster can be used without requiring a licence key.
+
+### Bug fixes
+
+These are the changes with respect to the previous Forecaster version 4.0.1.0.
+
+1.Bug fixed in which it was not possible to click 'Setup New' in the Forecast workflow task. This meant that only the default model (typically Profile Model) could previously be used when creating a new project using workflows, and workflows previously could not be used for changing models.
+2. Bug fixed where the formula for a derived column could no longer be viewed after it was created (under Column Properties / Formula Editor)
+3. Bug fixed where no column could be deleted once 2 derived columns were added
+4. Bug fixed where forecast period did not extend correctly when new rows were manually inserted at the end of the dataset.
+5. Bug fixed in the formula engine, where rows could sometimes incorrectly swap position under certain conditions
+
+### Additional functionality
+1. Custom models are now able to return multiple columns (not just FORECAST and ERROR)  
 
 
 ## Version 4.0 (March 2019)
